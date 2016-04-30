@@ -1,0 +1,19 @@
+//Logic to handle the tic tac toe game for my final
+//project in Rapid Prototyping with FPGAs
+//Engineer: Kommon Ousley
+//Date Started: 4/30/2016
+//Inputs(May attempt to use the PS/2 Keyboard)
+//
+//Outputs
+//player_1_win:1 bit wire
+//player_2_win:1 bit wire
+//
+module ttt_logic( output wire player_1_win,player_2_win);
+
+
+
+
+
+
+
+endmodule
