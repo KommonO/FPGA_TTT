@@ -12,6 +12,7 @@ module ttt_logic(input mclk,  output wire player_1_win,player_2_win);
 
 //wires
 wire player1_turn, player2_turn;
+wire enter;//also known as select depending on keyboard use or button use
 
 
 //parameters

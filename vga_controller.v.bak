@@ -48,7 +48,6 @@ end
 //initialize other modules
 vga_timer vga_timer();
 
-ttt_logic ttt_logic();
 //ASCCII TRANSLATE
 
 

@@ -21,7 +21,7 @@
 //  Vertical: Time- Clocks- Lines-
 //  Horizontal: Time- Clocks-
 
-module vga_timer(input mclk, output );
+module vga_timer();
 
 //Need to change names and values and erase Tw most likely
 
