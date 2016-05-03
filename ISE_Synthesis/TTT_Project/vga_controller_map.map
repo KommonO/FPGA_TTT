@@ -1,0 +1,193 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Map Application Log File for Design 'vga_controller'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off
+-c 100 -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+Target Device  : xc3s500e
+Target Package : fg320
+Target Speed   : -4
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Tue May 03 02:48:44 2016
+
+Mapping design into LUTs...
+ERROR:MapLib:979 - LUT4 symbol
+   "ila/U0/I_NO_D.U_ILA/U_STAT/U_MUX/U_CS_MUX/I1.U_MUX2/O56" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_STAT/TDO_next) has input signal "ila/CONTROL<4>"
+   which will be trimmed. See Section 5 of the Map Report File for details about
+   why the input signal will become undriven.
+ERROR:MapLib:978 - LUT4 symbol
+   "icon/U0/U_ICON/U_TDO_MUX/U_CS_MUX/I4.U_MUX16/Mmux_O_4" (output
+   signal=icon/U0/U_ICON/U_TDO_MUX/U_CS_MUX/I4.U_MUX16/Mmux_O_4) has an equation
+   that uses input pin I0, which no longer has a connected signal. Please ensure
+   that all the pins used in the equation for this LUT have signals that are not
+   trimmed (see Section 5 of the Map Report File for details on which signals
+   were trimmed).
+ERROR:MapLib:978 - LUT4 symbol
+   "ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.I_RDADDR/I_NI_GT_1.I3.U_
+   LUT" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.I_RDADDR/lowAddr_r
+   st) has an equation that uses input pin I3, which no longer has a connected
+   signal. Please ensure that all the pins used in the equation for this LUT
+   have signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT2 symbol
+   "ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.I_RDADDR/I_NI_GT_1.U_hig
+   hAddr_ce" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.I_RDADDR/highAddr_
+   ce) has an equation that uses input pin I1, which no longer has a connected
+   signal. Please ensure that all the pins used in the equation for this LUT
+   have signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT2 symbol
+   "ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_CDONE/I_NOLUT6.I_SRL_T2.
+   U_LUT" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_CDONE/iCFG_DIN)
+   has an equation that uses input pin I1, which no longer has a connected
+   signal. Please ensure that all the pins used in the equation for this LUT
+   have signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT2 symbol
+   "ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_CMPRESET/I_NOLUT6.I_SRL_
+   T2.U_LUT" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_CMPRESET/iCFG_DIN)
+   has an equation that uses input pin I1, which no longer has a connected
+   signal. Please ensure that all the pins used in the equation for this LUT
+   have signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT2 symbol
+   "ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_NS0/I_NOLUT6.I_SRL_T2.U_
+   LUT" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_NS0/iCFG_DIN) has
+   an equation that uses input pin I1, which no longer has a connected signal.
+   Please ensure that all the pins used in the equation for this LUT have
+   signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT2 symbol
+   "ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_NS1/I_NOLUT6.I_SRL_T2.U_
+   LUT" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_NS1/iCFG_DIN) has
+   an equation that uses input pin I1, which no longer has a connected signal.
+   Please ensure that all the pins used in the equation for this LUT have
+   signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT2 symbol
+   "ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_SCE/I_NOLUT6.I_SRL_T2.U_
+   LUT" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_SCE/iCFG_DIN) has
+   an equation that uses input pin I1, which no longer has a connected signal.
+   Please ensure that all the pins used in the equation for this LUT have
+   signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT2 symbol
+   "ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_SCMPCE/I_NOLUT6.I_SRL_T2
+   .U_LUT" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_SCMPCE/iCFG_DIN)
+   has an equation that uses input pin I1, which no longer has a connected
+   signal. Please ensure that all the pins used in the equation for this LUT
+   have signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT2 symbol
+   "ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_SCRST/I_NOLUT6.I_SRL_T2.
+   U_LUT" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_SCRST/iCFG_DIN)
+   has an equation that uses input pin I1, which no longer has a connected
+   signal. Please ensure that all the pins used in the equation for this LUT
+   have signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT2 symbol
+   "ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_WCE/I_NOLUT6.I_SRL_T2.U_
+   LUT" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_WCE/iCFG_DIN) has
+   an equation that uses input pin I1, which no longer has a connected signal.
+   Please ensure that all the pins used in the equation for this LUT have
+   signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT2 symbol
+   "ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_WHCMPCE/I_NOLUT6.I_SRL_T
+   2.U_LUT" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_WHCMPCE/iCFG_DIN)
+   has an equation that uses input pin I1, which no longer has a connected
+   signal. Please ensure that all the pins used in the equation for this LUT
+   have signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT2 symbol
+   "ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_WLCMPCE/I_NOLUT6.I_SRL_T
+   2.U_LUT" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_WLCMPCE/iCFG_DIN)
+   has an equation that uses input pin I1, which no longer has a connected
+   signal. Please ensure that all the pins used in the equation for this LUT
+   have signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT2 symbol
+   "ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_BRK0" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/cfg_data<2>) has
+   an equation that uses input pin I1, which no longer has a connected signal.
+   Please ensure that all the pins used in the equation for this LUT have
+   signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT2 symbol
+   "ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_BRK1" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/cfg_data<4>) has
+   an equation that uses input pin I1, which no longer has a connected signal.
+   Please ensure that all the pins used in the equation for this LUT have
+   signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT2 symbol "ila/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_CLEAR"
+   (output signal=ila/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/iCLR) has an equation
+   that uses input pin I1, which no longer has a connected signal. Please ensure
+   that all the pins used in the equation for this LUT have signals that are not
+   trimmed (see Section 5 of the Map Report File for details on which signals
+   were trimmed).
+ERROR:MapLib:978 - LUT2 symbol "ila/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_CLEAR"
+   (output signal=ila/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/iCLR) has an equation
+   that uses input pin I1, which no longer has a connected signal. Please ensure
+   that all the pins used in the equation for this LUT have signals that are not
+   trimmed (see Section 5 of the Map Report File for details on which signals
+   were trimmed).
+ERROR:MapLib:978 - LUT3 symbol "ila/U0/I_NO_D.U_ILA/U_STAT/DIRTY_dstat1" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_STAT/DIRTY_dstat) has an equation that uses
+   input pin I0, which no longer has a connected signal. Please ensure that all
+   the pins used in the equation for this LUT have signals that are not trimmed
+   (see Section 5 of the Map Report File for details on which signals were
+   trimmed).
+ERROR:MapLib:978 - LUT2 symbol "ila/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_CLEAR"
+   (output signal=ila/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/iCLR) has an equation that
+   uses input pin I1, which no longer has a connected signal. Please ensure that
+   all the pins used in the equation for this LUT have signals that are not
+   trimmed (see Section 5 of the Map Report File for details on which signals
+   were trimmed).
+ERROR:MapLib:978 - LUT4 symbol
+   "ila/U0/I_NO_D.U_ILA/U_STAT/U_MUX/U_CS_MUX/I1.U_MUX2/O56" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_STAT/TDO_next) has an equation that uses input
+   pin I0, which no longer has a connected signal. Please ensure that all the
+   pins used in the equation for this LUT have signals that are not trimmed (see
+   Section 5 of the Map Report File for details on which signals were trimmed).
+ERROR:MapLib:978 - LUT2 symbol
+   "ila/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_STORAGE_QUAL/I_SRLT_NE_1.I_
+   NMU_1_TO_4.U_TCL/I_NMU_EQ1.U_iDOUT/I_NOLUT6.I_SRL_T2.U_LUT" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_STORAGE_QUAL/I_SRLT_N
+   E_1.I_NMU_1_TO_4.U_TCL/I_NMU_EQ1.U_iDOUT/iCFG_DIN) has an equation that uses
+   input pin I1, which no longer has a connected signal. Please ensure that all
+   the pins used in the equation for this LUT have signals that are not trimmed
+   (see Section 5 of the Map Report File for details on which signals were
+   trimmed).
+ERROR:MapLib:978 - LUT2 symbol
+   "ila/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_NEQ2.U_TC_EQUATION/I_SRLT_NE_1.I_NMU_
+   1_TO_4.U_TCL/I_NMU_EQ1.U_iDOUT/I_NOLUT6.I_SRL_T2.U_LUT" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_NEQ2.U_TC_EQUATION/I_SRLT_NE_1.
+   I_NMU_1_TO_4.U_TCL/I_NMU_EQ1.U_iDOUT/iCFG_DIN) has an equation that uses
+   input pin I1, which no longer has a connected signal. Please ensure that all
+   the pins used in the equation for this LUT have signals that are not trimmed
+   (see Section 5 of the Map Report File for details on which signals were
+   trimmed).
+
+Error found in mapping process, exiting...
+Errors found during the mapping phase.  Please see map report file for more
+details.  Output files will not be written.
+
+Design Summary
+--------------
+Number of errors   :  23
+Number of warnings :   0

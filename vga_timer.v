@@ -24,7 +24,7 @@
 module vga_timer(input wire mclk, clr,
 	output reg hsync,vsync, 
 	output reg [10:0] Pixel_X, Pixel_Y,
-	output reg vga_on );
+	output reg vga_on);
 
 
 //Counter values set as parameters
@@ -87,15 +87,17 @@ always @* begin
 	if((HorizontalCount < HORIZONTAL_PW))
 		hsync <= 1;
 	else begin
-		if(vertical_sync_en) begin
-			if (VerticalCount == TOTAL_VERTICAL-1)
-				VerticalCount <=0;
-			else
-				VerticalCount <= VerticalCount + 1;
-		end
+		hsync <= 0;
+			
 	end
 end
 
+always @* begin
+	if (VerticalCount < VERTICAL_PW)
+		vsync<= 1;
+	else
+		vsync<= 0;
+end
 //process to handle the pixel location
 always @(posedge mclk)begin
 	if((HorizontalCount < HORIZONTAL_FP) && (HorizontalCount > HORIZONTAL_BP) && (VerticalCount < VERTICAL_FP) && (VerticalCount > VERTICAL_BP)) begin

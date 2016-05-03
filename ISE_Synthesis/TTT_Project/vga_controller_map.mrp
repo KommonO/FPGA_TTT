@@ -1,0 +1,485 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'vga_controller'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off
+-c 100 -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+Target Device  : xc3s500e
+Target Package : fg320
+Target Speed   : -4
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Tue May 03 02:48:44 2016
+
+Design Summary
+--------------
+Number of errors   :  23
+Number of warnings :   0
+
+Section 1 - Errors
+------------------
+ERROR:MapLib:979 - LUT4 symbol
+   "ila/U0/I_NO_D.U_ILA/U_STAT/U_MUX/U_CS_MUX/I1.U_MUX2/O56" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_STAT/TDO_next) has input signal "ila/CONTROL<4>"
+   which will be trimmed. See Section 5 of the Map Report File for details about
+   why the input signal will become undriven.
+ERROR:MapLib:978 - LUT4 symbol
+   "icon/U0/U_ICON/U_TDO_MUX/U_CS_MUX/I4.U_MUX16/Mmux_O_4" (output
+   signal=icon/U0/U_ICON/U_TDO_MUX/U_CS_MUX/I4.U_MUX16/Mmux_O_4) has an equation
+   that uses input pin I0, which no longer has a connected signal. Please ensure
+   that all the pins used in the equation for this LUT have signals that are not
+   trimmed (see Section 5 of the Map Report File for details on which signals
+   were trimmed).
+ERROR:MapLib:978 - LUT4 symbol
+   "ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.I_RDADDR/I_NI_GT_1.I3.U_
+   LUT" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.I_RDADDR/lowAddr_r
+   st) has an equation that uses input pin I3, which no longer has a connected
+   signal. Please ensure that all the pins used in the equation for this LUT
+   have signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT2 symbol
+   "ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.I_RDADDR/I_NI_GT_1.U_hig
+   hAddr_ce" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.I_RDADDR/highAddr_
+   ce) has an equation that uses input pin I1, which no longer has a connected
+   signal. Please ensure that all the pins used in the equation for this LUT
+   have signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT2 symbol
+   "ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_CDONE/I_NOLUT6.I_SRL_T2.
+   U_LUT" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_CDONE/iCFG_DIN)
+   has an equation that uses input pin I1, which no longer has a connected
+   signal. Please ensure that all the pins used in the equation for this LUT
+   have signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT2 symbol
+   "ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_CMPRESET/I_NOLUT6.I_SRL_
+   T2.U_LUT" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_CMPRESET/iCFG_DIN)
+   has an equation that uses input pin I1, which no longer has a connected
+   signal. Please ensure that all the pins used in the equation for this LUT
+   have signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT2 symbol
+   "ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_NS0/I_NOLUT6.I_SRL_T2.U_
+   LUT" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_NS0/iCFG_DIN) has
+   an equation that uses input pin I1, which no longer has a connected signal.
+   Please ensure that all the pins used in the equation for this LUT have
+   signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT2 symbol
+   "ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_NS1/I_NOLUT6.I_SRL_T2.U_
+   LUT" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_NS1/iCFG_DIN) has
+   an equation that uses input pin I1, which no longer has a connected signal.
+   Please ensure that all the pins used in the equation for this LUT have
+   signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT2 symbol
+   "ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_SCE/I_NOLUT6.I_SRL_T2.U_
+   LUT" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_SCE/iCFG_DIN) has
+   an equation that uses input pin I1, which no longer has a connected signal.
+   Please ensure that all the pins used in the equation for this LUT have
+   signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT2 symbol
+   "ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_SCMPCE/I_NOLUT6.I_SRL_T2
+   .U_LUT" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_SCMPCE/iCFG_DIN)
+   has an equation that uses input pin I1, which no longer has a connected
+   signal. Please ensure that all the pins used in the equation for this LUT
+   have signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT2 symbol
+   "ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_SCRST/I_NOLUT6.I_SRL_T2.
+   U_LUT" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_SCRST/iCFG_DIN)
+   has an equation that uses input pin I1, which no longer has a connected
+   signal. Please ensure that all the pins used in the equation for this LUT
+   have signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT2 symbol
+   "ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_WCE/I_NOLUT6.I_SRL_T2.U_
+   LUT" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_WCE/iCFG_DIN) has
+   an equation that uses input pin I1, which no longer has a connected signal.
+   Please ensure that all the pins used in the equation for this LUT have
+   signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT2 symbol
+   "ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_WHCMPCE/I_NOLUT6.I_SRL_T
+   2.U_LUT" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_WHCMPCE/iCFG_DIN)
+   has an equation that uses input pin I1, which no longer has a connected
+   signal. Please ensure that all the pins used in the equation for this LUT
+   have signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT2 symbol
+   "ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_WLCMPCE/I_NOLUT6.I_SRL_T
+   2.U_LUT" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_WLCMPCE/iCFG_DIN)
+   has an equation that uses input pin I1, which no longer has a connected
+   signal. Please ensure that all the pins used in the equation for this LUT
+   have signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT2 symbol
+   "ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_BRK0" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/cfg_data<2>) has
+   an equation that uses input pin I1, which no longer has a connected signal.
+   Please ensure that all the pins used in the equation for this LUT have
+   signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT2 symbol
+   "ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_BRK1" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/cfg_data<4>) has
+   an equation that uses input pin I1, which no longer has a connected signal.
+   Please ensure that all the pins used in the equation for this LUT have
+   signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT2 symbol "ila/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_CLEAR"
+   (output signal=ila/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/iCLR) has an equation
+   that uses input pin I1, which no longer has a connected signal. Please ensure
+   that all the pins used in the equation for this LUT have signals that are not
+   trimmed (see Section 5 of the Map Report File for details on which signals
+   were trimmed).
+ERROR:MapLib:978 - LUT2 symbol "ila/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_CLEAR"
+   (output signal=ila/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/iCLR) has an equation
+   that uses input pin I1, which no longer has a connected signal. Please ensure
+   that all the pins used in the equation for this LUT have signals that are not
+   trimmed (see Section 5 of the Map Report File for details on which signals
+   were trimmed).
+ERROR:MapLib:978 - LUT3 symbol "ila/U0/I_NO_D.U_ILA/U_STAT/DIRTY_dstat1" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_STAT/DIRTY_dstat) has an equation that uses
+   input pin I0, which no longer has a connected signal. Please ensure that all
+   the pins used in the equation for this LUT have signals that are not trimmed
+   (see Section 5 of the Map Report File for details on which signals were
+   trimmed).
+ERROR:MapLib:978 - LUT2 symbol "ila/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_CLEAR"
+   (output signal=ila/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/iCLR) has an equation that
+   uses input pin I1, which no longer has a connected signal. Please ensure that
+   all the pins used in the equation for this LUT have signals that are not
+   trimmed (see Section 5 of the Map Report File for details on which signals
+   were trimmed).
+ERROR:MapLib:978 - LUT4 symbol
+   "ila/U0/I_NO_D.U_ILA/U_STAT/U_MUX/U_CS_MUX/I1.U_MUX2/O56" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_STAT/TDO_next) has an equation that uses input
+   pin I0, which no longer has a connected signal. Please ensure that all the
+   pins used in the equation for this LUT have signals that are not trimmed (see
+   Section 5 of the Map Report File for details on which signals were trimmed).
+ERROR:MapLib:978 - LUT2 symbol
+   "ila/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_STORAGE_QUAL/I_SRLT_NE_1.I_
+   NMU_1_TO_4.U_TCL/I_NMU_EQ1.U_iDOUT/I_NOLUT6.I_SRL_T2.U_LUT" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_STORAGE_QUAL/I_SRLT_N
+   E_1.I_NMU_1_TO_4.U_TCL/I_NMU_EQ1.U_iDOUT/iCFG_DIN) has an equation that uses
+   input pin I1, which no longer has a connected signal. Please ensure that all
+   the pins used in the equation for this LUT have signals that are not trimmed
+   (see Section 5 of the Map Report File for details on which signals were
+   trimmed).
+ERROR:MapLib:978 - LUT2 symbol
+   "ila/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_NEQ2.U_TC_EQUATION/I_SRLT_NE_1.I_NMU_
+   1_TO_4.U_TCL/I_NMU_EQ1.U_iDOUT/I_NOLUT6.I_SRL_T2.U_LUT" (output
+   signal=ila/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_NEQ2.U_TC_EQUATION/I_SRLT_NE_1.
+   I_NMU_1_TO_4.U_TCL/I_NMU_EQ1.U_iDOUT/iCFG_DIN) has an equation that uses
+   input pin I1, which no longer has a connected signal. Please ensure that all
+   the pins used in the equation for this LUT have signals that are not trimmed
+   (see Section 5 of the Map Report File for details on which signals were
+   trimmed).
+
+Section 2 - Warnings
+--------------------
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network BTN0 has no load.
+INFO:LIT:395 - The above info message is repeated 33 more times for the
+   following (max. 5 shown):
+   ila/CONTROL<3>,
+   icon/CONTROL0<13>,
+   icon/CONTROL0<14>,
+   icon/CONTROL0<20>,
+   icon/CONTROL0<15>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:MapLib:159 - Net Timing constraints on signal CCLK are pushed forward
+   through input buffer.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  83 block(s) removed
+  17 block(s) optimized away
+  74 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "icon/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[10].U_LUT" (ROM)
+removed.
+Loadless block "icon/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[11].U_LUT" (ROM)
+removed.
+Loadless block "icon/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[12].U_LUT" (ROM)
+removed.
+Loadless block "icon/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[13].U_LUT" (ROM)
+removed.
+Loadless block "icon/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[14].U_LUT" (ROM)
+removed.
+Loadless block "icon/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[1].U_LUT" (ROM)
+removed.
+Loadless block "icon/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[2].U_LUT" (ROM)
+removed.
+Loadless block "icon/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[3].U_LUT" (ROM)
+removed.
+Loadless block "icon/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[4].U_LUT" (ROM)
+removed.
+Loadless block "icon/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[5].U_LUT" (ROM)
+removed.
+Loadless block "icon/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[6].U_LUT" (ROM)
+removed.
+Loadless block "icon/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[7].U_LUT" (ROM)
+removed.
+Loadless block "icon/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[8].U_LUT" (ROM)
+removed.
+Loadless block "icon/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[9].U_LUT" (ROM)
+removed.
+Loadless block "ila/U0/I_NO_D.U_ILA/U_STAT/U_DSR" (ROM) removed.
+Loadless block "ila/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_CAP_B" (ROM)
+removed.
+Loadless block "instance_name/CLKDV_BUFG_INST" (CKBUF) removed.
+ The signal "instance_name/CLKDV_BUF" is loadless and has been removed.
+The signal "ila/CONTROL<12>" is sourceless and has been removed.
+ Sourceless block "ila/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_TFDRE" (FF) removed.
+The signal "ila/CONTROL<13>" is sourceless and has been removed.
+ Sourceless block "ila/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC" (LATCH) removed.
+  The signal "ila/U0/I_NO_D.U_ILA/U_STAT/DIRTY_SEL" is sourceless and has been
+removed.
+ Sourceless block "ila/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_TFDRE" (FF) removed.
+The signal "ila/CONTROL<14>" is sourceless and has been removed.
+The signal "ila/CONTROL<20>" is sourceless and has been removed.
+The signal "ila/CONTROL<3>" is sourceless and has been removed.
+The signal "ila/CONTROL<4>" is sourceless and has been removed.
+ Sourceless block "ila/U0/I_NO_D.U_ILA/U_STAT/U_STATCMD" (ROM) removed.
+  The signal "ila/U0/I_NO_D.U_ILA/U_STAT/iSTATCMD_CE" is sourceless and has been
+removed.
+   Sourceless block "ila/U0/I_NO_D.U_ILA/U_STAT/U_STATCMD_n" (BUF) removed.
+    The signal "ila/U0/I_NO_D.U_ILA/U_STAT/iSTATCMD_CE_n" is sourceless and has been
+removed.
+The signal "ila/CONTROL<5>" is sourceless and has been removed.
+ Sourceless block "ila/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_TFDRE" (FF) removed.
+ Sourceless block "ila/U0/I_NO_D.U_ILA/U_STAT/U_RESET_EDGE/U_DOUT0" (FF) removed.
+The signal "ila/CONTROL<6>" is sourceless and has been removed.
+ Sourceless block "ila/U0/I_NO_D.U_ILA/U_DOUT" (ROM) removed.
+The signal "ila/CONTROL<8>" is sourceless and has been removed.
+The signal "ila/CONTROL<9>" is sourceless and has been removed.
+The signal
+"ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/I_MUX.U_RD_DATA/U_CS_
+MUX/I3.U_MUX8/Mmux_O_7" is sourceless and has been removed.
+ Sourceless block
+"ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/I_MUX.U_RD_DATA/U_CS_
+MUX/I3.U_MUX8/Mmux_O_5_f5" (MUX) removed.
+  The signal
+"ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/I_MUX.U_RD_DATA/U_CS_
+MUX/I3.U_MUX8/Mmux_O_5_f5" is sourceless and has been removed.
+   Sourceless block
+"ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/muxAddrFF<2>2_INV_0"
+(BUF) removed.
+    The signal
+"ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/muxAddrFF<2>2" is
+sourceless and has been removed.
+     Sourceless block
+"ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/muxAddrFF<2>_f5"
+(MUX) removed.
+      The signal "ila/U0/I_NO_D.U_ILA/iDATA_DOUT" is sourceless and has been removed.
+The signal
+"ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/I_MUX.U_RD_DATA/U_CS_
+MUX/I3.U_MUX8/Mmux_O_6" is sourceless and has been removed.
+The signal
+"ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/muxAddrFF<2>1" is
+sourceless and has been removed.
+The signal "icon/CONTROL0<13>" is sourceless and has been removed.
+The signal "icon/CONTROL0<14>" is sourceless and has been removed.
+The signal "icon/CONTROL0<3>" is sourceless and has been removed.
+The signal "icon/CONTROL0<20>" is sourceless and has been removed.
+The signal "icon/CONTROL0<15>" is sourceless and has been removed.
+The signal "icon/CONTROL0<4>" is sourceless and has been removed.
+The signal "icon/CONTROL0<21>" is sourceless and has been removed.
+The signal "icon/CONTROL0<16>" is sourceless and has been removed.
+The signal "icon/CONTROL0<5>" is sourceless and has been removed.
+The signal "icon/CONTROL0<22>" is sourceless and has been removed.
+The signal "icon/CONTROL0<17>" is sourceless and has been removed.
+The signal "icon/CONTROL0<6>" is sourceless and has been removed.
+The signal "icon/CONTROL0<23>" is sourceless and has been removed.
+The signal "icon/CONTROL0<18>" is sourceless and has been removed.
+The signal "icon/CONTROL0<7>" is sourceless and has been removed.
+The signal "icon/CONTROL0<24>" is sourceless and has been removed.
+The signal "icon/CONTROL0<19>" is sourceless and has been removed.
+The signal "icon/CONTROL0<8>" is sourceless and has been removed.
+The signal "icon/CONTROL0<30>" is sourceless and has been removed.
+The signal "icon/CONTROL0<25>" is sourceless and has been removed.
+The signal "icon/CONTROL0<9>" is sourceless and has been removed.
+The signal "icon/CONTROL0<31>" is sourceless and has been removed.
+The signal "icon/CONTROL0<26>" is sourceless and has been removed.
+The signal "icon/CONTROL0<32>" is sourceless and has been removed.
+The signal "icon/CONTROL0<27>" is sourceless and has been removed.
+The signal "icon/CONTROL0<33>" is sourceless and has been removed.
+The signal "icon/CONTROL0<28>" is sourceless and has been removed.
+The signal "icon/CONTROL0<34>" is sourceless and has been removed.
+The signal "icon/CONTROL0<29>" is sourceless and has been removed.
+The signal "icon/CONTROL0<35>" is sourceless and has been removed.
+The signal "icon/CONTROL0<10>" is sourceless and has been removed.
+The signal "icon/CONTROL0<11>" is sourceless and has been removed.
+The signal "icon/CONTROL0<12>" is sourceless and has been removed.
+The signal "icon/U0/U_ICON/iCORE_ID_SEL<0>" is sourceless and has been removed.
+ Sourceless block "icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[0].U_HCE" (ROM)
+removed.
+ Sourceless block "icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[0].U_LCE" (ROM)
+removed.
+ Sourceless block "icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[1].U_HCE" (ROM)
+removed.
+ Sourceless block "icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[1].U_LCE" (ROM)
+removed.
+ Sourceless block "icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[2].U_HCE" (ROM)
+removed.
+ Sourceless block "icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[2].U_LCE" (ROM)
+removed.
+ Sourceless block "icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[3].U_HCE" (ROM)
+removed.
+ Sourceless block "icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[3].U_LCE" (ROM)
+removed.
+ Sourceless block "icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[4].U_HCE" (ROM)
+removed.
+ Sourceless block "icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[4].U_LCE" (ROM)
+removed.
+ Sourceless block "icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[5].U_HCE" (ROM)
+removed.
+ Sourceless block "icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[5].U_LCE" (ROM)
+removed.
+ Sourceless block "icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[6].U_HCE" (ROM)
+removed.
+ Sourceless block "icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[6].U_LCE" (ROM)
+removed.
+ Sourceless block "icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[7].U_HCE" (ROM)
+removed.
+ Sourceless block "icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[7].U_LCE" (ROM)
+removed.
+ Sourceless block "icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[8].U_HCE" (ROM)
+removed.
+ Sourceless block "icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[8].U_LCE" (ROM)
+removed.
+ Sourceless block "icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_HCE" (ROM)
+removed.
+ Sourceless block "icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_LCE" (ROM)
+removed.
+ Sourceless block "icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[10].U_HCE" (ROM)
+removed.
+ Sourceless block "icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[10].U_LCE" (ROM)
+removed.
+ Sourceless block "icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[11].U_HCE" (ROM)
+removed.
+ Sourceless block "icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[11].U_LCE" (ROM)
+removed.
+ Sourceless block "icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[12].U_HCE" (ROM)
+removed.
+ Sourceless block "icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[12].U_LCE" (ROM)
+removed.
+ Sourceless block "icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[13].U_HCE" (ROM)
+removed.
+ Sourceless block "icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[13].U_LCE" (ROM)
+removed.
+ Sourceless block "icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[14].U_HCE" (ROM)
+removed.
+ Sourceless block "icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[14].U_LCE" (ROM)
+removed.
+ Sourceless block "icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[15].U_HCE" (ROM)
+removed.
+ Sourceless block "icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[15].U_LCE" (ROM)
+removed.
+The signal "icon/U0/U_ICON/U_CTRL_OUT/iCOMMAND_GRP_SEL<1>" is sourceless and has
+been removed.
+The signal "icon/U0/U_ICON/U_CTRL_OUT/iCOMMAND_GRP_SEL<0>" is sourceless and has
+been removed.
+The signal "icon/U0/U_ICON/iCOMMAND_SEL<1>" is sourceless and has been removed.
+The signal "icon/U0/U_ICON/iCOMMAND_SEL<2>" is sourceless and has been removed.
+The signal "icon/U0/U_ICON/iCOMMAND_SEL<3>" is sourceless and has been removed.
+The signal "icon/U0/U_ICON/iCOMMAND_SEL<4>" is sourceless and has been removed.
+The signal "icon/U0/U_ICON/iCOMMAND_SEL<5>" is sourceless and has been removed.
+The signal "icon/U0/U_ICON/iCOMMAND_SEL<6>" is sourceless and has been removed.
+The signal "icon/U0/U_ICON/iCOMMAND_SEL<7>" is sourceless and has been removed.
+The signal "icon/U0/U_ICON/iCOMMAND_SEL<8>" is sourceless and has been removed.
+The signal "icon/U0/U_ICON/iCOMMAND_SEL<9>" is sourceless and has been removed.
+The signal "icon/U0/U_ICON/iCOMMAND_SEL<10>" is sourceless and has been removed.
+The signal "icon/U0/U_ICON/iCOMMAND_SEL<11>" is sourceless and has been removed.
+The signal "icon/U0/U_ICON/iCOMMAND_SEL<12>" is sourceless and has been removed.
+The signal "icon/U0/U_ICON/iCOMMAND_SEL<13>" is sourceless and has been removed.
+The signal "icon/U0/U_ICON/iCOMMAND_SEL<14>" is sourceless and has been removed.
+The signal "icon/U0/U_ICON/iCOMMAND_SEL<15>" is sourceless and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "N1" is unused and has been removed.
+The signal "instance_name/CLKFB_IN" is unused and has been removed.
+ Unused block "instance_name/CLK0_BUFG_INST" (CKBUF) removed.
+  The signal "instance_name/CLK0_BUF" is unused and has been removed.
+Unused block "icon/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[10].U_LUT" (ROM) removed.
+Unused block "icon/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[11].U_LUT" (ROM) removed.
+Unused block "icon/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[12].U_LUT" (ROM) removed.
+Unused block "icon/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[13].U_LUT" (ROM) removed.
+Unused block "icon/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[14].U_LUT" (ROM) removed.
+Unused block "icon/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[15].U_LUT" (ROM) removed.
+Unused block "icon/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[1].U_LUT" (ROM) removed.
+Unused block "icon/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[2].U_LUT" (ROM) removed.
+Unused block "icon/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[3].U_LUT" (ROM) removed.
+Unused block "icon/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[4].U_LUT" (ROM) removed.
+Unused block "icon/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[5].U_LUT" (ROM) removed.
+Unused block "icon/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[6].U_LUT" (ROM) removed.
+Unused block "icon/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[7].U_LUT" (ROM) removed.
+Unused block "icon/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[8].U_LUT" (ROM) removed.
+Unused block "icon/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[9].U_LUT" (ROM) removed.
+Unused block "icon/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[0].U_LUT" (ROM) removed.
+Unused block "icon/U0/U_ICON/U_CTRL_OUT/U_CMDGRP0" (ROM) removed.
+Unused block "icon/U0/U_ICON/U_CTRL_OUT/U_CMDGRP1" (ROM) removed.
+Unused block
+"ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/I_MUX.U_RD_DATA/U_CS_
+MUX/I3.U_MUX8/Mmux_O_6" (ROM) removed.
+Unused block
+"ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/I_MUX.U_RD_DATA/U_CS_
+MUX/I3.U_MUX8/Mmux_O_7" (ROM) removed.
+Unused block
+"ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/muxAddrFF<2>1" (ROM)
+removed.
+Unused block "instance_name/DCM_SP_INST" (DCM_SP) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+GND 		icon/XST_GND
+VCC 		icon/XST_VCC
+LUT4 		ila/U0/I_NO_D.U_ILA/U_STAT/F_SSTAT[6].I_STAT.U_STAT
+   optimized to 0
+FDPE
+		ila/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GAND.U_match/I_SRL16.U
+_GAND_SRL16/I_YES_IREG.F_TW[0].U_IREG
+   optimized to 1
+FDP 		ila/U0/I_TQ0.G_TW[0].U_TQ
+   optimized to 1
+GND 		ila/XST_GND
+VCC 		ila/XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.

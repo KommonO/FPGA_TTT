@@ -9,7 +9,7 @@ z2
 cModel Technology
 dC:/Users/Kirsten/Desktop/Homework 8 source Files/FPGA Homework 8 Start/FPGA Homework 8 Start/Modelsim
 vvga_controller
-Z0 !s110 1462261918
+Z0 !s110 1462262528
 !i10b 1
 !s100 L6QUhDVOP83G7fRYmCQ`92
 I<`jhfOc1`OlJIbd8E0FI`0
@@ -23,7 +23,7 @@ Z4 OP;L;10.4a;61
 r1
 !s85 0
 31
-Z5 !s108 1462261918.000000
+Z5 !s108 1462262528.000000
 !s107 C:/Users/Kirsten/Desktop/FPGA TTT Git/vga_controller.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Kirsten/Desktop/FPGA TTT Git/vga_controller.v|
 !s101 -O0
@@ -36,7 +36,7 @@ R0
 IUIeo<5A8k^`b6HDhJ]:1W1
 R1
 R2
-w1462259590
+w1462262524
 8C:/Users/Kirsten/Desktop/FPGA TTT Git/vga_timer.v
 FC:/Users/Kirsten/Desktop/FPGA TTT Git/vga_timer.v
 R3

@@ -1,19 +1,16 @@
-{C:/Users/Kirsten/Desktop/FPGA TTT Git/ttt_logic.v} {0 {vlog -work work -stats=none {C:/Users/Kirsten/Desktop/FPGA TTT Git/ttt_logic.v}
+{C:/Users/Kirsten/Desktop/FPGA TTT Git/vga_timer.v} {2 {vlog -work work -stats=none {C:/Users/Kirsten/Desktop/FPGA TTT Git/vga_timer.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module vga_timer
+** Warning: C:/Users/Kirsten/Desktop/FPGA TTT Git/vga_timer.v(91): (vlog-2182) 'VerticalCount' might be read before written in always_comb or always @* block.
+
+
+Top level modules:
+	vga_timer
+
+} {} {}} {C:/Users/Kirsten/Desktop/FPGA TTT Git/ttt_logic.v} {0 {vlog -work work -stats=none {C:/Users/Kirsten/Desktop/FPGA TTT Git/ttt_logic.v}
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module ttt_logic
 ** Error: (vlog-13069) C:/Users/Kirsten/Desktop/FPGA TTT Git/ttt_logic.v(21): near ",": syntax error, unexpected ','.
 
 
-} {4.0 5.0} {}} {C:/Users/Kirsten/Desktop/FPGA TTT Git/vga_controller.v} {0 {vlog -work work -stats=none {C:/Users/Kirsten/Desktop/FPGA TTT Git/vga_controller.v}
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module vga_controller
-** Error: C:/Users/Kirsten/Desktop/FPGA TTT Git/vga_controller.v(34): (vlog-2730) Undefined variable: 'video_on'.
-
-** Error: C:/Users/Kirsten/Desktop/FPGA TTT Git/vga_controller.v(35): (vlog-2730) Undefined variable: 'TicTacToeR'.
-
-** Error: C:/Users/Kirsten/Desktop/FPGA TTT Git/vga_controller.v(36): (vlog-2730) Undefined variable: 'TicTacToeB'.
-
-** Error: C:/Users/Kirsten/Desktop/FPGA TTT Git/vga_controller.v(37): (vlog-2730) Undefined variable: 'TicTacToeG'.
-
-
-} {4.0 5.0 6.0 7.0 8.0 9.0 10.0 11.0} {}}
+} {4.0 5.0} {}}

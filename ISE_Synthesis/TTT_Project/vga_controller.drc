@@ -1,0 +1,15 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Tue May 03 02:15:09 2016
+
+drc -z vga_controller.ncd vga_controller.pcf
+
+ERROR:PhysDesignRules:368 - The signal <VGA_VSYNC_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <VGA_HSYNC_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:10 - The network <VGA_VSYNC_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <VGA_HSYNC_OBUF> is completely unrouted.
+ERROR:Bitgen:25 - DRC detected 4 errors and 0 warnings.  Please see the
+   previously displayed individual error or warning messages for more details.

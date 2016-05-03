@@ -22,7 +22,7 @@
 //  Horizontal: Time- Clocks-
 
 module vga_timer(input wire mclk, clr,
-	output hsync,vsync, 
+	output reg hsync,vsync, 
 	output reg [10:0] Pixel_X, Pixel_Y,
 	output reg vga_on );
 

@@ -31,6 +31,26 @@ assign hsync = ~hsync_out;
 assign vsync = ~vsync_out;
 
 
+clock_divider instance_name (
+    .CLKIN_IN(CCLK),  
+    .CLKDV_OUT(clk_50mhz), 
+    .CLKIN_IBUFG_OUT(CLKIN_IBUFG_OUT), 
+    .CLK0_OUT(), 
+    .LOCKED_OUT()
+    );
+	 
+//ICON
+icon icon(
+    .CONTROL0(CONTROL0) // INOUT BUS [35:0]
+);
+
+//ILA
+ila ila (
+    .CONTROL(CONTROL0), // INOUT BUS [35:0]
+    .CLK(CLKIN_IBUFG_OUT), // IN
+    .TRIG0({1,1,1,1,1,1,1,1}) // IN BUS [7:0]
+);
+
 //processes
 always @(posedge CCLK or posedge BTN0) begin
   //If reset,colors set to 0 to print out black.correct?
@@ -47,15 +67,15 @@ always @(posedge CCLK or posedge BTN0) begin
   end
   //else if video is not on screen should be black
   else begin
-    VGA_RED = 1'b0;
-    VGA_BLUE = 1'b0;
-    VGA_GREEN = 1'b0;
+    VGA_RED <= 1'b0;
+    VGA_BLUE <= 1'b0;
+    VGA_GREEN <= 1'b0;
   end
 end
 
 
 //initialize other modules
-vga_timer vga_timer(.mclk(clk_50mz), .clr(BTN0),.hsync(hsync_out), .vsync(vsync_out),.Pixel_X(Pixel_X), .Pixel_Y(Pixel_Y), .vga_on(vga_on));
+vga_timer vga_timer(.mclk(clk_50mhz), .clr(BTN0),.hsync(hsync_out), .vsync(vsync_out),.Pixel_X(Pixel_X), .Pixel_Y(Pixel_Y), .vga_on(vga_on));
 
 //ttt_logic ttt_logic();
 //ASCCII TRANSLATE
