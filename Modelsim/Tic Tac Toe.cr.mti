@@ -1,20 +1,10 @@
-{C:/Users/Kirsten/Desktop/FPGA TTT Git/vga_timer.v} {0 {vlog -work work -stats=none {C:/Users/Kirsten/Desktop/FPGA TTT Git/vga_timer.v}
+{C:/Users/Kirsten/Desktop/FPGA TTT Git/ttt_logic.v} {0 {vlog -work work -stats=none {C:/Users/Kirsten/Desktop/FPGA TTT Git/ttt_logic.v}
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module vga_timer
-** Error: C:/Users/Kirsten/Desktop/FPGA TTT Git/vga_timer.v(28): (vlog-2730) Undefined variable: 'counter'.
-
-** Error: (vlog-13069) C:/Users/Kirsten/Desktop/FPGA TTT Git/vga_timer.v(28): near ")": syntax error, unexpected ')'.
-
-** Error: (vlog-13069) C:/Users/Kirsten/Desktop/FPGA TTT Git/vga_timer.v(29): near ";": syntax error, unexpected ';'.
-
-** Error: (vlog-13069) C:/Users/Kirsten/Desktop/FPGA TTT Git/vga_timer.v(30): near ";": syntax error, unexpected ';'.
-
-** Error: (vlog-13069) C:/Users/Kirsten/Desktop/FPGA TTT Git/vga_timer.v(31): near ";": syntax error, unexpected ';'.
-
-** Error: (vlog-13069) C:/Users/Kirsten/Desktop/FPGA TTT Git/vga_timer.v(32): near ";": syntax error, unexpected ';'.
+-- Compiling module ttt_logic
+** Error: (vlog-13069) C:/Users/Kirsten/Desktop/FPGA TTT Git/ttt_logic.v(21): near ",": syntax error, unexpected ','.
 
 
-} {4.0 5.0 6.0 7.0 8.0 9.0 10.0 11.0 12.0 13.0 14.0 15.0} {}} {C:/Users/Kirsten/Desktop/FPGA TTT Git/vga_controller.v} {0 {vlog -work work -stats=none {C:/Users/Kirsten/Desktop/FPGA TTT Git/vga_controller.v}
+} {4.0 5.0} {}} {C:/Users/Kirsten/Desktop/FPGA TTT Git/vga_controller.v} {0 {vlog -work work -stats=none {C:/Users/Kirsten/Desktop/FPGA TTT Git/vga_controller.v}
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module vga_controller
 ** Error: C:/Users/Kirsten/Desktop/FPGA TTT Git/vga_controller.v(34): (vlog-2730) Undefined variable: 'video_on'.

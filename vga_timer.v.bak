@@ -23,14 +23,15 @@
 
 module vga_timer(input wire mclk, clr,
 	output hsync,vsync, 
-	output reg [10:0] Pixel_X, Pixel_Y );
+	output reg [10:0] Pixel_X, Pixel_Y,
+	output reg vga_on );
 
 
 //Counter values set as parameters
 //Horizontal Parameters
 //We are using a down counter so these values are a countdown value from the total 1040
 parameter TOTAL_HORIZONTAL = 11'd1040,	//May need to be 1042
-	  HORIZONTAL_PW    = 11'd120, 	//Minimum may need to be 116 or something like that
+	  HORIZONTAL_PW    = 11'd120, 	//Minimum may need to be 116 or something like that, HorizontalSyncWidth
 	  HORIZONTAL_FP    = 11'd984,
 	  HORIZONTAL_BP	   = 11'd184;
 //Vertical Parameters
@@ -44,17 +45,70 @@ reg vertical_sync_en;	//VerticalSyncEnable
 
 //Registers to hould count values for the horizontal and vertical lines
 reg [10:0] HorizontalCount;
-reg [10:0] VeritcalCount;
+reg [10:0] VerticalCount;
+
+
+//Counter for the horizontal sync signal
+always @(posedge mclk) begin
+	if(clr)
+		HorizontalCount <= 0;
+	else begin
+		if(HorizontalCount == TOTAL_HORIZONTAL - 1) begin //counter has reached end of horizontal line
+			HorizontalCount <= 0;
+			vertical_sync_en <=0;
+		end
+		else begin
+			HorizontalCount <= HorizontalCount + 1;
+			vertical_sync_en <= 0;	
+		end
+	end
+end
+
+//Counter for the Vertical sync signal
+always @ (posedge mclk) begin
+	if(clr)
+		VerticalCount <= 0;
+	else begin
+		if(vertical_sync_en) begin
+			if(VerticalCount == TOTAL_VERTICAL -1)
+				VerticalCount <= 0;
+			else
+				VerticalCount <= VerticalCount + 1; 
+		end
+	end
+end
 
 
 
 
-//Need to change names and values and erase Tw most likely
+//Generate the hsync pulse
+//Horizontal sync is low when horizontal counter is 0-127
+always @* begin
+	if((HorizontalCount < HORIZONTAL_PW))
+		hsync <= 1;
+	else begin
+		if(vertical_sync_en) begin
+			if (VerticalCount == TOTAL_VERTICAL-1)
+				VerticalCount <=0;
+			else
+				VerticalCount <= VerticalCount + 1;
+		end
+	end
+end
 
-assign Ts = (counter >= 5);
-   assign Tdisp =5;
-   assign Tpw =5;
-   assign Tfp = 5;
-   assign Tbp = 5;
+//process to handle the pixel location
+always @(posedge mclk)begin
+	if((HorizontalCount < HORIZONTAL_FP) && (HorizontalCount > HORIZONTAL_BP) && (VerticalCount < VERTICAL_FP) && (VerticalCount > VERTICAL_BP)) begin
+		vga_on <= 1;
+		Pixel_X <= HorizontalCount - HORIZONTAL_BP;
+		Pixel_Y <= VerticalCount - VERTICAL_BP;
+	end
+	else begin
+		vga_on <=  0;
+		Pixel_X <= 0;
+		Pixel_Y <= 0;
+	end
+end
 
-endmodule
+
+endmodule 
