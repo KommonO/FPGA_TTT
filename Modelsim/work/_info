@@ -8,3 +8,24 @@ z2
 !i10f 100
 cModel Technology
 dC:/Users/Kirsten/Desktop/Homework 8 source Files/FPGA Homework 8 Start/FPGA Homework 8 Start/Modelsim
+vvga_timer
+!s110 1462256376
+!i10b 1
+!s100 5DDUJo>W`nWN3CYdkm`o<1
+Ind7GTcRI;_7;C=EMaBWP90
+VDg1SIo80bB@j0V0VzS_@n1
+dC:/Users/Kirsten/Desktop/FPGA TTT Git/Modelsim
+w1462256374
+8C:/Users/Kirsten/Desktop/FPGA TTT Git/vga_timer.v
+FC:/Users/Kirsten/Desktop/FPGA TTT Git/vga_timer.v
+L0 24
+OP;L;10.4a;61
+r1
+!s85 0
+31
+!s108 1462256376.000000
+!s107 C:/Users/Kirsten/Desktop/FPGA TTT Git/vga_timer.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Kirsten/Desktop/FPGA TTT Git/vga_timer.v|
+!s101 -O0
+!i113 1
+o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
