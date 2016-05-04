@@ -1,12 +1,15 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue May 03 02:14:42 2016
+// Written by: Map P.20131013 on Tue May 03 21:17:25 2016
 //! **************************************************************************
 
 SCHEMATIC START;
 COMP "VGA_RED" LOCATE = SITE "H14" LEVEL 1;
 COMP "VGA_VSYNC" LOCATE = SITE "F14" LEVEL 1;
+COMP "CCLK" LOCATE = SITE "C9" LEVEL 1;
 COMP "VGA_BLUE" LOCATE = SITE "G15" LEVEL 1;
 COMP "VGA_GREEN" LOCATE = SITE "H15" LEVEL 1;
 COMP "VGA_HSYNC" LOCATE = SITE "F15" LEVEL 1;
+NET "CCLK_BUFGP/IBUFG" BEL "CCLK_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+NET "CCLK_BUFGP/IBUFG" PERIOD = 20 ns HIGH 40%;
 SCHEMATIC END;
 

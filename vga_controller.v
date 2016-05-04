@@ -21,35 +21,39 @@
 //NET 	"HS"			LOC = "F15"	| IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST;
 //NET 	"VS"			LOC = "F14"	| IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST;
 
-module vga_controller(input BTN0, CCLK , output  reg VGA_RED, VGA_GREEN, VGA_BLUE, VGA_HSYNC, VGA_VSYNC);
+module vga_controller(input BTN0, CCLK , output  reg VGA_RED, VGA_GREEN, VGA_BLUE, wire VGA_HSYNC, VGA_VSYNC);
 //counters are found in thr vga_timer
 wire clk_50mhz, hsync_out,vsync_out,vga_on;
 wire [10:0] Pixel_X;
 wire [10:0] Pixel_Y;
 
-assign hsync = ~hsync_out;
-assign vsync = ~vsync_out;
+assign VGA_HSYNC = ~hsync_out;
+assign VGA_VSYNC = ~vsync_out;
 
+//wires needed for synthesizing
+wire [35:0] CONTROl0;
+//wire CLKIN_IBUFG_OUT;
+wire CONTROL0;
 
-clock_divider instance_name (
+/*clock_divider instance_name (
     .CLKIN_IN(CCLK),  
     .CLKDV_OUT(clk_50mhz), 
-    .CLKIN_IBUFG_OUT(CLKIN_IBUFG_OUT), 
+    .CLKIN_IBUFG_OUT(), 
     .CLK0_OUT(), 
     .LOCKED_OUT()
-    );
+    );  */
 	 
 //ICON
-icon icon(
+/*icon icon(
     .CONTROL0(CONTROL0) // INOUT BUS [35:0]
-);
+);*/
 
 //ILA
-ila ila (
+/*ila ila (
     .CONTROL(CONTROL0), // INOUT BUS [35:0]
     .CLK(CLKIN_IBUFG_OUT), // IN
     .TRIG0({1,1,1,1,1,1,1,1}) // IN BUS [7:0]
-);
+);*/
 
 //processes
 always @(posedge CCLK or posedge BTN0) begin
@@ -75,7 +79,7 @@ end
 
 
 //initialize other modules
-vga_timer vga_timer(.mclk(clk_50mhz), .clr(BTN0),.hsync(hsync_out), .vsync(vsync_out),.Pixel_X(Pixel_X), .Pixel_Y(Pixel_Y), .vga_on(vga_on));
+vga_timer vga_timer(.mclk(CCLK), .clr(BTN0),.hsync(hsync_out), .vsync(vsync_out),.Pixel_X(Pixel_X), .Pixel_Y(Pixel_Y), .vga_on(vga_on));
 
 //ttt_logic ttt_logic();
 //ASCCII TRANSLATE

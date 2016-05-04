@@ -8,8 +8,6 @@ Git/VGA.ucf -p xc3s500e-fg320-4 vga_controller.ngc vga_controller.ngd
 
 Reading NGO file "C:/Users/Kirsten/Desktop/FPGA TTT
 Git/ISE_Synthesis/TTT_Project/vga_controller.ngc" ...
-Loading design module "ipcore_dir/ila.ngc"...
-Loading design module "ipcore_dir/icon.ngc"...
 Gathering constraint information from source properties...
 Done.
 
@@ -25,17 +23,6 @@ INFO:ConstraintSystem - The Period constraint <NET  "CCLK"		PERIOD = 20.0ns HIGH
 Done...
 
 Checking expanded design ...
-WARNING:NgdBuild:452 - logical net 'ila/CONTROL<12>' has no driver
-WARNING:NgdBuild:452 - logical net 'ila/CONTROL<13>' has no driver
-WARNING:NgdBuild:452 - logical net 'ila/CONTROL<14>' has no driver
-WARNING:NgdBuild:452 - logical net 'ila/CONTROL<20>' has no driver
-WARNING:NgdBuild:452 - logical net 'ila/CONTROL<1>' has no driver
-WARNING:NgdBuild:452 - logical net 'ila/CONTROL<4>' has no driver
-WARNING:NgdBuild:452 - logical net 'ila/CONTROL<5>' has no driver
-WARNING:NgdBuild:452 - logical net 'ila/CONTROL<6>' has no driver
-WARNING:NgdBuild:452 - logical net 'ila/CONTROL<8>' has no driver
-WARNING:NgdBuild:452 - logical net 'ila/CONTROL<9>' has no driver
-WARNING:NgdBuild:452 - logical net 'icon/CONTROL0<3>' has no driver
 
 Partition Implementation Status
 -------------------------------
@@ -46,12 +33,12 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings:  11
+  Number of warnings:   0
 
-Total memory usage is 181516 kilobytes
+Total memory usage is 150908 kilobytes
 
 Writing NGD file "vga_controller.ngd" ...
-Total REAL time to NGDBUILD completion:  5 sec
-Total CPU time to NGDBUILD completion:   5 sec
+Total REAL time to NGDBUILD completion:  4 sec
+Total CPU time to NGDBUILD completion:   4 sec
 
 Writing NGDBUILD log file "vga_controller.bld"...

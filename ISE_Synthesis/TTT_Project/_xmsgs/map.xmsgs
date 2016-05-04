@@ -5,91 +5,10 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">BTN0</arg> has no load.
-</msg>
-
-<msg type="info" file="LIT" num="395" delta="old" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">33</arg> more times for the following (max. 5 shown):
-<arg fmt="%s" index="3">ila/CONTROL&lt;3&gt;,
-icon/CONTROL0&lt;13&gt;,
-icon/CONTROL0&lt;14&gt;,
-icon/CONTROL0&lt;20&gt;,
-icon/CONTROL0&lt;15&gt;</arg>
-To see the details of these <arg fmt="%s" index="4">info</arg> messages, please use the -detail switch.
-</msg>
-
 <msg type="info" file="MapLib" num="562" delta="old" >No environment variables are currently set.
 </msg>
 
 <msg type="info" file="MapLib" num="159" delta="old" >Net Timing constraints on signal <arg fmt="%s" index="1">CCLK</arg> are pushed forward through input buffer.
-</msg>
-
-<msg type="error" file="MapLib" num="979" delta="old" ><arg fmt="%s" index="1">LUT4 symbol &quot;ila/U0/I_NO_D.U_ILA/U_STAT/U_MUX/U_CS_MUX/I1.U_MUX2/O56&quot; (output signal=ila/U0/I_NO_D.U_ILA/U_STAT/TDO_next)</arg> has input signal &quot;<arg fmt="%s" index="2">ila/CONTROL&lt;4&gt;</arg>&quot; which will be trimmed. See Section 5 of the Map Report File for details about why the input signal will become undriven.
-</msg>
-
-<msg type="error" file="MapLib" num="978" delta="old" ><arg fmt="%s" index="1">LUT4 symbol &quot;icon/U0/U_ICON/U_TDO_MUX/U_CS_MUX/I4.U_MUX16/Mmux_O_4&quot; (output signal=icon/U0/U_ICON/U_TDO_MUX/U_CS_MUX/I4.U_MUX16/Mmux_O_4)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I0</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
-</msg>
-
-<msg type="error" file="MapLib" num="978" delta="old" ><arg fmt="%s" index="1">LUT4 symbol &quot;ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.I_RDADDR/I_NI_GT_1.I3.U_LUT&quot; (output signal=ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.I_RDADDR/lowAddr_rst)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I3</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
-</msg>
-
-<msg type="error" file="MapLib" num="978" delta="old" ><arg fmt="%s" index="1">LUT2 symbol &quot;ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.I_RDADDR/I_NI_GT_1.U_highAddr_ce&quot; (output signal=ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.I_RDADDR/highAddr_ce)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I1</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
-</msg>
-
-<msg type="error" file="MapLib" num="978" delta="old" ><arg fmt="%s" index="1">LUT2 symbol &quot;ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_CDONE/I_NOLUT6.I_SRL_T2.U_LUT&quot; (output signal=ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_CDONE/iCFG_DIN)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I1</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
-</msg>
-
-<msg type="error" file="MapLib" num="978" delta="old" ><arg fmt="%s" index="1">LUT2 symbol &quot;ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_CMPRESET/I_NOLUT6.I_SRL_T2.U_LUT&quot; (output signal=ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_CMPRESET/iCFG_DIN)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I1</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
-</msg>
-
-<msg type="error" file="MapLib" num="978" delta="old" ><arg fmt="%s" index="1">LUT2 symbol &quot;ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_NS0/I_NOLUT6.I_SRL_T2.U_LUT&quot; (output signal=ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_NS0/iCFG_DIN)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I1</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
-</msg>
-
-<msg type="error" file="MapLib" num="978" delta="old" ><arg fmt="%s" index="1">LUT2 symbol &quot;ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_NS1/I_NOLUT6.I_SRL_T2.U_LUT&quot; (output signal=ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_NS1/iCFG_DIN)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I1</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
-</msg>
-
-<msg type="error" file="MapLib" num="978" delta="old" ><arg fmt="%s" index="1">LUT2 symbol &quot;ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_SCE/I_NOLUT6.I_SRL_T2.U_LUT&quot; (output signal=ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_SCE/iCFG_DIN)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I1</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
-</msg>
-
-<msg type="error" file="MapLib" num="978" delta="old" ><arg fmt="%s" index="1">LUT2 symbol &quot;ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_SCMPCE/I_NOLUT6.I_SRL_T2.U_LUT&quot; (output signal=ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_SCMPCE/iCFG_DIN)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I1</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
-</msg>
-
-<msg type="error" file="MapLib" num="978" delta="old" ><arg fmt="%s" index="1">LUT2 symbol &quot;ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_SCRST/I_NOLUT6.I_SRL_T2.U_LUT&quot; (output signal=ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_SCRST/iCFG_DIN)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I1</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
-</msg>
-
-<msg type="error" file="MapLib" num="978" delta="old" ><arg fmt="%s" index="1">LUT2 symbol &quot;ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_WCE/I_NOLUT6.I_SRL_T2.U_LUT&quot; (output signal=ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_WCE/iCFG_DIN)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I1</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
-</msg>
-
-<msg type="error" file="MapLib" num="978" delta="old" ><arg fmt="%s" index="1">LUT2 symbol &quot;ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_WHCMPCE/I_NOLUT6.I_SRL_T2.U_LUT&quot; (output signal=ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_WHCMPCE/iCFG_DIN)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I1</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
-</msg>
-
-<msg type="error" file="MapLib" num="978" delta="old" ><arg fmt="%s" index="1">LUT2 symbol &quot;ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_WLCMPCE/I_NOLUT6.I_SRL_T2.U_LUT&quot; (output signal=ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_WLCMPCE/iCFG_DIN)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I1</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
-</msg>
-
-<msg type="error" file="MapLib" num="978" delta="old" ><arg fmt="%s" index="1">LUT2 symbol &quot;ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_BRK0&quot; (output signal=ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/cfg_data&lt;2&gt;)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I1</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
-</msg>
-
-<msg type="error" file="MapLib" num="978" delta="old" ><arg fmt="%s" index="1">LUT2 symbol &quot;ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_BRK1&quot; (output signal=ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/cfg_data&lt;4&gt;)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I1</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
-</msg>
-
-<msg type="error" file="MapLib" num="978" delta="old" ><arg fmt="%s" index="1">LUT2 symbol &quot;ila/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_CLEAR&quot; (output signal=ila/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/iCLR)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I1</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
-</msg>
-
-<msg type="error" file="MapLib" num="978" delta="old" ><arg fmt="%s" index="1">LUT2 symbol &quot;ila/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_CLEAR&quot; (output signal=ila/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/iCLR)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I1</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
-</msg>
-
-<msg type="error" file="MapLib" num="978" delta="old" ><arg fmt="%s" index="1">LUT3 symbol &quot;ila/U0/I_NO_D.U_ILA/U_STAT/DIRTY_dstat1&quot; (output signal=ila/U0/I_NO_D.U_ILA/U_STAT/DIRTY_dstat)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I0</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
-</msg>
-
-<msg type="error" file="MapLib" num="978" delta="old" ><arg fmt="%s" index="1">LUT2 symbol &quot;ila/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_CLEAR&quot; (output signal=ila/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/iCLR)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I1</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
-</msg>
-
-<msg type="error" file="MapLib" num="978" delta="old" ><arg fmt="%s" index="1">LUT4 symbol &quot;ila/U0/I_NO_D.U_ILA/U_STAT/U_MUX/U_CS_MUX/I1.U_MUX2/O56&quot; (output signal=ila/U0/I_NO_D.U_ILA/U_STAT/TDO_next)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I0</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
-</msg>
-
-<msg type="error" file="MapLib" num="978" delta="old" ><arg fmt="%s" index="1">LUT2 symbol &quot;ila/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_STORAGE_QUAL/I_SRLT_NE_1.I_NMU_1_TO_4.U_TCL/I_NMU_EQ1.U_iDOUT/I_NOLUT6.I_SRL_T2.U_LUT&quot; (output signal=ila/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_STORAGE_QUAL/I_SRLT_NE_1.I_NMU_1_TO_4.U_TCL/I_NMU_EQ1.U_iDOUT/iCFG_DIN)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I1</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
-</msg>
-
-<msg type="error" file="MapLib" num="978" delta="old" ><arg fmt="%s" index="1">LUT2 symbol &quot;ila/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_NEQ2.U_TC_EQUATION/I_SRLT_NE_1.I_NMU_1_TO_4.U_TCL/I_NMU_EQ1.U_iDOUT/I_NOLUT6.I_SRL_T2.U_LUT&quot; (output signal=ila/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_NEQ2.U_TC_EQUATION/I_SRLT_NE_1.I_NMU_1_TO_4.U_TCL/I_NMU_EQ1.U_iDOUT/iCFG_DIN)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I1</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
 </msg>
 
 </messages>

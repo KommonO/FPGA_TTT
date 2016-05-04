@@ -1,14 +1,9 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Tue May 03 02:14:58 2016
+Tue May 03 21:17:43 2016
 
 All signals are completely routed.
 
-WARNING:ParHelpers:362 - There are 2 sourceless signals in this design. This design will not pass the DRC check run by
-   Bitgen.
-
-   VGA_HSYNC_OBUF
-   VGA_VSYNC_OBUF
 
 

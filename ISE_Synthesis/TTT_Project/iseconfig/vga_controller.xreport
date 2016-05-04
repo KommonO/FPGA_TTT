@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-05-03T02:26:27</DateModified>
+  <DateModified>2016-05-03T20:39:51</DateModified>
   <ModuleName>vga_controller</ModuleName>
-  <SummaryTimeStamp>2016-05-03T02:25:19</SummaryTimeStamp>
+  <SummaryTimeStamp>2016-05-03T20:27:09</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Kirsten/Desktop/FPGA TTT Git/ISE_Synthesis/TTT_Project/iseconfig/vga_controller.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Kirsten/Desktop/FPGA TTT Git/ISE_Synthesis/TTT_Project</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/Kirsten/Desktop/FPGA TTT Git/ISE_Synthesis/TTT_Project\</ImplementationReportsDirectory>
   <DateInitialized>2016-05-03T01:57:03</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

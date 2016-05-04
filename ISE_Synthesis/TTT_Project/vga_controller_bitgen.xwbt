@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\vga_controller.ncd
+OUTFILE=C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\vga_controller.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project
+LICENSE=WebPack
+USER_INFO=211152465_0_0_834

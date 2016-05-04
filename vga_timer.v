@@ -30,7 +30,7 @@ module vga_timer(input wire mclk, clr,
 //Counter values set as parameters
 //Horizontal Parameters
 //We are using a down counter so these values are a countdown value from the total 1040
-parameter TOTAL_HORIZONTAL = 11'd1040,	//May need to be 1042
+/*parameter TOTAL_HORIZONTAL = 11'd1040,	//May need to be 1042
 	  HORIZONTAL_PW    = 11'd120, 	//Minimum may need to be 116 or something like that, HorizontalSyncWidth
 	  HORIZONTAL_FP    = 11'd984,
 	  HORIZONTAL_BP	   = 11'd184;
@@ -38,8 +38,17 @@ parameter TOTAL_HORIZONTAL = 11'd1040,	//May need to be 1042
 parameter TOTAL_VERTICAL   = 11'd666,
           VERTICAL_PW    = 11'd6, 	//Minimum may need to be 116 or something like that
 	  VERTICAL_FP    = 11'd643,
-	  VERTICAL_BP	   = 11'd43;
+	  VERTICAL_BP	   = 11'd43;*/
 	
+parameter TOTAL_HORIZONTAL = 11'd743,	//56 clocks after the FP
+	  HORIZONTAL_PW    = 11'd95, 	//Minimum may need to be 116 or something like that, HorizontalSyncWidth
+	  HORIZONTAL_FP    = 11'd687,
+	  HORIZONTAL_BP	   = 11'd47;
+//Vertical Parameters
+parameter TOTAL_VERTICAL   = 11'd546,
+          VERTICAL_PW    = 11'd1, 	//Minimum may need to be 116 or something like that
+			VERTICAL_FP    = 11'd523,
+			VERTICAL_BP	   = 11'd43;
 	  
 reg vertical_sync_en;	//VerticalSyncEnable
 
