@@ -35,6 +35,8 @@ assign VGA_VSYNC = ~vsync_out;
 wire [35:0] CONTROL0;
 wire CLKIN_IBUFG_OUT;
 wire CONTROL;
+wire [7:0] LED;
+wire [7:0] square_num;
 
 clock_divider clock_divider (
     .CLKIN_IN(CCLK),  
@@ -50,59 +52,8 @@ icon icon (
 ila ila (
     .CONTROL(CONTROL0), // INOUT BUS [35:0]
     .CLK(CLKIN_IBUFG_OUT), // IN
-    .TRIG0({clr, VGA_GREEN, VGA_BLUE, VGA_RED,VGA_HSYNC, VGA_VSYNC, Pixel_X[0], Pixel_Y[0]}) // IN BUS [7:0]
+    .TRIG0({square_num}) // IN BUS [7:0]
 );
-
-
-//processes
-/*always @(posedge clk_25mhz or posedge clr) begin
-  //If reset,colors set to 0 to print out black.correct?
-  if(clr) begin
-    VGA_RED <=1'b0;
-    VGA_BLUE <=1'b0;
-    VGA_GREEN <=1'b0;
-  end
-
-  else if(vga_on) begin
-    if(SW0) begin
-    VGA_RED <= 0;//TicTacToeR;
-    VGA_BLUE <=0;//TicTacToeB;
-    VGA_GREEN <= 1;//TicTacToeG;
-	 end
-	 else if(SW1) begin
-	 VGA_RED <= 0;//TicTacToeR;
-    VGA_BLUE <=1;//TicTacToeB;
-    VGA_GREEN <= 0;//TicTacToeG;
-	 
-	 end
-	 
-	 else if(SW2) begin
-    VGA_RED <= 1;//TicTacToeR;
-    VGA_BLUE <=0;//TicTacToeB;
-    VGA_GREEN <= 0;//TicTacToeG;	 
-	 end
-	 
-	 else if(SW3) begin
-	 VGA_RED <= 1;//TicTacToeR;
-    VGA_BLUE <=1;//TicTacToeB;
-    VGA_GREEN <= 0;//TicTacToeG;
-	 end
-	 else begin
-	 VGA_RED <= 1;//TicTacToeR;
-    VGA_BLUE <=1;//TicTacToeB;
-    VGA_GREEN <= 1;//TicTacToeG;
-	 
-	 end
-	 
-  end
-  //else if video is not on screen should be black
-  else begin
-    VGA_RED <= 1'b0;
-    VGA_BLUE <= 1'b0;
-    VGA_GREEN <= 1'b0;
-  end
-end
-*/
 
 //debounced
 debounce debounce_rst(.clk(clk_25mhz), .rst(1'b0),.async_in(BTN0), .sync_out(clr_debounce));
@@ -110,11 +61,11 @@ debounce debounce_rst(.clk(clk_25mhz), .rst(1'b0),.async_in(BTN0), .sync_out(clr
 oneshot oneshot(.oneshot_in(clr_debounce), .rst(1'b0), .clk(clk_25mhz), .oneshot_out(clr));
 //initialize other modules
 vga_timer vga_timer(.Clk(clk_25mhz),/* .clr(clr),*/.vga_h_sync(hsync_out), .vga_v_sync(vsync_out),.CounterX(Pixel_X), .CounterY(Pixel_Y), .vga_on(vga_on));
-ttt_logic ttt_logic(.clk(clk_25mhz), .clr(clr), .vga_on(vga_on), .Pixel_X(Pixel_X),.Pixel_Y(Pixel_Y), .vga_green(VGA_GREEN),.vga_red(VGA_RED),.vga_blue(VGA_BLUE));
+ttt_logic ttt_logic(.square_num(square_num),.clk(clk_25mhz), .clr(clr), .vga_on(vga_on), .Pixel_X(Pixel_X),.Pixel_Y(Pixel_Y), .vga_green(VGA_GREEN),.vga_red(VGA_RED),.vga_blue(VGA_BLUE));
 
 
-//testing rotary method 2,needed to add debounce/oneshot because values were jumpy
-wire [7:0] LED;
+//testing rotary method 2,needed to add debounce
+//wire [7:0] LED;
 wire ROTA_debounce, ROTB_debounce, ROTCTR_debounce;
 wire rotctr, rota,rot;
 
@@ -124,9 +75,9 @@ debounce debounce_ROTA(.clk(CLK0), .rst(1'b0), .async_in(ROTA), .sync_out(ROTA_d
 debounce debounce_ROTB(.clk(CLK0), .rst(1'b0), .async_in(ROTB), .sync_out(ROTB_debounce));
 debounce debounce_ROTCTR(.clk(CLK0),.rst(1'b0), .async_in(ROTCTR), .sync_out(ROTCTR_debounce));
 
-oneshot oneshot_ROTA(.oneshot_in(ROTA_debounce), .rst(1'b0), .clk(CLK0),.oneshot_out(rota));
+/*oneshot oneshot_ROTA(.oneshot_in(ROTA_debounce), .rst(1'b0), .clk(CLK0),.oneshot_out(rota));
 oneshot oneshot_ROTB(.oneshot_in(ROTB_debounce), .rst(1'b0), .clk(CLK0), .oneshot_out(rotb));
-oneshot oneshot_ROTCTR(.oneshot_in(ROTCTR_debounce), .rst(1'b0), .clk(CLK0), .oneshot_out(rotctr));
+oneshot oneshot_ROTCTR(.oneshot_in(ROTCTR_debounce), .rst(1'b0), .clk(CLK0), .oneshot_out(rotctr));*/
 
 assign LD0 = LED[0];
 assign LD1 = LED[1];
@@ -136,6 +87,18 @@ assign LD4 = LED[4];
 assign LD5 = LED[5];
 assign LD6 = LED[6];
 assign LD7 = LED[7];
+//8 bit wire to transfer LED count values
+wire square_num0, square_num1, square_num2, square_num3, square_num4, square_num5, square_num6, square_num7;
+ assign square_num0 = LED[0];
+ assign square_num1 = LED[1];
+ assign square_num2 = LED[2];
+ assign square_num3 = LED[3];
+ assign square_num4 = LED[4];
+ assign square_num5 = LED[5];
+ assign square_num6 = LED[6];
+ assign square_num7 = LED[7];
+ assign square_num = {square_num7,square_num6,square_num5,square_num4, square_num3, square_num2,square_num1, square_num0};
+ 
 //ASCCII TRANSLATE
 
 

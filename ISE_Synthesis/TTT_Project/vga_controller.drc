@@ -1,7 +1,7 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Sat May 07 13:13:33 2016
+Sat May 07 16:57:28 2016
 
 drc -z vga_controller.ncd vga_controller.pcf
 
@@ -16,5 +16,7 @@ WARNING:PhysDesignRules:367 - The signal <SW2_IBUF> is incomplete. The signal
    does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <SW3_IBUF> is incomplete. The signal
    does not drive any load pins in the design.
-DRC detected 0 errors and 5 warnings.  Please see the previously displayed
+WARNING:PhysDesignRules:367 - The signal <BTN0_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+DRC detected 0 errors and 6 warnings.  Please see the previously displayed
 individual error or warning messages for more details.
