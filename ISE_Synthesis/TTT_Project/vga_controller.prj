@@ -1,6 +1,8 @@
 verilog work "turn_marker.v"
+verilog work "square_status.v"
 verilog work "../../vga_timer.v"
 verilog work "../../ttt_logic.v"
+verilog work "rotary.v"
 verilog work "oneshot.v"
 verilog work "ipcore_dir/ila.v"
 verilog work "ipcore_dir/icon.v"

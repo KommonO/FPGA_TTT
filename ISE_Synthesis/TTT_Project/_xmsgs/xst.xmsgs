@@ -23,6 +23,9 @@
 <msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 68: Port <arg fmt="%s" index="1">clk</arg> is not connected to this instance
 </msg>
 
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 69: Port <arg fmt="%s" index="1">clk</arg> is not connected to this instance
+</msg>
+
 <msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\turn_marker.v" Line 33: Signal &lt;<arg fmt="%s" index="1">current_state</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
@@ -32,10 +35,40 @@
 <msg type="warning" file="HDLCompiler" num="552" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 68: Input port <arg fmt="%s" index="1">clk</arg> is not connected on this instance
 </msg>
 
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 69: Input port <arg fmt="%s" index="1">clk</arg> is not connected on this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\rotary.v" Line 82: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\rotary.v" Line 84: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" Line 127: Assignment to <arg fmt="%s" index="1">rota</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" Line 128: Assignment to <arg fmt="%s" index="1">rotb</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" Line 129: Assignment to <arg fmt="%s" index="1">rotctr</arg> ignored, since the identifier is never used
+</msg>
+
 <msg type="warning" file="HDLCompiler" num="552" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" Line 39: Input port <arg fmt="%s" index="1">RST_IN</arg> is not connected on this instance
 </msg>
 
 <msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%d" index="2">68</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">turn_marker</arg>&gt; of block &lt;<arg fmt="%s" index="4">turn_marker</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">ttt_logic</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%d" index="2">69</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">square_status</arg>&gt; of block &lt;<arg fmt="%s" index="4">square_status</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">ttt_logic</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v</arg>&quot; line <arg fmt="%d" index="2">127</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">oneshot_ROTA</arg>&gt; of block &lt;<arg fmt="%s" index="4">oneshot</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">vga_controller</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v</arg>&quot; line <arg fmt="%d" index="2">128</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">oneshot_ROTB</arg>&gt; of block &lt;<arg fmt="%s" index="4">oneshot</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">vga_controller</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v</arg>&quot; line <arg fmt="%d" index="2">129</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">oneshot_ROTCTR</arg>&gt; of block &lt;<arg fmt="%s" index="4">oneshot</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">vga_controller</arg>&gt;. Underlying logic will be removed.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">SW0</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -50,16 +83,55 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">SW3</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v</arg>&quot; line <arg fmt="%s" index="2">39</arg>: Output port &lt;<arg fmt="%s" index="3">CLK0_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">clock_divider</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v</arg>&quot; line <arg fmt="%s" index="2">39</arg>: Output port &lt;<arg fmt="%s" index="3">LOCKED_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">clock_divider</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v</arg>&quot; line <arg fmt="%s" index="2">39</arg>: Output port &lt;<arg fmt="%s" index="3">LOCKED_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">clock_divider</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v</arg>&quot; line <arg fmt="%s" index="2">127</arg>: Output port &lt;<arg fmt="%s" index="3">oneshot_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">oneshot_ROTA</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v</arg>&quot; line <arg fmt="%s" index="2">128</arg>: Output port &lt;<arg fmt="%s" index="3">oneshot_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">oneshot_ROTB</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v</arg>&quot; line <arg fmt="%s" index="2">129</arg>: Output port &lt;<arg fmt="%s" index="3">oneshot_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">oneshot_ROTCTR</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">clk</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">turn_marker</arg>&apos;, is tied to GND.
 </msg>
 
 <msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">start</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">turn_marker</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">clk</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">square_status</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">clr</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">square_status</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">key_1</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">square_status</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">key_2</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">square_status</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">key_3</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">square_status</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">key_4</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">square_status</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">key_5</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">square_status</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">key_6</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">square_status</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">key_7</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">square_status</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">key_8</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">square_status</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">key_9</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">square_status</arg>&apos;, is tied to GND.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -75,6 +147,36 @@
 </msg>
 
 <msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%s" index="2">68</arg>: Output port &lt;<arg fmt="%s" index="3">player2_marker</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">turn_marker</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%s" index="2">69</arg>: Output port &lt;<arg fmt="%s" index="3">square_1_status</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">square_status</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%s" index="2">69</arg>: Output port &lt;<arg fmt="%s" index="3">square_2_status</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">square_status</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%s" index="2">69</arg>: Output port &lt;<arg fmt="%s" index="3">square_3_status</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">square_status</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%s" index="2">69</arg>: Output port &lt;<arg fmt="%s" index="3">square_4_status</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">square_status</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%s" index="2">69</arg>: Output port &lt;<arg fmt="%s" index="3">square_5_status</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">square_status</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%s" index="2">69</arg>: Output port &lt;<arg fmt="%s" index="3">square_6_status</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">square_status</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%s" index="2">69</arg>: Output port &lt;<arg fmt="%s" index="3">square_7_status</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">square_status</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%s" index="2">69</arg>: Output port &lt;<arg fmt="%s" index="3">square_8_status</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">square_status</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%s" index="2">69</arg>: Output port &lt;<arg fmt="%s" index="3">square_9_status</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">square_status</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">LED&lt;7:4&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
 </msg>
 
 <msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.

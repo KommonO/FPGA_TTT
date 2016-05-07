@@ -66,7 +66,7 @@ assign vga_green = vga_green_reg;
 
 //instantiate module to decide who's turn it is and their player marker
 turn_marker turn_marker();
-
+square_status square_status();
 
 //ASCII TEXT
 

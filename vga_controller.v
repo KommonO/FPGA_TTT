@@ -21,7 +21,7 @@
 //NET 	"HS"			LOC = "F15"	| IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST;
 //NET 	"VS"			LOC = "F14"	| IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST;
 
-module vga_controller(input BTN0, CCLK, SW0, SW1, SW2,SW3, output  wire VGA_RED, VGA_GREEN, VGA_BLUE, wire VGA_HSYNC, VGA_VSYNC);
+module vga_controller(input BTN0, CCLK, SW0, SW1, SW2,SW3,ROTA, ROTB,ROTCTR, output  wire VGA_RED, VGA_GREEN, VGA_BLUE, VGA_HSYNC, VGA_VSYNC, LD0, LD1, LD2, LD3,LD4, LD5, LD6, LD7);
 //counters are found in thr vga_timer
 wire clk_50mhz, hsync_out,vsync_out,vga_on;
 wire [9:0] Pixel_X;
@@ -40,7 +40,7 @@ clock_divider clock_divider (
     .CLKIN_IN(CCLK),  
     .CLKDV_OUT(clk_25mhz), 
     .CLKIN_IBUFG_OUT(CLKIN_IBUFG_OUT), 
-    .CLK0_OUT(), 
+    .CLK0_OUT(CLK0), 
     .LOCKED_OUT()
     );  
 	 
@@ -113,6 +113,29 @@ vga_timer vga_timer(.Clk(clk_25mhz),/* .clr(clr),*/.vga_h_sync(hsync_out), .vga_
 ttt_logic ttt_logic(.clk(clk_25mhz), .clr(clr), .vga_on(vga_on), .Pixel_X(Pixel_X),.Pixel_Y(Pixel_Y), .vga_green(VGA_GREEN),.vga_red(VGA_RED),.vga_blue(VGA_BLUE));
 
 
+//testing rotary method 2,needed to add debounce/oneshot because values were jumpy
+wire [7:0] LED;
+wire ROTA_debounce, ROTB_debounce, ROTCTR_debounce;
+wire rotctr, rota,rot;
+
+rotary rotary(.C_CLK(CLK0), .ROT_A(ROTA_debounce),.ROT_B(ROTB_debounce),.ROT_CTR(ROTCTR_debounce), .LED(LED));
+//debounce and oneshot rotary signals may need to change CLK0 to clk_25mhz
+debounce debounce_ROTA(.clk(CLK0), .rst(1'b0), .async_in(ROTA), .sync_out(ROTA_debounce));
+debounce debounce_ROTB(.clk(CLK0), .rst(1'b0), .async_in(ROTB), .sync_out(ROTB_debounce));
+debounce debounce_ROTCTR(.clk(CLK0),.rst(1'b0), .async_in(ROTCTR), .sync_out(ROTCTR_debounce));
+
+oneshot oneshot_ROTA(.oneshot_in(ROTA_debounce), .rst(1'b0), .clk(CLK0),.oneshot_out(rota));
+oneshot oneshot_ROTB(.oneshot_in(ROTB_debounce), .rst(1'b0), .clk(CLK0), .oneshot_out(rotb));
+oneshot oneshot_ROTCTR(.oneshot_in(ROTCTR_debounce), .rst(1'b0), .clk(CLK0), .oneshot_out(rotctr));
+
+assign LD0 = LED[0];
+assign LD1 = LED[1];
+assign LD2 = LED[2];
+assign LD3 = LED[3];
+assign LD4 = LED[4];
+assign LD5 = LED[5];
+assign LD6 = LED[6];
+assign LD7 = LED[7];
 //ASCCII TRANSLATE
 
 

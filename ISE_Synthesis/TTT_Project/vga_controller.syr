@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> WARNING:Xst:1583 - You are using an internal switch '-use_new_parser'.
 WARNING:Xst:3152 - You have chosen to run a version of XST which is not the default solution
@@ -124,12 +124,16 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 Analyzing Verilog file "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\turn_marker.v" into library work
 Parsing module <turn_marker>.
+Analyzing Verilog file "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" into library work
+Parsing module <square_status>.
 Analyzing Verilog file "C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_timer.v" into library work
 Parsing module <vga_timer>.
 Analyzing Verilog file "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" into library work
 Parsing module <ttt_logic>.
 WARNING:HDLCompiler:751 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 14: Redeclaration of ansi port Pixel_X is not allowed
 WARNING:HDLCompiler:751 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 15: Redeclaration of ansi port Pixel_Y is not allowed
+Analyzing Verilog file "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\rotary.v" into library work
+Parsing module <rotary>.
 Analyzing Verilog file "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\oneshot.v" into library work
 Parsing module <oneshot>.
 Analyzing Verilog file "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\ipcore_dir\ila.v" into library work
@@ -170,15 +174,30 @@ Elaborating module <vga_timer>.
 WARNING:HDLCompiler:413 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_timer.v" Line 17: Result of 11-bit expression is truncated to fit in 10-bit target.
 WARNING:HDLCompiler:413 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_timer.v" Line 20: Result of 10-bit expression is truncated to fit in 9-bit target.
 WARNING:HDLCompiler:1016 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 68: Port clk is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 69: Port clk is not connected to this instance
 
 Elaborating module <ttt_logic>.
 
 Elaborating module <turn_marker>.
 WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\turn_marker.v" Line 33: Signal <current_state> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 WARNING:HDLCompiler:1499 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\turn_marker.v" Line 21: Empty module <turn_marker> remains a black box.
+
+Elaborating module <square_status>.
 WARNING:HDLCompiler:552 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 68: Input port clk is not connected on this instance
+WARNING:HDLCompiler:552 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 69: Input port clk is not connected on this instance
+
+Elaborating module <rotary>.
+WARNING:HDLCompiler:413 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\rotary.v" Line 82: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\rotary.v" Line 84: Result of 32-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:1127 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" Line 127: Assignment to rota ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" Line 128: Assignment to rotb ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" Line 129: Assignment to rotctr ignored, since the identifier is never used
 WARNING:HDLCompiler:552 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" Line 39: Input port RST_IN is not connected on this instance
 WARNING:Xst:2972 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" line 68. All outputs of instance <turn_marker> of block <turn_marker> are unconnected in block <ttt_logic>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" line 69. All outputs of instance <square_status> of block <square_status> are unconnected in block <ttt_logic>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" line 127. All outputs of instance <oneshot_ROTA> of block <oneshot> are unconnected in block <vga_controller>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" line 128. All outputs of instance <oneshot_ROTB> of block <oneshot> are unconnected in block <vga_controller>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" line 129. All outputs of instance <oneshot_ROTCTR> of block <oneshot> are unconnected in block <vga_controller>. Underlying logic will be removed.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -190,8 +209,10 @@ WARNING:Xst:647 - Input <SW0> is never used. This port will be preserved and lef
 WARNING:Xst:647 - Input <SW1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <SW2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <SW3> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" line 39: Output port <CLK0_OUT> of the instance <clock_divider> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" line 39: Output port <LOCKED_OUT> of the instance <clock_divider> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" line 127: Output port <oneshot_out> of the instance <oneshot_ROTA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" line 128: Output port <oneshot_out> of the instance <oneshot_ROTB> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" line 129: Output port <oneshot_out> of the instance <oneshot_ROTCTR> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <vga_controller> synthesized.
@@ -204,13 +225,14 @@ Unit <clock_divider> synthesized.
 
 Synthesizing Unit <debounce>.
     Related source file is "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\debounce.v".
-    Found 1-bit register for signal <sync_out>.
     Found 15-bit register for signal <count>.
+    Found 1-bit register for signal <sync_out>.
     Found 1-bit register for signal <q_1>.
     Found 15-bit adder for signal <count[14]_GND_8_o_add_1_OUT> created at line 39.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  17 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
 Unit <debounce> synthesized.
 
 Synthesizing Unit <oneshot>.
@@ -242,11 +264,31 @@ Synthesizing Unit <ttt_logic>.
         LINE_WIDTH_MAX = 3'b011
 WARNING:Xst:2898 - Port 'clk', unconnected in block instance 'turn_marker', is tied to GND.
 WARNING:Xst:2898 - Port 'start', unconnected in block instance 'turn_marker', is tied to GND.
+WARNING:Xst:2898 - Port 'clk', unconnected in block instance 'square_status', is tied to GND.
+WARNING:Xst:2898 - Port 'clr', unconnected in block instance 'square_status', is tied to GND.
+WARNING:Xst:2898 - Port 'key_1', unconnected in block instance 'square_status', is tied to GND.
+WARNING:Xst:2898 - Port 'key_2', unconnected in block instance 'square_status', is tied to GND.
+WARNING:Xst:2898 - Port 'key_3', unconnected in block instance 'square_status', is tied to GND.
+WARNING:Xst:2898 - Port 'key_4', unconnected in block instance 'square_status', is tied to GND.
+WARNING:Xst:2898 - Port 'key_5', unconnected in block instance 'square_status', is tied to GND.
+WARNING:Xst:2898 - Port 'key_6', unconnected in block instance 'square_status', is tied to GND.
+WARNING:Xst:2898 - Port 'key_7', unconnected in block instance 'square_status', is tied to GND.
+WARNING:Xst:2898 - Port 'key_8', unconnected in block instance 'square_status', is tied to GND.
+WARNING:Xst:2898 - Port 'key_9', unconnected in block instance 'square_status', is tied to GND.
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 INFO:Xst:3210 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" line 68: Output port <player_turn> of the instance <turn_marker> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" line 68: Output port <player1_marker> of the instance <turn_marker> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" line 68: Output port <player2_marker> of the instance <turn_marker> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" line 69: Output port <square_1_status> of the instance <square_status> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" line 69: Output port <square_2_status> of the instance <square_status> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" line 69: Output port <square_3_status> of the instance <square_status> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" line 69: Output port <square_4_status> of the instance <square_status> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" line 69: Output port <square_5_status> of the instance <square_status> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" line 69: Output port <square_6_status> of the instance <square_status> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" line 69: Output port <square_7_status> of the instance <square_status> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" line 69: Output port <square_8_status> of the instance <square_status> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" line 69: Output port <square_9_status> of the instance <square_status> is unconnected or connected to loadless signal.
     Found 10-bit comparator lessequal for signal <n0000> created at line 37
     Found 9-bit comparator lessequal for signal <n0008> created at line 37
     Summary:
@@ -254,25 +296,59 @@ INFO:Xst:3210 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" line 68: Out
 	inferred   1 Multiplexer(s).
 Unit <ttt_logic> synthesized.
 
+Synthesizing Unit <rotary>.
+    Related source file is "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\rotary.v".
+WARNING:Xst:653 - Signal <LED<7:4>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 2-bit register for signal <current_state>.
+    Found 6-bit register for signal <quad_count>.
+    Found finite state machine <FSM_0> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 2                                              |
+    | Clock              | C_CLK (rising_edge)                            |
+    | Reset              | ROT_CTR (positive)                             |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 11                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 6-bit adder for signal <quad_count[5]_GND_23_o_add_13_OUT> created at line 82.
+    Found 6-bit subtractor for signal <GND_23_o_GND_23_o_sub_15_OUT<5:0>> created at line 84.
+    Found 1-bit 4-to-1 multiplexer for signal <increment> created at line 32.
+    Found 1-bit 4-to-1 multiplexer for signal <decrement> created at line 32.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   6 D-type flip-flop(s).
+	inferred   6 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <rotary> synthesized.
+
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 3
+# Adders/Subtractors                                   : 7
  10-bit adder                                          : 1
- 15-bit adder                                          : 1
+ 15-bit adder                                          : 4
+ 6-bit addsub                                          : 1
  9-bit adder                                           : 1
-# Registers                                            : 9
- 1-bit register                                        : 6
+# Registers                                            : 19
+ 1-bit register                                        : 12
  10-bit register                                       : 1
- 15-bit register                                       : 1
+ 15-bit register                                       : 4
+ 6-bit register                                        : 1
  9-bit register                                        : 1
 # Comparators                                          : 3
  10-bit comparator lessequal                           : 1
  9-bit comparator greater                              : 1
  9-bit comparator lessequal                            : 1
-# Multiplexers                                         : 2
- 1-bit 2-to-1 multiplexer                              : 2
+# Multiplexers                                         : 12
+ 1-bit 2-to-1 multiplexer                              : 6
+ 1-bit 4-to-1 multiplexer                              : 2
+ 15-bit 2-to-1 multiplexer                             : 4
+# FSMs                                                 : 1
 
 =========================================================================
 
@@ -289,6 +365,10 @@ Synthesizing (advanced) Unit <debounce>.
 The following registers are absorbed into counter <count>: 1 register on signal <count>.
 Unit <debounce> synthesized (advanced).
 
+Synthesizing (advanced) Unit <rotary>.
+The following registers are absorbed into counter <quad_count>: 1 register on signal <quad_count>.
+Unit <rotary> synthesized (advanced).
+
 Synthesizing (advanced) Unit <vga_timer>.
 The following registers are absorbed into counter <CounterX>: 1 register on signal <CounterX>.
 The following registers are absorbed into counter <CounterY>: 1 register on signal <CounterY>.
@@ -298,32 +378,47 @@ Unit <vga_timer> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Counters                                             : 3
+# Counters                                             : 7
  10-bit up counter                                     : 1
- 15-bit up counter                                     : 1
+ 15-bit up counter                                     : 4
+ 6-bit updown counter                                  : 1
  9-bit up counter                                      : 1
-# Registers                                            : 6
- Flip-Flops                                            : 6
+# Registers                                            : 12
+ Flip-Flops                                            : 12
 # Comparators                                          : 3
  10-bit comparator lessequal                           : 1
  9-bit comparator greater                              : 1
  9-bit comparator lessequal                            : 1
-# Multiplexers                                         : 1
- 1-bit 2-to-1 multiplexer                              : 1
+# Multiplexers                                         : 7
+ 1-bit 2-to-1 multiplexer                              : 5
+ 1-bit 4-to-1 multiplexer                              : 2
+# FSMs                                                 : 1
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <rotary/FSM_0> on signal <current_state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 11    | 11
+ 01    | 01
+ 10    | 10
+ 00    | 00
+-------------------
 
 Optimizing unit <vga_controller> ...
 
 Optimizing unit <vga_timer> ...
 
+Optimizing unit <rotary> ...
+
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block vga_controller, actual ratio is 6.
+Found area constraint ratio of 100 (+ 5) on block vga_controller, actual ratio is 7.
 
 Final Macro Processing ...
 
@@ -331,8 +426,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 40
- Flip-Flops                                            : 40
+# Registers                                            : 99
+ Flip-Flops                                            : 99
 
 =========================================================================
 
@@ -355,30 +450,30 @@ Top Level Output File Name         : vga_controller.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 541
+# BELS                             : 763
 #      GND                         : 3
-#      INV                         : 10
-#      LUT1                        : 91
-#      LUT2                        : 33
+#      INV                         : 14
+#      LUT1                        : 133
+#      LUT2                        : 93
 #      LUT2_L                      : 1
-#      LUT3                        : 41
+#      LUT3                        : 46
 #      LUT3_L                      : 1
-#      LUT4                        : 119
+#      LUT4                        : 141
 #      LUT4_L                      : 6
-#      MUXCY                       : 31
+#      MUXCY                       : 73
 #      MUXCY_L                     : 67
-#      MUXF5                       : 32
+#      MUXF5                       : 34
 #      MUXF6                       : 9
 #      VCC                         : 3
-#      XORCY                       : 94
-# FlipFlops/Latches                : 270
-#      FD                          : 13
-#      FDC                         : 1
-#      FDCE                        : 24
-#      FDE                         : 45
-#      FDP                         : 9
+#      XORCY                       : 139
+# FlipFlops/Latches                : 329
+#      FD                          : 12
+#      FDC                         : 65
+#      FDCE                        : 34
+#      FDE                         : 44
+#      FDP                         : 11
 #      FDPE                        : 10
-#      FDR                         : 75
+#      FDR                         : 60
 #      FDRE                        : 78
 #      FDRS                        : 4
 #      FDS                         : 10
@@ -391,10 +486,10 @@ Primitive and Black Box Usage:
 #      SRLC16E                     : 52
 # Clock Buffers                    : 4
 #      BUFG                        : 4
-# IO Buffers                       : 7
-#      IBUF                        : 1
+# IO Buffers                       : 18
+#      IBUF                        : 4
 #      IBUFG                       : 1
-#      OBUF                        : 5
+#      OBUF                        : 13
 # DCMs                             : 1
 #      DCM_SP                      : 1
 # Others                           : 1
@@ -405,13 +500,13 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-4 
 
- Number of Slices:                      282  out of   4656     6%  
- Number of Slice Flip Flops:            270  out of   9312     2%  
- Number of 4 input LUTs:                363  out of   9312     3%  
-    Number used as logic:               302
+ Number of Slices:                      354  out of   4656     7%  
+ Number of Slice Flip Flops:            329  out of   9312     3%  
+ Number of 4 input LUTs:                496  out of   9312     5%  
+    Number used as logic:               435
     Number used as Shift registers:      61
- Number of IOs:                          11
- Number of bonded IOBs:                   7  out of    232     3%  
+ Number of IOs:                          22
+ Number of bonded IOBs:                  18  out of    232     7%  
  Number of BRAMs:                         5  out of     20    25%  
  Number of GCLKs:                         4  out of     24    16%  
  Number of DCMs:                          1  out of      4    25%  
@@ -437,8 +532,8 @@ Clock Information:
 ----------------------------------------------------------------------+------------------------------------------------+-------+
 Clock Signal                                                          | Clock buffer(FF name)                          | Load  |
 ----------------------------------------------------------------------+------------------------------------------------+-------+
+CCLK                                                                  | DCM_SP:CLK0                                    | 218   |
 CCLK                                                                  | DCM_SP:CLKDV                                   | 40    |
-CCLK                                                                  | IBUFG+BUFG                                     | 159   |
 icon/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1                                 | BUFG                                           | 140   |
 icon/CONTROL0<13>(icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_LCE:O)| NONE(*)(ila/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC)| 1     |
 icon/U0/iUPDATE_OUT                                                   | NONE(icon/U0/U_ICON/U_iDATA_CMD)               | 1     |
@@ -453,12 +548,14 @@ Asynchronous Control Signals Information:
 -------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+-------+
 Control Signal                                                                                   | Buffer(FF name)                                                                                                          | Load  |
 -------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+-------+
-icon/U0/U_ICON/U_CMD/iSEL_n(icon/U0/U_ICON/U_CMD/U_SEL_n:O)                                      | NONE(icon/U0/U_ICON/U_CMD/G_TARGET[9].I_NE0.U_TARGET)                                                                    | 10    |
-ila/N0(ila/XST_GND:G)                                                                            | NONE(ila/U0/I_TQ0.G_TW[3].U_TQ)                                                                                          | 9     |
-icon/CONTROL0<20>(icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[0].U_HCE:O)                           | NONE(ila/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GAND.U_match/I_SRL16.U_GAND_SRL16/I_YES_IREG.F_TW[2].U_IREG)| 8     |
-ila/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/iCLR(ila/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_CLEAR:O)        | NONE(ila/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_DOUT0)                                                                       | 4     |
-ila/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/iCLR(ila/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_CLEAR:O)      | NONE(ila/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_DOUT1)                                                                      | 4     |
-ila/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/iCLR(ila/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_CLEAR:O)              | NONE(ila/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_RFDRE)                                                                          | 4     |
+VGA_RED_OBUF(XST_GND:G)                                                                          | NONE(debounce_ROTB/sync_out)                                                                                             | 68    |
+icon/U0/U_ICON/U_CMD/iSEL_n(icon/U0/U_ICON/U_CMD/U_SEL_n:O)                                      | NONE(icon/U0/U_ICON/U_CMD/G_TARGET[6].I_NE0.U_TARGET)                                                                    | 10    |
+ila/N0(ila/XST_GND:G)                                                                            | NONE(ila/U0/I_TQ0.G_TW[2].U_TQ)                                                                                          | 9     |
+debounce_ROTCTR/sync_out(debounce_ROTCTR/sync_out:Q)                                             | NONE(rotary/quad_count_5)                                                                                                | 8     |
+icon/CONTROL0<20>(icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[0].U_HCE:O)                           | NONE(ila/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GAND.U_match/I_SRL16.U_GAND_SRL16/I_YES_IREG.F_TW[6].U_IREG)| 8     |
+ila/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/iCLR(ila/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_CLEAR:O)        | NONE(ila/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_RFDRE)                                                                       | 4     |
+ila/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/iCLR(ila/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_CLEAR:O)      | NONE(ila/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_RFDRE)                                                                      | 4     |
+ila/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/iCLR(ila/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_CLEAR:O)              | NONE(ila/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_DOUT1)                                                                          | 4     |
 ila/U0/I_NO_D.U_ILA/iARM(ila/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_GEN_DELAY[3].U_FD:Q)             | NONE(ila/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_FDCE)                                                                            | 2     |
 icon/CONTROL0<13>(icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_LCE:O)                           | NONE(ila/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_FDPE)                                                                            | 1     |
 icon/U0/U_ICON/iSEL_n(icon/U0/U_ICON/U_iSEL_n:O)                                                 | NONE(icon/U0/U_ICON/U_iDATA_CMD)                                                                                         | 1     |
@@ -482,7 +579,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CCLK'
   Clock period: 5.796ns (frequency: 172.533MHz)
-  Total number of paths / destination ports: 1928 / 450
+  Total number of paths / destination ports: 3113 / 500
 -------------------------------------------------------------------------
 Delay:               5.796ns (Levels of Logic = 5)
   Source:            vga_timer/CounterX_7 (FF)
@@ -497,7 +594,7 @@ Delay:               5.796ns (Levels of Logic = 5)
      FDR:C->Q              7   0.591   0.883  vga_timer/CounterX_7 (vga_timer/CounterX_7)
      LUT2:I0->O            1   0.704   0.424  ttt_logic/Mmux_vga_blue_reg168 (ttt_logic/Mmux_vga_blue_reg168)
      LUT4:I3->O            1   0.704   0.499  ttt_logic/Mmux_vga_blue_reg183 (ttt_logic/Mmux_vga_blue_reg183)
-     LUT4_L:I1->LO         1   0.704   0.275  ttt_logic/Mmux_vga_blue_reg1222_SW0 (N5)
+     LUT4_L:I1->LO         1   0.704   0.275  ttt_logic/Mmux_vga_blue_reg1222_SW0 (N17)
      LUT4:I0->O            4   0.704   0.000  ttt_logic/Mmux_vga_blue_reg1222 (VGA_BLUE_OBUF)
      begin scope: 'ila:TRIG0<6>'
      FDP:D                     0.308          U0/I_TQ0.G_TW[6].U_TQ
@@ -556,19 +653,19 @@ Delay:               2.554ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CCLK'
-  Total number of paths / destination ports: 1 / 1
+  Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
 Offset:              1.946ns (Levels of Logic = 1)
-  Source:            BTN0 (PAD)
-  Destination:       debounce_rst/q_1 (FF)
-  Destination Clock: CCLK rising 0.5X
+  Source:            ROTCTR (PAD)
+  Destination:       debounce_ROTCTR/q_1 (FF)
+  Destination Clock: CCLK rising
 
-  Data Path: BTN0 to debounce_rst/q_1
+  Data Path: ROTCTR to debounce_ROTCTR/q_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   1.218   0.420  BTN0_IBUF (BTN0_IBUF)
-     FD:D                      0.308          debounce_rst/q_1
+     IBUF:I->O             1   1.218   0.420  ROTCTR_IBUF (ROTCTR_IBUF)
+     FDC:D                     0.308          debounce_ROTCTR/q_1
     ----------------------------------------
     Total                      1.946ns (1.526ns logic, 0.420ns route)
                                        (78.4% logic, 21.6% route)
@@ -600,7 +697,7 @@ Offset:              8.201ns (Levels of Logic = 5)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CCLK'
-  Total number of paths / destination ports: 104 / 4
+  Total number of paths / destination ports: 108 / 8
 -------------------------------------------------------------------------
 Offset:              9.347ns (Levels of Logic = 5)
   Source:            vga_timer/CounterX_7 (FF)
@@ -614,7 +711,7 @@ Offset:              9.347ns (Levels of Logic = 5)
      FDR:C->Q              7   0.591   0.883  vga_timer/CounterX_7 (vga_timer/CounterX_7)
      LUT2:I0->O            1   0.704   0.424  ttt_logic/Mmux_vga_blue_reg168 (ttt_logic/Mmux_vga_blue_reg168)
      LUT4:I3->O            1   0.704   0.499  ttt_logic/Mmux_vga_blue_reg183 (ttt_logic/Mmux_vga_blue_reg183)
-     LUT4_L:I1->LO         1   0.704   0.275  ttt_logic/Mmux_vga_blue_reg1222_SW0 (N5)
+     LUT4_L:I1->LO         1   0.704   0.275  ttt_logic/Mmux_vga_blue_reg1222_SW0 (N17)
      LUT4:I0->O            4   0.704   0.587  ttt_logic/Mmux_vga_blue_reg1222 (VGA_BLUE_OBUF)
      OBUF:I->O                 3.272          VGA_GREEN_OBUF (VGA_GREEN)
     ----------------------------------------
@@ -676,8 +773,8 @@ icon/U0/iUPDATE_OUT|    2.554|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 11.00 secs
-Total CPU time to Xst completion: 10.90 secs
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.08 secs
  
 WARNING:Xst:3152 - You have chosen to run a version of XST which is not the default solution
    for the specified device family. You are free to use it in order to take
@@ -689,9 +786,9 @@ WARNING:Xst:3152 - You have chosen to run a version of XST which is not the defa
    on the XST command line or in the XST process properties panel.
 --> 
 
-Total memory usage is 228524 kilobytes
+Total memory usage is 228780 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   22 (   0 filtered)
-Number of infos    :    6 (   0 filtered)
+Number of warnings :   45 (   0 filtered)
+Number of infos    :   17 (   0 filtered)
 
