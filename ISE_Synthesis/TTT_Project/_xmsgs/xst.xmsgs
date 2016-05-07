@@ -20,7 +20,7 @@
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_timer.v" Line 20: Result of <arg fmt="%d" index="1">10</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">9</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 67: Port <arg fmt="%s" index="1">clk</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 68: Port <arg fmt="%s" index="1">clk</arg> is not connected to this instance
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\turn_marker.v" Line 33: Signal &lt;<arg fmt="%s" index="1">current_state</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
@@ -29,13 +29,13 @@
 <msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\turn_marker.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">turn_marker</arg>&gt; remains a black box.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="552" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 67: Input port <arg fmt="%s" index="1">clk</arg> is not connected on this instance
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 68: Input port <arg fmt="%s" index="1">clk</arg> is not connected on this instance
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="552" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" Line 39: Input port <arg fmt="%s" index="1">RST_IN</arg> is not connected on this instance
 </msg>
 
-<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%d" index="2">67</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">turn_marker</arg>&gt; of block &lt;<arg fmt="%s" index="4">turn_marker</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">ttt_logic</arg>&gt;. Underlying logic will be removed.
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%d" index="2">68</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">turn_marker</arg>&gt; of block &lt;<arg fmt="%s" index="4">turn_marker</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">ttt_logic</arg>&gt;. Underlying logic will be removed.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">SW0</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -68,13 +68,13 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%s" index="2">67</arg>: Output port &lt;<arg fmt="%s" index="3">player_turn</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">turn_marker</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%s" index="2">68</arg>: Output port &lt;<arg fmt="%s" index="3">player_turn</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">turn_marker</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%s" index="2">67</arg>: Output port &lt;<arg fmt="%s" index="3">player1_marker</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">turn_marker</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%s" index="2">68</arg>: Output port &lt;<arg fmt="%s" index="3">player1_marker</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">turn_marker</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%s" index="2">67</arg>: Output port &lt;<arg fmt="%s" index="3">player2_marker</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">turn_marker</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%s" index="2">68</arg>: Output port &lt;<arg fmt="%s" index="3">player2_marker</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">turn_marker</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
