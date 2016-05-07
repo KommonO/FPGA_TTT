@@ -1,125 +1,59 @@
-//this will handle the timing restrictions aa required and stated in the user manual
-//will be using the washer machine timer as a reference
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    04:44:19 04/23/2014 
+// Design Name: 
+// Module Name:    VGAOut 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module vga_timer(Clk, vga_h_sync, vga_v_sync, inDisplayArea, CounterX, CounterY);
+input Clk;
+output vga_h_sync, vga_v_sync;
+output inDisplayArea;
+output [9:0] CounterX;
+output [8:0] CounterY;
 
-//TS (Sync Pulse Time)
-//  Vertical: Time- Clocks- Lines-
-//  Horizontal: Time- Clocks-
+//////////////////////////////////////////////////
+reg [9:0] CounterX;
+reg [8:0] CounterY;
+wire CounterXmaxed = (CounterX==10'd767);
 
-//TDISP (Display Time)
-//  Vertical: Time- Clocks- Lines-
-//  Horizontal: Time- Clocks-
+always @(posedge Clk)
+if(CounterXmaxed)
+	CounterX <= 0;
+else
+	CounterX <= CounterX + 1;
 
-//TPW (Pulse Width)
-//  Vertical: Time- Clocks- Lines-
-//  Horizontal: Time- Clocks-
+always @(posedge Clk)
+if(CounterXmaxed) CounterY <= CounterY + 1;
 
-//TFP (Front Porch)
-//  Vertical: Time- Clocks- Lines- 
-//  Horizontal: Time- Clocks- 
+reg	vga_HS, vga_VS;
+always @(posedge Clk)
+begin
+	vga_HS <= (CounterX[9:4]==6'd45); // change this value to move the display horizontally was 45
+	vga_VS <= (CounterY==500); // change this value to move the display vertically
+end
 
-//TBP (Back Porch)
-//  Vertical: Time- Clocks- Lines-
-//  Horizontal: Time- Clocks-
-
-module vga_timer(input wire mclk, clr,
-	output reg hsync,vsync, 
-	output reg [10:0] Pixel_X, Pixel_Y,
-	output reg vga_on);
-
-
-//Counter values set as parameters
-//Horizontal Parameters
-//We are using a down counter so these values are a countdown value from the total 1040
-/*parameter TOTAL_HORIZONTAL = 11'd1040,	//May need to be 1042
-	  HORIZONTAL_PW    = 11'd120, 	//Minimum may need to be 116 or something like that, HorizontalSyncWidth
-	  HORIZONTAL_FP    = 11'd984,
-	  HORIZONTAL_BP	   = 11'd184;
-//Vertical Parameters
-parameter TOTAL_VERTICAL   = 11'd666,
-          VERTICAL_PW    = 11'd6, 	//Minimum may need to be 116 or something like that
-	  VERTICAL_FP    = 11'd643,
-	  VERTICAL_BP	   = 11'd43;*/
+reg inDisplayArea;
+always @(posedge Clk)
+if(inDisplayArea==0)
+	inDisplayArea <= (CounterXmaxed) && (CounterY<480);
+else
+	inDisplayArea <= !(CounterX==639);
 	
-parameter TOTAL_HORIZONTAL = 11'd743,	//56 clocks after the FP
-	  HORIZONTAL_PW    = 11'd95, 	//Minimum may need to be 116 or something like that, HorizontalSyncWidth
-	  HORIZONTAL_FP    = 11'd687,
-	  HORIZONTAL_BP	   = 11'd47;
-//Vertical Parameters
-parameter TOTAL_VERTICAL   = 11'd546,
-          VERTICAL_PW    = 11'd1, 	//Minimum may need to be 116 or something like that
-			VERTICAL_FP    = 11'd523,
-			VERTICAL_BP	   = 11'd43;
-	  
-reg vertical_sync_en;	//VerticalSyncEnable
+assign vga_h_sync = ~vga_HS;
+assign vga_v_sync = ~vga_VS;
 
-//Registers to hould count values for the horizontal and vertical lines
-reg [10:0] HorizontalCount;
-reg [10:0] VerticalCount;
-
-
-//Counter for the horizontal sync signal
-always @(posedge mclk) begin
-	if(clr)
-		HorizontalCount <= 0;
-	else begin
-		if(HorizontalCount == TOTAL_HORIZONTAL - 1) begin //counter has reached end of horizontal line
-			HorizontalCount <= 0;
-			vertical_sync_en <=0;
-		end
-		else begin
-			HorizontalCount <= HorizontalCount + 1;
-			vertical_sync_en <= 0;	
-		end
-	end
-end
-
-//Counter for the Vertical sync signal
-always @ (posedge mclk) begin
-	if(clr)
-		VerticalCount <= 0;
-	else begin
-		if(vertical_sync_en) begin
-			if(VerticalCount == TOTAL_VERTICAL -1)
-				VerticalCount <= 0;
-			else
-				VerticalCount <= VerticalCount + 1; 
-		end
-	end
-end
-
-
-
-
-//Generate the hsync pulse
-//Horizontal sync is low when horizontal counter is 0-127
-always @* begin
-	if((HorizontalCount < HORIZONTAL_PW))
-		hsync <= 1;
-	else begin
-		hsync <= 0;
-			
-	end
-end
-
-always @* begin
-	if (VerticalCount < VERTICAL_PW)
-		vsync<= 1;
-	else
-		vsync<= 0;
-end
-//process to handle the pixel location
-always @(posedge mclk)begin
-	if((HorizontalCount < HORIZONTAL_FP) && (HorizontalCount > HORIZONTAL_BP) && (VerticalCount < VERTICAL_FP) && (VerticalCount > VERTICAL_BP)) begin
-		vga_on <= 1;
-		Pixel_X <= HorizontalCount - HORIZONTAL_BP;
-		Pixel_Y <= VerticalCount - VERTICAL_BP;
-	end
-	else begin
-		vga_on <=  0;
-		Pixel_X <= 0;
-		Pixel_Y <= 0;
-	end
-end
-
-
-endmodule 
+endmodule

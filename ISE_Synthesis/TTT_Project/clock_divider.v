@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : xaw2verilog
 //  /   /         Filename : clock_divider.v
-// /___/   /\     Timestamp : 05/03/2016 02:44:15
+// /___/   /\     Timestamp : 05/06/2016 13:19:56
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -51,7 +51,7 @@ module clock_divider(CLKIN_IN,
                         .O(CLKFB_IN));
    DCM_SP #( .CLK_FEEDBACK("1X"), .CLKDV_DIVIDE(2.0), .CLKFX_DIVIDE(1), 
          .CLKFX_MULTIPLY(4), .CLKIN_DIVIDE_BY_2("FALSE"), 
-         .CLKIN_PERIOD(10.000), .CLKOUT_PHASE_SHIFT("NONE"), 
+         .CLKIN_PERIOD(20.000), .CLKOUT_PHASE_SHIFT("NONE"), 
          .DESKEW_ADJUST("SYSTEM_SYNCHRONOUS"), .DFS_FREQUENCY_MODE("LOW"), 
          .DLL_FREQUENCY_MODE("LOW"), .DUTY_CYCLE_CORRECTION("TRUE"), 
          .FACTORY_JF(16'hC080), .PHASE_SHIFT(0), .STARTUP_WAIT("FALSE") ) 

@@ -34,413 +34,701 @@ INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and
    Error.
 
 ================================================================================
-Timing constraint: NET "CCLK_BUFGP/IBUFG" PERIOD = 20 ns HIGH 40%;
+Timing constraint: NET "CLKIN_IBUFG_OUT" PERIOD = 20 ns HIGH 40%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 187 paths analyzed, 36 endpoints analyzed, 0 failing endpoints
+ 1127 paths analyzed, 424 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   5.418ns.
+ Minimum period is   9.093ns.
 --------------------------------------------------------------------------------
 
-Paths for end point vga_timer/HorizontalCount_10 (SLICE_X51Y90.SR), 11 paths
+Paths for end point ila/U0/I_TQ0.G_TW[5].U_TQ (SLICE_X64Y53.BX), 1 path
 --------------------------------------------------------------------------------
-Slack (setup path):     14.582ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               vga_timer/HorizontalCount_3 (FF)
-  Destination:          vga_timer/HorizontalCount_10 (FF)
+Slack (setup path):     10.907ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               VGA_BLUE (FF)
+  Destination:          ila/U0/I_TQ0.G_TW[5].U_TQ (FF)
   Requirement:          20.000ns
-  Data Path Delay:      5.418ns (Levels of Logic = 2)
+  Data Path Delay:      9.093ns (Levels of Logic = 0)
   Clock Path Skew:      0.000ns
-  Source Clock:         CCLK_BUFGP rising at 0.000ns
-  Destination Clock:    CCLK_BUFGP rising at 20.000ns
+  Source Clock:         clk_25mhz rising at 0.000ns
+  Destination Clock:    CLKIN_IBUFG_OUT_BUFG rising at 20.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: vga_timer/HorizontalCount_3 to vga_timer/HorizontalCount_10
+  Maximum Data Path: VGA_BLUE to ila/U0/I_TQ0.G_TW[5].U_TQ
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X51Y86.YQ      Tcko                  0.587   vga_timer/HorizontalCount<2>
-                                                       vga_timer/HorizontalCount_3
-    SLICE_X52Y86.F1      net (fanout=3)        0.815   vga_timer/HorizontalCount<3>
-    SLICE_X52Y86.X       Tilo                  0.759   vga_timer/Mcount_HorizontalCount_val9
-                                                       vga_timer/Mcount_HorizontalCount_val9
-    SLICE_X52Y88.F1      net (fanout=1)        0.409   vga_timer/Mcount_HorizontalCount_val9
-    SLICE_X52Y88.X       Tilo                  0.759   vga_timer/Mcount_HorizontalCount_val
-                                                       vga_timer/Mcount_HorizontalCount_val37
-    SLICE_X51Y90.SR      net (fanout=6)        1.179   vga_timer/Mcount_HorizontalCount_val
-    SLICE_X51Y90.CLK     Tsrck                 0.910   vga_timer/HorizontalCount<10>
-                                                       vga_timer/HorizontalCount_10
+    SLICE_X65Y48.XQ      Tcko                  0.591   VGA_BLUE_OBUF
+                                                       VGA_BLUE
+    SLICE_X64Y53.BX      net (fanout=2)        8.142   VGA_BLUE_OBUF
+    SLICE_X64Y53.CLK     Tdick                 0.360   ila/U0/iTRIG_IN<5>
+                                                       ila/U0/I_TQ0.G_TW[5].U_TQ
     -------------------------------------------------  ---------------------------
-    Total                                      5.418ns (3.015ns logic, 2.403ns route)
-                                                       (55.6% logic, 44.4% route)
+    Total                                      9.093ns (0.951ns logic, 8.142ns route)
+                                                       (10.5% logic, 89.5% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     14.637ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               vga_timer/HorizontalCount_5 (FF)
-  Destination:          vga_timer/HorizontalCount_10 (FF)
+
+Paths for end point ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[12].U_FDRE (SLICE_X51Y34.SR), 19 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     13.718ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               ila/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_CAP_DLY (FF)
+  Destination:          ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[12].U_FDRE (FF)
   Requirement:          20.000ns
-  Data Path Delay:      5.363ns (Levels of Logic = 2)
-  Clock Path Skew:      0.000ns
-  Source Clock:         CCLK_BUFGP rising at 0.000ns
-  Destination Clock:    CCLK_BUFGP rising at 20.000ns
+  Data Path Delay:      6.274ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.008ns (0.084 - 0.092)
+  Source Clock:         CLKIN_IBUFG_OUT_BUFG rising at 0.000ns
+  Destination Clock:    CLKIN_IBUFG_OUT_BUFG rising at 20.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: vga_timer/HorizontalCount_5 to vga_timer/HorizontalCount_10
+  Maximum Data Path: ila/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_CAP_DLY to ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[12].U_FDRE
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X51Y87.YQ      Tcko                  0.587   vga_timer/HorizontalCount<4>
-                                                       vga_timer/HorizontalCount_5
-    SLICE_X52Y86.F4      net (fanout=3)        0.760   vga_timer/HorizontalCount<5>
-    SLICE_X52Y86.X       Tilo                  0.759   vga_timer/Mcount_HorizontalCount_val9
-                                                       vga_timer/Mcount_HorizontalCount_val9
-    SLICE_X52Y88.F1      net (fanout=1)        0.409   vga_timer/Mcount_HorizontalCount_val9
-    SLICE_X52Y88.X       Tilo                  0.759   vga_timer/Mcount_HorizontalCount_val
-                                                       vga_timer/Mcount_HorizontalCount_val37
-    SLICE_X51Y90.SR      net (fanout=6)        1.179   vga_timer/Mcount_HorizontalCount_val
-    SLICE_X51Y90.CLK     Tsrck                 0.910   vga_timer/HorizontalCount<10>
-                                                       vga_timer/HorizontalCount_10
+    SLICE_X49Y48.YQ      Tcko                  0.587   ila/U0/I_NO_D.U_ILA/iCAPTURE
+                                                       ila/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_CAP_DLY
+    SLICE_X46Y33.G4      net (fanout=36)       2.215   ila/U0/I_NO_D.U_ILA/iCAPTURE
+    SLICE_X46Y33.F5      Tif5                  1.033   ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_SCRST/jO<1>
+                                                       ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_SCRST/I_NOLUT6.I_SRL_T2.I_NO_RPM.UG1_CFGLUT4
+                                                       ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_SCRST/I_NOLUT6.I_SRL_T2.I_NO_RPM.U1_MUXF5
+    SLICE_X46Y32.FXINB   net (fanout=1)        0.000   ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_SCRST/jO<1>
+    SLICE_X46Y32.Y       Tif6y                 0.409   ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/SCNT_RESET
+                                                       ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_SCRST/I_NOLUT6.I_SRL_T2.I_NO_RPM.I_NO_OREG.U_MUXF6
+    SLICE_X51Y34.SR      net (fanout=7)        1.120   ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/SCNT_RESET
+    SLICE_X51Y34.CLK     Tsrck                 0.910   ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/iSCNT<12>
+                                                       ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[12].U_FDRE
     -------------------------------------------------  ---------------------------
-    Total                                      5.363ns (3.015ns logic, 2.348ns route)
-                                                       (56.2% logic, 43.8% route)
+    Total                                      6.274ns (2.939ns logic, 3.335ns route)
+                                                       (46.8% logic, 53.2% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     14.702ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               vga_timer/HorizontalCount_1 (FF)
-  Destination:          vga_timer/HorizontalCount_10 (FF)
+Slack (setup path):     13.718ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               ila/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_CAP_DLY (FF)
+  Destination:          ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[12].U_FDRE (FF)
   Requirement:          20.000ns
-  Data Path Delay:      5.298ns (Levels of Logic = 2)
-  Clock Path Skew:      0.000ns
-  Source Clock:         CCLK_BUFGP rising at 0.000ns
-  Destination Clock:    CCLK_BUFGP rising at 20.000ns
+  Data Path Delay:      6.274ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.008ns (0.084 - 0.092)
+  Source Clock:         CLKIN_IBUFG_OUT_BUFG rising at 0.000ns
+  Destination Clock:    CLKIN_IBUFG_OUT_BUFG rising at 20.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: vga_timer/HorizontalCount_1 to vga_timer/HorizontalCount_10
+  Maximum Data Path: ila/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_CAP_DLY to ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[12].U_FDRE
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X51Y85.YQ      Tcko                  0.587   vga_timer/HorizontalCount<0>
-                                                       vga_timer/HorizontalCount_1
-    SLICE_X52Y88.G1      net (fanout=3)        1.081   vga_timer/HorizontalCount<1>
-    SLICE_X52Y88.Y       Tilo                  0.759   vga_timer/Mcount_HorizontalCount_val
-                                                       vga_timer/Mcount_HorizontalCount_val12
-    SLICE_X52Y88.F4      net (fanout=1)        0.023   vga_timer/Mcount_HorizontalCount_val12/O
-    SLICE_X52Y88.X       Tilo                  0.759   vga_timer/Mcount_HorizontalCount_val
-                                                       vga_timer/Mcount_HorizontalCount_val37
-    SLICE_X51Y90.SR      net (fanout=6)        1.179   vga_timer/Mcount_HorizontalCount_val
-    SLICE_X51Y90.CLK     Tsrck                 0.910   vga_timer/HorizontalCount<10>
-                                                       vga_timer/HorizontalCount_10
+    SLICE_X49Y48.YQ      Tcko                  0.587   ila/U0/I_NO_D.U_ILA/iCAPTURE
+                                                       ila/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_CAP_DLY
+    SLICE_X46Y32.G4      net (fanout=36)       2.215   ila/U0/I_NO_D.U_ILA/iCAPTURE
+    SLICE_X46Y32.F5      Tif5                  1.033   ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/SCNT_RESET
+                                                       ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_SCRST/I_NOLUT6.I_SRL_T2.I_NO_RPM.UG0_CFGLUT4
+                                                       ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_SCRST/I_NOLUT6.I_SRL_T2.I_NO_RPM.U0_MUXF5
+    SLICE_X46Y32.FXINA   net (fanout=1)        0.000   ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_SCRST/jO<0>
+    SLICE_X46Y32.Y       Tif6y                 0.409   ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/SCNT_RESET
+                                                       ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_SCRST/I_NOLUT6.I_SRL_T2.I_NO_RPM.I_NO_OREG.U_MUXF6
+    SLICE_X51Y34.SR      net (fanout=7)        1.120   ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/SCNT_RESET
+    SLICE_X51Y34.CLK     Tsrck                 0.910   ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/iSCNT<12>
+                                                       ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[12].U_FDRE
     -------------------------------------------------  ---------------------------
-    Total                                      5.298ns (3.015ns logic, 2.283ns route)
-                                                       (56.9% logic, 43.1% route)
+    Total                                      6.274ns (2.939ns logic, 3.335ns route)
+                                                       (46.8% logic, 53.2% route)
 
 --------------------------------------------------------------------------------
-
-Paths for end point vga_timer/HorizontalCount_2 (SLICE_X51Y86.SR), 11 paths
---------------------------------------------------------------------------------
-Slack (setup path):     14.871ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               vga_timer/HorizontalCount_3 (FF)
-  Destination:          vga_timer/HorizontalCount_2 (FF)
+Slack (setup path):     13.783ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               ila/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_CAP_DLY (FF)
+  Destination:          ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[12].U_FDRE (FF)
   Requirement:          20.000ns
-  Data Path Delay:      5.129ns (Levels of Logic = 2)
-  Clock Path Skew:      0.000ns
-  Source Clock:         CCLK_BUFGP rising at 0.000ns
-  Destination Clock:    CCLK_BUFGP rising at 20.000ns
+  Data Path Delay:      6.209ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.008ns (0.084 - 0.092)
+  Source Clock:         CLKIN_IBUFG_OUT_BUFG rising at 0.000ns
+  Destination Clock:    CLKIN_IBUFG_OUT_BUFG rising at 20.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: vga_timer/HorizontalCount_3 to vga_timer/HorizontalCount_2
+  Maximum Data Path: ila/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_CAP_DLY to ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[12].U_FDRE
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X51Y86.YQ      Tcko                  0.587   vga_timer/HorizontalCount<2>
-                                                       vga_timer/HorizontalCount_3
-    SLICE_X52Y86.F1      net (fanout=3)        0.815   vga_timer/HorizontalCount<3>
-    SLICE_X52Y86.X       Tilo                  0.759   vga_timer/Mcount_HorizontalCount_val9
-                                                       vga_timer/Mcount_HorizontalCount_val9
-    SLICE_X52Y88.F1      net (fanout=1)        0.409   vga_timer/Mcount_HorizontalCount_val9
-    SLICE_X52Y88.X       Tilo                  0.759   vga_timer/Mcount_HorizontalCount_val
-                                                       vga_timer/Mcount_HorizontalCount_val37
-    SLICE_X51Y86.SR      net (fanout=6)        0.890   vga_timer/Mcount_HorizontalCount_val
-    SLICE_X51Y86.CLK     Tsrck                 0.910   vga_timer/HorizontalCount<2>
-                                                       vga_timer/HorizontalCount_2
+    SLICE_X49Y48.YQ      Tcko                  0.587   ila/U0/I_NO_D.U_ILA/iCAPTURE
+                                                       ila/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_CAP_DLY
+    SLICE_X46Y32.F4      net (fanout=36)       2.150   ila/U0/I_NO_D.U_ILA/iCAPTURE
+    SLICE_X46Y32.F5      Tif5                  1.033   ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/SCNT_RESET
+                                                       ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_SCRST/I_NOLUT6.I_SRL_T2.I_NO_RPM.UF0_CFGLUT4
+                                                       ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_SCRST/I_NOLUT6.I_SRL_T2.I_NO_RPM.U0_MUXF5
+    SLICE_X46Y32.FXINA   net (fanout=1)        0.000   ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_SCRST/jO<0>
+    SLICE_X46Y32.Y       Tif6y                 0.409   ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/SCNT_RESET
+                                                       ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_SCRST/I_NOLUT6.I_SRL_T2.I_NO_RPM.I_NO_OREG.U_MUXF6
+    SLICE_X51Y34.SR      net (fanout=7)        1.120   ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/SCNT_RESET
+    SLICE_X51Y34.CLK     Tsrck                 0.910   ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/iSCNT<12>
+                                                       ila/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[12].U_FDRE
     -------------------------------------------------  ---------------------------
-    Total                                      5.129ns (3.015ns logic, 2.114ns route)
-                                                       (58.8% logic, 41.2% route)
+    Total                                      6.209ns (2.939ns logic, 3.270ns route)
+                                                       (47.3% logic, 52.7% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     14.926ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               vga_timer/HorizontalCount_5 (FF)
-  Destination:          vga_timer/HorizontalCount_2 (FF)
+
+Paths for end point ila/U0/I_TQ0.G_TW[4].U_TQ (SLICE_X64Y53.BY), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     13.879ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               VGA_RED (FF)
+  Destination:          ila/U0/I_TQ0.G_TW[4].U_TQ (FF)
   Requirement:          20.000ns
-  Data Path Delay:      5.074ns (Levels of Logic = 2)
+  Data Path Delay:      6.121ns (Levels of Logic = 0)
   Clock Path Skew:      0.000ns
-  Source Clock:         CCLK_BUFGP rising at 0.000ns
-  Destination Clock:    CCLK_BUFGP rising at 20.000ns
+  Source Clock:         clk_25mhz rising at 0.000ns
+  Destination Clock:    CLKIN_IBUFG_OUT_BUFG rising at 20.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: vga_timer/HorizontalCount_5 to vga_timer/HorizontalCount_2
+  Maximum Data Path: VGA_RED to ila/U0/I_TQ0.G_TW[4].U_TQ
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X51Y87.YQ      Tcko                  0.587   vga_timer/HorizontalCount<4>
-                                                       vga_timer/HorizontalCount_5
-    SLICE_X52Y86.F4      net (fanout=3)        0.760   vga_timer/HorizontalCount<5>
-    SLICE_X52Y86.X       Tilo                  0.759   vga_timer/Mcount_HorizontalCount_val9
-                                                       vga_timer/Mcount_HorizontalCount_val9
-    SLICE_X52Y88.F1      net (fanout=1)        0.409   vga_timer/Mcount_HorizontalCount_val9
-    SLICE_X52Y88.X       Tilo                  0.759   vga_timer/Mcount_HorizontalCount_val
-                                                       vga_timer/Mcount_HorizontalCount_val37
-    SLICE_X51Y86.SR      net (fanout=6)        0.890   vga_timer/Mcount_HorizontalCount_val
-    SLICE_X51Y86.CLK     Tsrck                 0.910   vga_timer/HorizontalCount<2>
-                                                       vga_timer/HorizontalCount_2
+    SLICE_X65Y48.YQ      Tcko                  0.587   VGA_BLUE_OBUF
+                                                       VGA_RED
+    SLICE_X64Y53.BY      net (fanout=2)        5.152   VGA_RED_OBUF
+    SLICE_X64Y53.CLK     Tdick                 0.382   ila/U0/iTRIG_IN<5>
+                                                       ila/U0/I_TQ0.G_TW[4].U_TQ
     -------------------------------------------------  ---------------------------
-    Total                                      5.074ns (3.015ns logic, 2.059ns route)
-                                                       (59.4% logic, 40.6% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     14.991ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               vga_timer/HorizontalCount_1 (FF)
-  Destination:          vga_timer/HorizontalCount_2 (FF)
-  Requirement:          20.000ns
-  Data Path Delay:      5.009ns (Levels of Logic = 2)
-  Clock Path Skew:      0.000ns
-  Source Clock:         CCLK_BUFGP rising at 0.000ns
-  Destination Clock:    CCLK_BUFGP rising at 20.000ns
-  Clock Uncertainty:    0.000ns
-
-  Maximum Data Path: vga_timer/HorizontalCount_1 to vga_timer/HorizontalCount_2
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X51Y85.YQ      Tcko                  0.587   vga_timer/HorizontalCount<0>
-                                                       vga_timer/HorizontalCount_1
-    SLICE_X52Y88.G1      net (fanout=3)        1.081   vga_timer/HorizontalCount<1>
-    SLICE_X52Y88.Y       Tilo                  0.759   vga_timer/Mcount_HorizontalCount_val
-                                                       vga_timer/Mcount_HorizontalCount_val12
-    SLICE_X52Y88.F4      net (fanout=1)        0.023   vga_timer/Mcount_HorizontalCount_val12/O
-    SLICE_X52Y88.X       Tilo                  0.759   vga_timer/Mcount_HorizontalCount_val
-                                                       vga_timer/Mcount_HorizontalCount_val37
-    SLICE_X51Y86.SR      net (fanout=6)        0.890   vga_timer/Mcount_HorizontalCount_val
-    SLICE_X51Y86.CLK     Tsrck                 0.910   vga_timer/HorizontalCount<2>
-                                                       vga_timer/HorizontalCount_2
-    -------------------------------------------------  ---------------------------
-    Total                                      5.009ns (3.015ns logic, 1.994ns route)
-                                                       (60.2% logic, 39.8% route)
+    Total                                      6.121ns (0.969ns logic, 5.152ns route)
+                                                       (15.8% logic, 84.2% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point vga_timer/HorizontalCount_3 (SLICE_X51Y86.SR), 11 paths
---------------------------------------------------------------------------------
-Slack (setup path):     14.871ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               vga_timer/HorizontalCount_3 (FF)
-  Destination:          vga_timer/HorizontalCount_3 (FF)
-  Requirement:          20.000ns
-  Data Path Delay:      5.129ns (Levels of Logic = 2)
-  Clock Path Skew:      0.000ns
-  Source Clock:         CCLK_BUFGP rising at 0.000ns
-  Destination Clock:    CCLK_BUFGP rising at 20.000ns
-  Clock Uncertainty:    0.000ns
-
-  Maximum Data Path: vga_timer/HorizontalCount_3 to vga_timer/HorizontalCount_3
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X51Y86.YQ      Tcko                  0.587   vga_timer/HorizontalCount<2>
-                                                       vga_timer/HorizontalCount_3
-    SLICE_X52Y86.F1      net (fanout=3)        0.815   vga_timer/HorizontalCount<3>
-    SLICE_X52Y86.X       Tilo                  0.759   vga_timer/Mcount_HorizontalCount_val9
-                                                       vga_timer/Mcount_HorizontalCount_val9
-    SLICE_X52Y88.F1      net (fanout=1)        0.409   vga_timer/Mcount_HorizontalCount_val9
-    SLICE_X52Y88.X       Tilo                  0.759   vga_timer/Mcount_HorizontalCount_val
-                                                       vga_timer/Mcount_HorizontalCount_val37
-    SLICE_X51Y86.SR      net (fanout=6)        0.890   vga_timer/Mcount_HorizontalCount_val
-    SLICE_X51Y86.CLK     Tsrck                 0.910   vga_timer/HorizontalCount<2>
-                                                       vga_timer/HorizontalCount_3
-    -------------------------------------------------  ---------------------------
-    Total                                      5.129ns (3.015ns logic, 2.114ns route)
-                                                       (58.8% logic, 41.2% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     14.926ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               vga_timer/HorizontalCount_5 (FF)
-  Destination:          vga_timer/HorizontalCount_3 (FF)
-  Requirement:          20.000ns
-  Data Path Delay:      5.074ns (Levels of Logic = 2)
-  Clock Path Skew:      0.000ns
-  Source Clock:         CCLK_BUFGP rising at 0.000ns
-  Destination Clock:    CCLK_BUFGP rising at 20.000ns
-  Clock Uncertainty:    0.000ns
-
-  Maximum Data Path: vga_timer/HorizontalCount_5 to vga_timer/HorizontalCount_3
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X51Y87.YQ      Tcko                  0.587   vga_timer/HorizontalCount<4>
-                                                       vga_timer/HorizontalCount_5
-    SLICE_X52Y86.F4      net (fanout=3)        0.760   vga_timer/HorizontalCount<5>
-    SLICE_X52Y86.X       Tilo                  0.759   vga_timer/Mcount_HorizontalCount_val9
-                                                       vga_timer/Mcount_HorizontalCount_val9
-    SLICE_X52Y88.F1      net (fanout=1)        0.409   vga_timer/Mcount_HorizontalCount_val9
-    SLICE_X52Y88.X       Tilo                  0.759   vga_timer/Mcount_HorizontalCount_val
-                                                       vga_timer/Mcount_HorizontalCount_val37
-    SLICE_X51Y86.SR      net (fanout=6)        0.890   vga_timer/Mcount_HorizontalCount_val
-    SLICE_X51Y86.CLK     Tsrck                 0.910   vga_timer/HorizontalCount<2>
-                                                       vga_timer/HorizontalCount_3
-    -------------------------------------------------  ---------------------------
-    Total                                      5.074ns (3.015ns logic, 2.059ns route)
-                                                       (59.4% logic, 40.6% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     14.991ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               vga_timer/HorizontalCount_1 (FF)
-  Destination:          vga_timer/HorizontalCount_3 (FF)
-  Requirement:          20.000ns
-  Data Path Delay:      5.009ns (Levels of Logic = 2)
-  Clock Path Skew:      0.000ns
-  Source Clock:         CCLK_BUFGP rising at 0.000ns
-  Destination Clock:    CCLK_BUFGP rising at 20.000ns
-  Clock Uncertainty:    0.000ns
-
-  Maximum Data Path: vga_timer/HorizontalCount_1 to vga_timer/HorizontalCount_3
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X51Y85.YQ      Tcko                  0.587   vga_timer/HorizontalCount<0>
-                                                       vga_timer/HorizontalCount_1
-    SLICE_X52Y88.G1      net (fanout=3)        1.081   vga_timer/HorizontalCount<1>
-    SLICE_X52Y88.Y       Tilo                  0.759   vga_timer/Mcount_HorizontalCount_val
-                                                       vga_timer/Mcount_HorizontalCount_val12
-    SLICE_X52Y88.F4      net (fanout=1)        0.023   vga_timer/Mcount_HorizontalCount_val12/O
-    SLICE_X52Y88.X       Tilo                  0.759   vga_timer/Mcount_HorizontalCount_val
-                                                       vga_timer/Mcount_HorizontalCount_val37
-    SLICE_X51Y86.SR      net (fanout=6)        0.890   vga_timer/Mcount_HorizontalCount_val
-    SLICE_X51Y86.CLK     Tsrck                 0.910   vga_timer/HorizontalCount<2>
-                                                       vga_timer/HorizontalCount_3
-    -------------------------------------------------  ---------------------------
-    Total                                      5.009ns (3.015ns logic, 1.994ns route)
-                                                       (60.2% logic, 39.8% route)
-
+Hold Paths: NET "CLKIN_IBUFG_OUT" PERIOD = 20 ns HIGH 40%;
 --------------------------------------------------------------------------------
 
-Hold Paths: NET "CCLK_BUFGP/IBUFG" PERIOD = 20 ns HIGH 40%;
+Paths for end point ila/U0/I_TQ0.G_TW[7].U_TQ (SLICE_X55Y42.G4), 1 path
 --------------------------------------------------------------------------------
-
-Paths for end point vga_timer/HorizontalCount_8 (SLICE_X51Y89.F3), 1 path
---------------------------------------------------------------------------------
-Slack (hold path):      1.622ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               vga_timer/HorizontalCount_8 (FF)
-  Destination:          vga_timer/HorizontalCount_8 (FF)
+Slack (hold path):      0.263ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               debounce_rst/sync_out (FF)
+  Destination:          ila/U0/I_TQ0.G_TW[7].U_TQ (FF)
   Requirement:          0.000ns
-  Data Path Delay:      1.622ns (Levels of Logic = 1)
-  Clock Path Skew:      0.000ns
-  Source Clock:         CCLK_BUFGP rising at 20.000ns
-  Destination Clock:    CCLK_BUFGP rising at 20.000ns
+  Data Path Delay:      2.663ns (Levels of Logic = 1)
+  Clock Path Skew:      2.400ns (1.652 - -0.748)
+  Source Clock:         clk_25mhz rising at 0.000ns
+  Destination Clock:    CLKIN_IBUFG_OUT_BUFG rising at 0.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path: vga_timer/HorizontalCount_8 to vga_timer/HorizontalCount_8
+  Minimum Data Path: debounce_rst/sync_out to ila/U0/I_TQ0.G_TW[7].U_TQ
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X51Y89.XQ      Tcko                  0.473   vga_timer/HorizontalCount<8>
-                                                       vga_timer/HorizontalCount_8
-    SLICE_X51Y89.F3      net (fanout=3)        0.348   vga_timer/HorizontalCount<8>
-    SLICE_X51Y89.CLK     Tckf        (-Th)    -0.801   vga_timer/HorizontalCount<8>
-                                                       vga_timer/HorizontalCount<8>_rt
-                                                       vga_timer/Mcount_HorizontalCount_xor<8>
-                                                       vga_timer/HorizontalCount_8
+    SLICE_X42Y43.YQ      Tcko                  0.522   debounce_rst/sync_out
+                                                       debounce_rst/sync_out
+    SLICE_X55Y42.G4      net (fanout=2)        1.625   debounce_rst/sync_out
+    SLICE_X55Y42.CLK     Tckg        (-Th)    -0.516   ila/U0/iTRIG_IN<6>
+                                                       oneshot/oneshot_out1
+                                                       ila/U0/I_TQ0.G_TW[7].U_TQ
     -------------------------------------------------  ---------------------------
-    Total                                      1.622ns (1.274ns logic, 0.348ns route)
-                                                       (78.5% logic, 21.5% route)
+    Total                                      2.663ns (1.038ns logic, 1.625ns route)
+                                                       (39.0% logic, 61.0% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point vga_timer/HorizontalCount_2 (SLICE_X51Y86.F3), 1 path
+Paths for end point ila/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[1].I_SRLT_NE_0.DLY9/SRL16E (SLICE_X54Y41.BX), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      1.641ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               vga_timer/HorizontalCount_2 (FF)
-  Destination:          vga_timer/HorizontalCount_2 (FF)
+Slack (hold path):      0.723ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               ila/U0/I_TQ0.G_TW[1].U_TQ (FF)
+  Destination:          ila/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[1].I_SRLT_NE_0.DLY9/SRL16E (FF)
   Requirement:          0.000ns
-  Data Path Delay:      1.641ns (Levels of Logic = 1)
-  Clock Path Skew:      0.000ns
-  Source Clock:         CCLK_BUFGP rising at 20.000ns
-  Destination Clock:    CCLK_BUFGP rising at 20.000ns
+  Data Path Delay:      0.730ns (Levels of Logic = 1)
+  Clock Path Skew:      0.007ns (0.036 - 0.029)
+  Source Clock:         CLKIN_IBUFG_OUT_BUFG rising at 20.000ns
+  Destination Clock:    CLKIN_IBUFG_OUT_BUFG rising at 20.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path: vga_timer/HorizontalCount_2 to vga_timer/HorizontalCount_2
+  Minimum Data Path: ila/U0/I_TQ0.G_TW[1].U_TQ to ila/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[1].I_SRLT_NE_0.DLY9/SRL16E
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X51Y86.XQ      Tcko                  0.473   vga_timer/HorizontalCount<2>
-                                                       vga_timer/HorizontalCount_2
-    SLICE_X51Y86.F3      net (fanout=3)        0.367   vga_timer/HorizontalCount<2>
-    SLICE_X51Y86.CLK     Tckf        (-Th)    -0.801   vga_timer/HorizontalCount<2>
-                                                       vga_timer/HorizontalCount<2>_rt
-                                                       vga_timer/Mcount_HorizontalCount_xor<2>
-                                                       vga_timer/HorizontalCount_2
+    SLICE_X52Y40.XQ      Tcko                  0.474   ila/U0/iTRIG_IN<1>
+                                                       ila/U0/I_TQ0.G_TW[1].U_TQ
+    SLICE_X54Y41.BX      net (fanout=2)        0.405   ila/U0/iTRIG_IN<1>
+    SLICE_X54Y41.CLK     Tdh         (-Th)     0.149   ila/U0/I_NO_D.U_ILA/iDATA<1>
+                                                       ila/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[1].I_SRLT_NE_0.DLY9/SRL16E
     -------------------------------------------------  ---------------------------
-    Total                                      1.641ns (1.274ns logic, 0.367ns route)
-                                                       (77.6% logic, 22.4% route)
+    Total                                      0.730ns (0.325ns logic, 0.405ns route)
+                                                       (44.5% logic, 55.5% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point vga_timer/HorizontalCount_0 (SLICE_X51Y85.F2), 1 path
+Paths for end point ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[2].U_BRAM/ram_rt1_s1_s2_if.ram_rt1_s1_s2_i.B (RAMB16_X1Y4.DIB0), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      1.684ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               vga_timer/HorizontalCount_0 (FF)
-  Destination:          vga_timer/HorizontalCount_0 (FF)
+Slack (hold path):      0.730ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               ila/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[1].I_SRLT_NE_0.FF (FF)
+  Destination:          ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[2].U_BRAM/ram_rt1_s1_s2_if.ram_rt1_s1_s2_i.B (RAM)
   Requirement:          0.000ns
-  Data Path Delay:      1.684ns (Levels of Logic = 1)
-  Clock Path Skew:      0.000ns
-  Source Clock:         CCLK_BUFGP rising at 20.000ns
-  Destination Clock:    CCLK_BUFGP rising at 20.000ns
+  Data Path Delay:      0.742ns (Levels of Logic = 0)
+  Clock Path Skew:      0.012ns (0.048 - 0.036)
+  Source Clock:         CLKIN_IBUFG_OUT_BUFG rising at 20.000ns
+  Destination Clock:    CLKIN_IBUFG_OUT_BUFG rising at 20.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path: vga_timer/HorizontalCount_0 to vga_timer/HorizontalCount_0
+  Minimum Data Path: ila/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[1].I_SRLT_NE_0.FF to ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[2].U_BRAM/ram_rt1_s1_s2_if.ram_rt1_s1_s2_i.B
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X51Y85.XQ      Tcko                  0.473   vga_timer/HorizontalCount<0>
-                                                       vga_timer/HorizontalCount_0
-    SLICE_X51Y85.F2      net (fanout=3)        0.410   vga_timer/HorizontalCount<0>
-    SLICE_X51Y85.CLK     Tckf        (-Th)    -0.801   vga_timer/HorizontalCount<0>
-                                                       vga_timer/Mcount_HorizontalCount_lut<0>1_INV_0
-                                                       vga_timer/Mcount_HorizontalCount_xor<0>
-                                                       vga_timer/HorizontalCount_0
+    SLICE_X54Y41.XQ      Tcko                  0.474   ila/U0/I_NO_D.U_ILA/iDATA<1>
+                                                       ila/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[1].I_SRLT_NE_0.FF
+    RAMB16_X1Y4.DIB0     net (fanout=1)        0.394   ila/U0/I_NO_D.U_ILA/iDATA<1>
+    RAMB16_X1Y4.CLKB     Tbckd       (-Th)     0.126   ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[2].U_BRAM/ram_rt1_s1_s2_if.ram_rt1_s1_s2_i
+                                                       ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[2].U_BRAM/ram_rt1_s1_s2_if.ram_rt1_s1_s2_i.B
     -------------------------------------------------  ---------------------------
-    Total                                      1.684ns (1.274ns logic, 0.410ns route)
-                                                       (75.7% logic, 24.3% route)
+    Total                                      0.742ns (0.348ns logic, 0.394ns route)
+                                                       (46.9% logic, 53.1% route)
 
 --------------------------------------------------------------------------------
 
-Component Switching Limit Checks: NET "CCLK_BUFGP/IBUFG" PERIOD = 20 ns HIGH 40%;
+Component Switching Limit Checks: NET "CLKIN_IBUFG_OUT" PERIOD = 20 ns HIGH 40%;
 --------------------------------------------------------------------------------
-Slack: 18.005ns (period - (min high pulse limit / (high pulse / period)))
+Slack: 12.500ns (period - (min high pulse limit / (high pulse / period)))
   Period: 20.000ns
   High pulse: 8.000ns
-  High pulse limit: 0.798ns (Tch)
-  Physical resource: vga_timer/HorizontalCount<0>/CLK
-  Logical resource: vga_timer/HorizontalCount_0/CK
-  Location pin: SLICE_X51Y85.CLK
-  Clock network: CCLK_BUFGP
+  High pulse limit: 3.000ns (Tdcmpw_CLKIN_50_100)
+  Physical resource: clock_divider/DCM_SP_INST/CLKIN
+  Logical resource: clock_divider/DCM_SP_INST/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: CLKIN_IBUFG_OUT
 --------------------------------------------------------------------------------
-Slack: 18.005ns (period - (min high pulse limit / (high pulse / period)))
+Slack: 15.000ns (period - (min low pulse limit / (low pulse / period)))
   Period: 20.000ns
-  High pulse: 8.000ns
-  High pulse limit: 0.798ns (Tch)
-  Physical resource: vga_timer/HorizontalCount<0>/CLK
-  Logical resource: vga_timer/HorizontalCount_1/CK
-  Location pin: SLICE_X51Y85.CLK
-  Clock network: CCLK_BUFGP
+  Low pulse: 12.000ns
+  Low pulse limit: 3.000ns (Tdcmpw_CLKIN_50_100)
+  Physical resource: clock_divider/DCM_SP_INST/CLKIN
+  Logical resource: clock_divider/DCM_SP_INST/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: CLKIN_IBUFG_OUT
 --------------------------------------------------------------------------------
-Slack: 18.005ns (period - (min high pulse limit / (high pulse / period)))
+Slack: 15.834ns (period - min period limit)
   Period: 20.000ns
-  High pulse: 8.000ns
-  High pulse limit: 0.798ns (Tch)
-  Physical resource: vga_timer/HorizontalCount<2>/CLK
-  Logical resource: vga_timer/HorizontalCount_2/CK
-  Location pin: SLICE_X51Y86.CLK
-  Clock network: CCLK_BUFGP
+  Min period limit: 4.166ns (240.038MHz) (Tdcmpc)
+  Physical resource: clock_divider/DCM_SP_INST/CLKIN
+  Logical resource: clock_divider/DCM_SP_INST/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: CLKIN_IBUFG_OUT
 --------------------------------------------------------------------------------
 
+================================================================================
+Timing constraint: PERIOD analysis for net "clock_divider/CLKDV_BUF" derived 
+from  NET "CLKIN_IBUFG_OUT" PERIOD = 20 ns HIGH 40%;  multiplied by 2.00 to 40 
+nS and duty cycle corrected to HIGH 20 nS  
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 695 paths analyzed, 131 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   6.862ns.
+--------------------------------------------------------------------------------
+
+Paths for end point debounce_rst/sync_out (SLICE_X42Y43.CE), 15 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     33.138ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               debounce_rst/count_8 (FF)
+  Destination:          debounce_rst/sync_out (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      6.846ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.016ns (0.109 - 0.125)
+  Source Clock:         clk_25mhz rising at 0.000ns
+  Destination Clock:    clk_25mhz rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: debounce_rst/count_8 to debounce_rst/sync_out
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X33Y77.XQ      Tcko                  0.591   debounce_rst/count<8>
+                                                       debounce_rst/count_8
+    SLICE_X31Y74.F2      net (fanout=2)        0.803   debounce_rst/count<8>
+    SLICE_X31Y74.X       Tilo                  0.704   debounce_rst/out1
+                                                       debounce_rst/out1
+    SLICE_X32Y74.F3      net (fanout=1)        0.632   debounce_rst/out1
+    SLICE_X32Y74.X       Tilo                  0.759   debounce_rst/count_MAX
+                                                       debounce_rst/out26
+    SLICE_X42Y43.CE      net (fanout=9)        2.802   debounce_rst/count_MAX
+    SLICE_X42Y43.CLK     Tceck                 0.555   debounce_rst/sync_out
+                                                       debounce_rst/sync_out
+    -------------------------------------------------  ---------------------------
+    Total                                      6.846ns (2.609ns logic, 4.237ns route)
+                                                       (38.1% logic, 61.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     33.290ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               debounce_rst/count_13 (FF)
+  Destination:          debounce_rst/sync_out (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      6.692ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.018ns (0.109 - 0.127)
+  Source Clock:         clk_25mhz rising at 0.000ns
+  Destination Clock:    clk_25mhz rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: debounce_rst/count_13 to debounce_rst/sync_out
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X33Y79.YQ      Tcko                  0.587   debounce_rst/count<12>
+                                                       debounce_rst/count_13
+    SLICE_X31Y74.F4      net (fanout=2)        0.653   debounce_rst/count<13>
+    SLICE_X31Y74.X       Tilo                  0.704   debounce_rst/out1
+                                                       debounce_rst/out1
+    SLICE_X32Y74.F3      net (fanout=1)        0.632   debounce_rst/out1
+    SLICE_X32Y74.X       Tilo                  0.759   debounce_rst/count_MAX
+                                                       debounce_rst/out26
+    SLICE_X42Y43.CE      net (fanout=9)        2.802   debounce_rst/count_MAX
+    SLICE_X42Y43.CLK     Tceck                 0.555   debounce_rst/sync_out
+                                                       debounce_rst/sync_out
+    -------------------------------------------------  ---------------------------
+    Total                                      6.692ns (2.605ns logic, 4.087ns route)
+                                                       (38.9% logic, 61.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     33.313ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               debounce_rst/count_10 (FF)
+  Destination:          debounce_rst/sync_out (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      6.669ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.018ns (0.109 - 0.127)
+  Source Clock:         clk_25mhz rising at 0.000ns
+  Destination Clock:    clk_25mhz rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: debounce_rst/count_10 to debounce_rst/sync_out
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X33Y78.XQ      Tcko                  0.591   debounce_rst/count<10>
+                                                       debounce_rst/count_10
+    SLICE_X32Y78.F1      net (fanout=2)        0.834   debounce_rst/count<10>
+    SLICE_X32Y78.X       Tilo                  0.759   debounce_rst/out4
+                                                       debounce_rst/out4
+    SLICE_X32Y74.F1      net (fanout=1)        0.369   debounce_rst/out4
+    SLICE_X32Y74.X       Tilo                  0.759   debounce_rst/count_MAX
+                                                       debounce_rst/out26
+    SLICE_X42Y43.CE      net (fanout=9)        2.802   debounce_rst/count_MAX
+    SLICE_X42Y43.CLK     Tceck                 0.555   debounce_rst/sync_out
+                                                       debounce_rst/sync_out
+    -------------------------------------------------  ---------------------------
+    Total                                      6.669ns (2.664ns logic, 4.005ns route)
+                                                       (39.9% logic, 60.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point vga_timer/CounterX_2 (SLICE_X51Y88.SR), 10 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     34.340ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               vga_timer/CounterX_7 (FF)
+  Destination:          vga_timer/CounterX_2 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      5.658ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.002ns (0.015 - 0.017)
+  Source Clock:         clk_25mhz rising at 0.000ns
+  Destination Clock:    clk_25mhz rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: vga_timer/CounterX_7 to vga_timer/CounterX_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X51Y90.YQ      Tcko                  0.587   vga_timer/CounterX<6>
+                                                       vga_timer/CounterX_7
+    SLICE_X50Y86.F2      net (fanout=4)        1.180   vga_timer/CounterX<7>
+    SLICE_X50Y86.X       Tilo                  0.759   vga_timer/Mmux_GND_10_o_CounterXmaxed_MUX_55_o132
+                                                       vga_timer/Mmux_GND_10_o_CounterXmaxed_MUX_55_o132
+    SLICE_X50Y88.F3      net (fanout=1)        0.313   vga_timer/Mmux_GND_10_o_CounterXmaxed_MUX_55_o132
+    SLICE_X50Y88.X       Tilo                  0.759   vga_timer/CounterXmaxed
+                                                       vga_timer/Mmux_GND_10_o_CounterXmaxed_MUX_55_o1315
+    SLICE_X51Y88.SR      net (fanout=11)       1.150   vga_timer/CounterXmaxed
+    SLICE_X51Y88.CLK     Tsrck                 0.910   vga_timer/CounterX<2>
+                                                       vga_timer/CounterX_2
+    -------------------------------------------------  ---------------------------
+    Total                                      5.658ns (3.015ns logic, 2.643ns route)
+                                                       (53.3% logic, 46.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     34.747ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               vga_timer/CounterX_5 (FF)
+  Destination:          vga_timer/CounterX_2 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      5.253ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_25mhz rising at 0.000ns
+  Destination Clock:    clk_25mhz rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: vga_timer/CounterX_5 to vga_timer/CounterX_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X51Y89.YQ      Tcko                  0.587   vga_timer/CounterX<4>
+                                                       vga_timer/CounterX_5
+    SLICE_X50Y86.F3      net (fanout=4)        0.775   vga_timer/CounterX<5>
+    SLICE_X50Y86.X       Tilo                  0.759   vga_timer/Mmux_GND_10_o_CounterXmaxed_MUX_55_o132
+                                                       vga_timer/Mmux_GND_10_o_CounterXmaxed_MUX_55_o132
+    SLICE_X50Y88.F3      net (fanout=1)        0.313   vga_timer/Mmux_GND_10_o_CounterXmaxed_MUX_55_o132
+    SLICE_X50Y88.X       Tilo                  0.759   vga_timer/CounterXmaxed
+                                                       vga_timer/Mmux_GND_10_o_CounterXmaxed_MUX_55_o1315
+    SLICE_X51Y88.SR      net (fanout=11)       1.150   vga_timer/CounterXmaxed
+    SLICE_X51Y88.CLK     Tsrck                 0.910   vga_timer/CounterX<2>
+                                                       vga_timer/CounterX_2
+    -------------------------------------------------  ---------------------------
+    Total                                      5.253ns (3.015ns logic, 2.238ns route)
+                                                       (57.4% logic, 42.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     34.819ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               vga_timer/CounterX_9 (FF)
+  Destination:          vga_timer/CounterX_2 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      5.179ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.002ns (0.015 - 0.017)
+  Source Clock:         clk_25mhz rising at 0.000ns
+  Destination Clock:    clk_25mhz rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: vga_timer/CounterX_9 to vga_timer/CounterX_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X51Y91.YQ      Tcko                  0.587   vga_timer/CounterX<8>
+                                                       vga_timer/CounterX_9
+    SLICE_X50Y88.G3      net (fanout=4)        0.991   vga_timer/CounterX<9>
+    SLICE_X50Y88.Y       Tilo                  0.759   vga_timer/CounterXmaxed
+                                                       vga_timer/Mmux_GND_10_o_CounterXmaxed_MUX_55_o137
+    SLICE_X50Y88.F4      net (fanout=1)        0.023   vga_timer/Mmux_GND_10_o_CounterXmaxed_MUX_55_o137
+    SLICE_X50Y88.X       Tilo                  0.759   vga_timer/CounterXmaxed
+                                                       vga_timer/Mmux_GND_10_o_CounterXmaxed_MUX_55_o1315
+    SLICE_X51Y88.SR      net (fanout=11)       1.150   vga_timer/CounterXmaxed
+    SLICE_X51Y88.CLK     Tsrck                 0.910   vga_timer/CounterX<2>
+                                                       vga_timer/CounterX_2
+    -------------------------------------------------  ---------------------------
+    Total                                      5.179ns (3.015ns logic, 2.164ns route)
+                                                       (58.2% logic, 41.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point vga_timer/CounterX_3 (SLICE_X51Y88.SR), 10 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     34.340ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               vga_timer/CounterX_7 (FF)
+  Destination:          vga_timer/CounterX_3 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      5.658ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.002ns (0.015 - 0.017)
+  Source Clock:         clk_25mhz rising at 0.000ns
+  Destination Clock:    clk_25mhz rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: vga_timer/CounterX_7 to vga_timer/CounterX_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X51Y90.YQ      Tcko                  0.587   vga_timer/CounterX<6>
+                                                       vga_timer/CounterX_7
+    SLICE_X50Y86.F2      net (fanout=4)        1.180   vga_timer/CounterX<7>
+    SLICE_X50Y86.X       Tilo                  0.759   vga_timer/Mmux_GND_10_o_CounterXmaxed_MUX_55_o132
+                                                       vga_timer/Mmux_GND_10_o_CounterXmaxed_MUX_55_o132
+    SLICE_X50Y88.F3      net (fanout=1)        0.313   vga_timer/Mmux_GND_10_o_CounterXmaxed_MUX_55_o132
+    SLICE_X50Y88.X       Tilo                  0.759   vga_timer/CounterXmaxed
+                                                       vga_timer/Mmux_GND_10_o_CounterXmaxed_MUX_55_o1315
+    SLICE_X51Y88.SR      net (fanout=11)       1.150   vga_timer/CounterXmaxed
+    SLICE_X51Y88.CLK     Tsrck                 0.910   vga_timer/CounterX<2>
+                                                       vga_timer/CounterX_3
+    -------------------------------------------------  ---------------------------
+    Total                                      5.658ns (3.015ns logic, 2.643ns route)
+                                                       (53.3% logic, 46.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     34.747ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               vga_timer/CounterX_5 (FF)
+  Destination:          vga_timer/CounterX_3 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      5.253ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_25mhz rising at 0.000ns
+  Destination Clock:    clk_25mhz rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: vga_timer/CounterX_5 to vga_timer/CounterX_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X51Y89.YQ      Tcko                  0.587   vga_timer/CounterX<4>
+                                                       vga_timer/CounterX_5
+    SLICE_X50Y86.F3      net (fanout=4)        0.775   vga_timer/CounterX<5>
+    SLICE_X50Y86.X       Tilo                  0.759   vga_timer/Mmux_GND_10_o_CounterXmaxed_MUX_55_o132
+                                                       vga_timer/Mmux_GND_10_o_CounterXmaxed_MUX_55_o132
+    SLICE_X50Y88.F3      net (fanout=1)        0.313   vga_timer/Mmux_GND_10_o_CounterXmaxed_MUX_55_o132
+    SLICE_X50Y88.X       Tilo                  0.759   vga_timer/CounterXmaxed
+                                                       vga_timer/Mmux_GND_10_o_CounterXmaxed_MUX_55_o1315
+    SLICE_X51Y88.SR      net (fanout=11)       1.150   vga_timer/CounterXmaxed
+    SLICE_X51Y88.CLK     Tsrck                 0.910   vga_timer/CounterX<2>
+                                                       vga_timer/CounterX_3
+    -------------------------------------------------  ---------------------------
+    Total                                      5.253ns (3.015ns logic, 2.238ns route)
+                                                       (57.4% logic, 42.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     34.819ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               vga_timer/CounterX_9 (FF)
+  Destination:          vga_timer/CounterX_3 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      5.179ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.002ns (0.015 - 0.017)
+  Source Clock:         clk_25mhz rising at 0.000ns
+  Destination Clock:    clk_25mhz rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: vga_timer/CounterX_9 to vga_timer/CounterX_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X51Y91.YQ      Tcko                  0.587   vga_timer/CounterX<8>
+                                                       vga_timer/CounterX_9
+    SLICE_X50Y88.G3      net (fanout=4)        0.991   vga_timer/CounterX<9>
+    SLICE_X50Y88.Y       Tilo                  0.759   vga_timer/CounterXmaxed
+                                                       vga_timer/Mmux_GND_10_o_CounterXmaxed_MUX_55_o137
+    SLICE_X50Y88.F4      net (fanout=1)        0.023   vga_timer/Mmux_GND_10_o_CounterXmaxed_MUX_55_o137
+    SLICE_X50Y88.X       Tilo                  0.759   vga_timer/CounterXmaxed
+                                                       vga_timer/Mmux_GND_10_o_CounterXmaxed_MUX_55_o1315
+    SLICE_X51Y88.SR      net (fanout=11)       1.150   vga_timer/CounterXmaxed
+    SLICE_X51Y88.CLK     Tsrck                 0.910   vga_timer/CounterX<2>
+                                                       vga_timer/CounterX_3
+    -------------------------------------------------  ---------------------------
+    Total                                      5.179ns (3.015ns logic, 2.164ns route)
+                                                       (58.2% logic, 41.8% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: PERIOD analysis for net "clock_divider/CLKDV_BUF" derived from
+ NET "CLKIN_IBUFG_OUT" PERIOD = 20 ns HIGH 40%;
+ multiplied by 2.00 to 40 nS and duty cycle corrected to HIGH 20 nS 
+
+--------------------------------------------------------------------------------
+
+Paths for end point debounce_rst/sync_out (SLICE_X42Y43.BY), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.050ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               debounce_rst/q_1 (FF)
+  Destination:          debounce_rst/sync_out (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.051ns (Levels of Logic = 0)
+  Clock Path Skew:      0.001ns (0.016 - 0.015)
+  Source Clock:         clk_25mhz rising at 40.000ns
+  Destination Clock:    clk_25mhz rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: debounce_rst/q_1 to debounce_rst/sync_out
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X42Y41.YQ      Tcko                  0.522   debounce_rst/q_1
+                                                       debounce_rst/q_1
+    SLICE_X42Y43.BY      net (fanout=1)        0.377   debounce_rst/q_1
+    SLICE_X42Y43.CLK     Tckdi       (-Th)    -0.152   debounce_rst/sync_out
+                                                       debounce_rst/sync_out
+    -------------------------------------------------  ---------------------------
+    Total                                      1.051ns (0.674ns logic, 0.377ns route)
+                                                       (64.1% logic, 35.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point vga_timer/CounterY_2 (SLICE_X55Y88.F3), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.618ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               vga_timer/CounterY_2 (FF)
+  Destination:          vga_timer/CounterY_2 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.618ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_25mhz rising at 40.000ns
+  Destination Clock:    clk_25mhz rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: vga_timer/CounterY_2 to vga_timer/CounterY_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X55Y88.XQ      Tcko                  0.473   vga_timer/CounterY<2>
+                                                       vga_timer/CounterY_2
+    SLICE_X55Y88.F3      net (fanout=2)        0.344   vga_timer/CounterY<2>
+    SLICE_X55Y88.CLK     Tckf        (-Th)    -0.801   vga_timer/CounterY<2>
+                                                       vga_timer/CounterY<2>_rt
+                                                       vga_timer/Mcount_CounterY_xor<2>
+                                                       vga_timer/CounterY_2
+    -------------------------------------------------  ---------------------------
+    Total                                      1.618ns (1.274ns logic, 0.344ns route)
+                                                       (78.7% logic, 21.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point vga_timer/vga_HS (SLICE_X51Y86.F1), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.621ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               vga_timer/CounterX_7 (FF)
+  Destination:          vga_timer/vga_HS (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.617ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.004ns (0.013 - 0.017)
+  Source Clock:         clk_25mhz rising at 40.000ns
+  Destination Clock:    clk_25mhz rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: vga_timer/CounterX_7 to vga_timer/vga_HS
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X51Y90.YQ      Tcko                  0.470   vga_timer/CounterX<6>
+                                                       vga_timer/CounterX_7
+    SLICE_X51Y86.F1      net (fanout=4)        0.631   vga_timer/CounterX<7>
+    SLICE_X51Y86.CLK     Tckf        (-Th)    -0.516   vga_timer/vga_HS
+                                                       vga_timer/CounterX[9]_PWR_10_o_equal_11_o<9>
+                                                       vga_timer/vga_HS
+    -------------------------------------------------  ---------------------------
+    Total                                      1.617ns (0.986ns logic, 0.631ns route)
+                                                       (61.0% logic, 39.0% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: PERIOD analysis for net "clock_divider/CLKDV_BUF" derived from
+ NET "CLKIN_IBUFG_OUT" PERIOD = 20 ns HIGH 40%;
+ multiplied by 2.00 to 40 nS and duty cycle corrected to HIGH 20 nS 
+
+--------------------------------------------------------------------------------
+Slack: 33.751ns (period - min period limit)
+  Period: 40.000ns
+  Min period limit: 6.249ns (160.026MHz) (Tdcmpdv)
+  Physical resource: clock_divider/DCM_SP_INST/CLKDV
+  Logical resource: clock_divider/DCM_SP_INST/CLKDV
+  Location pin: DCM_X0Y1.CLKDV
+  Clock network: clock_divider/CLKDV_BUF
+--------------------------------------------------------------------------------
+Slack: 38.348ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 40.000ns
+  Low pulse: 20.000ns
+  Low pulse limit: 0.826ns (Tcl)
+  Physical resource: vga_timer/vga_VS/CLK
+  Logical resource: vga_timer/vga_VS/CK
+  Location pin: SLICE_X54Y87.CLK
+  Clock network: clk_25mhz
+--------------------------------------------------------------------------------
+Slack: 38.348ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 40.000ns
+  High pulse: 20.000ns
+  High pulse limit: 0.826ns (Tch)
+  Physical resource: vga_timer/vga_VS/CLK
+  Logical resource: vga_timer/vga_VS/CK
+  Location pin: SLICE_X54Y87.CLK
+  Clock network: clk_25mhz
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for CLKIN_IBUFG_OUT
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|CLKIN_IBUFG_OUT                |     20.000ns|      9.093ns|      3.431ns|            0|            0|         1127|          695|
+| clock_divider/CLKDV_BUF       |     40.000ns|      6.862ns|          N/A|            0|            0|          695|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 All constraints were met.
 
@@ -454,7 +742,7 @@ Clock to Setup on destination clock CCLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CCLK           |    5.418|         |         |         |
+CCLK           |    9.093|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -463,23 +751,23 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 187 paths, 0 nets, and 43 connections
+Constraints cover 1822 paths, 0 nets, and 857 connections
 
 Design statistics:
-   Minimum period:   5.418ns{1}   (Maximum frequency: 184.570MHz)
+   Minimum period:   9.093ns{1}   (Maximum frequency: 109.975MHz)
 
 
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Tue May 03 21:17:48 2016 
+Analysis completed Fri May 06 18:27:20 2016 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 161 MB
+Peak Memory Usage: 166 MB
 
 
 
