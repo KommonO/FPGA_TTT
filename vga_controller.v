@@ -21,11 +21,12 @@
 //NET 	"HS"			LOC = "F15"	| IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST;
 //NET 	"VS"			LOC = "F14"	| IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST;
 
-module vga_controller(input BTN0, CCLK, SW0, SW1, SW2,SW3, output  reg VGA_RED, VGA_GREEN, VGA_BLUE, wire VGA_HSYNC, VGA_VSYNC);
+module vga_controller(input BTN0, CCLK, SW0, SW1, SW2,SW3, output  wire VGA_RED, VGA_GREEN, VGA_BLUE, wire VGA_HSYNC, VGA_VSYNC);
 //counters are found in thr vga_timer
 wire clk_50mhz, hsync_out,vsync_out,vga_on;
-wire [10:0] Pixel_X;
-wire [10:0] Pixel_Y;
+wire [9:0] Pixel_X;
+wire [8:0] Pixel_Y;
+//wire vga_on;
 
 assign VGA_HSYNC = ~hsync_out;
 assign VGA_VSYNC = ~vsync_out;
@@ -49,12 +50,12 @@ icon icon (
 ila ila (
     .CONTROL(CONTROL0), // INOUT BUS [35:0]
     .CLK(CLKIN_IBUFG_OUT), // IN
-    .TRIG0({clr, VGA_GREEN, VGA_BLUE, VGA_RED,VGA_HSYNC, VGA_VSYNC, clk_25mhz, BTN0}) // IN BUS [7:0]
+    .TRIG0({clr, VGA_GREEN, VGA_BLUE, VGA_RED,VGA_HSYNC, VGA_VSYNC, Pixel_X[0], Pixel_Y[0]}) // IN BUS [7:0]
 );
 
 
 //processes
-always @(posedge clk_25mhz or posedge clr) begin
+/*always @(posedge clk_25mhz or posedge clr) begin
   //If reset,colors set to 0 to print out black.correct?
   if(clr) begin
     VGA_RED <=1'b0;
@@ -92,6 +93,7 @@ always @(posedge clk_25mhz or posedge clr) begin
     VGA_GREEN <= 1;//TicTacToeG;
 	 
 	 end
+	 
   end
   //else if video is not on screen should be black
   else begin
@@ -100,16 +102,17 @@ always @(posedge clk_25mhz or posedge clr) begin
     VGA_GREEN <= 1'b0;
   end
 end
-
+*/
 
 //debounced
 debounce debounce_rst(.clk(clk_25mhz), .rst(1'b0),.async_in(BTN0), .sync_out(clr_debounce));
 //oneshotted
 oneshot oneshot(.oneshot_in(clr_debounce), .rst(1'b0), .clk(clk_25mhz), .oneshot_out(clr));
 //initialize other modules
-vga_timer vga_timer(.Clk(clk_25mhz),/* .clr(clr),*/.vga_h_sync(hsync_out), .vga_v_sync(vsync_out),.CounterX(Pixel_X), .CounterY(Pixel_Y), .inDisplayArea(vga_on));
+vga_timer vga_timer(.Clk(clk_25mhz),/* .clr(clr),*/.vga_h_sync(hsync_out), .vga_v_sync(vsync_out),.CounterX(Pixel_X), .CounterY(Pixel_Y), .vga_on(vga_on));
+ttt_logic ttt_logic(.clk(clk_25mhz), .clr(clr), .vga_on(vga_on), .Pixel_X(Pixel_X),.Pixel_Y(Pixel_Y), .vga_green(VGA_GREEN),.vga_red(VGA_RED),.vga_blue(VGA_BLUE));
 
-//ttt_logic ttt_logic();
+
 //ASCCII TRANSLATE
 
 

@@ -1,57 +1,37 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    04:44:19 04/23/2014 
-// Design Name: 
-// Module Name:    VGAOut 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
-//
-// Dependencies: 
-//
-// Revision: 
-// Revision 0.01 - File Created
-// Additional Comments: 
-//
-//////////////////////////////////////////////////////////////////////////////////
-module vga_timer(Clk, vga_h_sync, vga_v_sync, inDisplayArea, CounterX, CounterY);
+module vga_timer(Clk, vga_h_sync, vga_v_sync, vga_on, CounterX, CounterY);
 input Clk;
 output vga_h_sync, vga_v_sync;
-output inDisplayArea;
+output vga_on;
 output [9:0] CounterX;
 output [8:0] CounterY;
 
-//////////////////////////////////////////////////
 reg [9:0] CounterX;
 reg [8:0] CounterY;
-wire CounterXmaxed = (CounterX==10'd767);
+wire x_count_max = (CounterX==10'd767);
 
 always @(posedge Clk)
-if(CounterXmaxed)
+if(x_count_max)
 	CounterX <= 0;
 else
 	CounterX <= CounterX + 1;
 
 always @(posedge Clk)
-if(CounterXmaxed) CounterY <= CounterY + 1;
+if(x_count_max) CounterY <= CounterY + 1;
 
 reg	vga_HS, vga_VS;
 always @(posedge Clk)
 begin
-	vga_HS <= (CounterX[9:4]==6'd45); // change this value to move the display horizontally was 45
+	vga_HS <= (CounterX[9:4]==6'd45); // change this value to move the display horizontally
 	vga_VS <= (CounterY==500); // change this value to move the display vertically
 end
 
-reg inDisplayArea;
+reg vga_on;
 always @(posedge Clk)
-if(inDisplayArea==0)
-	inDisplayArea <= (CounterXmaxed) && (CounterY<480);
+if(vga_on==0)
+	vga_on <= (x_count_max) && (CounterY<480);
 else
-	inDisplayArea <= !(CounterX==639);
+	vga_on <= !(CounterX==639);
 	
 assign vga_h_sync = ~vga_HS;
 assign vga_v_sync = ~vga_VS;

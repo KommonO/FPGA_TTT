@@ -115,7 +115,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1462580799" xil_pn:in_ck="6046277165770510747" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="8443422253917585171" xil_pn:start_ts="1462580783">
+    <transform xil_pn:end_ts="1462605340" xil_pn:in_ck="3100034647210232140" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="8443422253917585171" xil_pn:start_ts="1462605325">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -137,7 +137,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1462580808" xil_pn:in_ck="4156589837552812912" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="8688897813549668931" xil_pn:start_ts="1462580799">
+    <transform xil_pn:end_ts="1462605351" xil_pn:in_ck="4156589837552812912" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="8688897813549668931" xil_pn:start_ts="1462605342">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_ngo"/>
@@ -146,7 +146,7 @@
       <outfile xil_pn:name="vga_controller.ngd"/>
       <outfile xil_pn:name="vga_controller_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1462580816" xil_pn:in_ck="-7542691317504787000" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-5849673150125579957" xil_pn:start_ts="1462580808">
+    <transform xil_pn:end_ts="1462605358" xil_pn:in_ck="-7542691317504787000" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-5849673150125579957" xil_pn:start_ts="1462605351">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -160,7 +160,7 @@
       <outfile xil_pn:name="vga_controller_summary.xml"/>
       <outfile xil_pn:name="vga_controller_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1462580841" xil_pn:in_ck="-6914417935326727967" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1462580816">
+    <transform xil_pn:end_ts="1462605383" xil_pn:in_ck="-6914417935326727967" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1462605358">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -175,7 +175,7 @@
       <outfile xil_pn:name="vga_controller_pad.txt"/>
       <outfile xil_pn:name="vga_controller_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1462580857" xil_pn:in_ck="-5631260856313019452" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1462580841">
+    <transform xil_pn:end_ts="1462605397" xil_pn:in_ck="-5631260856313019452" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1462605383">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -188,21 +188,19 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1462563668" xil_pn:in_ck="-5631260856313032306" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="5582947192412673156" xil_pn:start_ts="1462563662">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-    </transform>
-    <transform xil_pn:end_ts="1462573119" xil_pn:in_ck="-5631260856313032306" xil_pn:name="TRAN_analyzeDesignUsingChipscope" xil_pn:prop_ck="8688897813549668931" xil_pn:start_ts="1462573119">
+    <transform xil_pn:end_ts="1462601611" xil_pn:in_ck="-5631260856313032306" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="5582947192412673156" xil_pn:start_ts="1462601610">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="InputChanged"/>
     </transform>
-    <transform xil_pn:end_ts="1462580841" xil_pn:in_ck="-7542691317504787132" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1462580836">
+    <transform xil_pn:end_ts="1462600534" xil_pn:in_ck="-5631260856313032306" xil_pn:name="TRAN_analyzeDesignUsingChipscope" xil_pn:prop_ck="8688897813549668931" xil_pn:start_ts="1462600534">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+    <transform xil_pn:end_ts="1462605383" xil_pn:in_ck="-7542691317504787132" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1462605378">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
