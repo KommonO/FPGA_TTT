@@ -33,7 +33,7 @@ parameter LINE_WIDTH_MAX = 3'd3;
 always @( clk or  clr or vga_on or Pixel_X or Pixel_Y) begin
    //test to make screen green
 	if(vga_on) begin
-		if((Pixel_X == 212) || (Pixel_X == 213) || (Pixel_X == 214) || (Pixel_X == 425)|| (Pixel_X == 426) || (Pixel_X == 427) ||(Pixel_Y == 132)|| (Pixel_Y == 133) || (Pixel_Y == 134) || (Pixel_Y == 265)||(Pixel_Y == 266)||(Pixel_Y == 267) ) begin
+		if((Pixel_X >= 212) && (Pixel_X <= 214) || (Pixel_X >= 425) &&(Pixel_X <= 427) ||(Pixel_Y >= 132) && (Pixel_Y <= 134) || (Pixel_Y >= 265)&&(Pixel_Y <= 267) ) begin
 		vga_red_reg <= 1'b0;
 		vga_blue_reg <= 1'b0;
 		vga_green_reg <= 1'b0;
