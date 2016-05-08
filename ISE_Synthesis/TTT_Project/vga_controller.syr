@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total CPU time to Xst completion: 0.25 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total CPU time to Xst completion: 0.25 secs
  
 --> WARNING:Xst:1583 - You are using an internal switch '-use_new_parser'.
 WARNING:Xst:3152 - You have chosen to run a version of XST which is not the default solution
@@ -150,8 +150,7 @@ Parsing module <vga_controller>.
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
-WARNING:HDLCompiler:1016 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" Line 41: Port RST_IN is not connected to this instance
-WARNING:HDLCompiler:1016 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" Line 64: Port ROTCTR_debounce is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" Line 44: Port RST_IN is not connected to this instance
 
 Elaborating module <vga_controller>.
 
@@ -174,74 +173,74 @@ Elaborating module <oneshot>.
 Elaborating module <vga_timer>.
 WARNING:HDLCompiler:413 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_timer.v" Line 17: Result of 11-bit expression is truncated to fit in 10-bit target.
 WARNING:HDLCompiler:413 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_timer.v" Line 20: Result of 10-bit expression is truncated to fit in 9-bit target.
-WARNING:HDLCompiler:1016 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 194: Port clk is not connected to this instance
-WARNING:HDLCompiler:1016 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 195: Port clk is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 375: Port clk is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 376: Port clk is not connected to this instance
 
 Elaborating module <ttt_logic>.
-WARNING:HDLCompiler:413 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 42: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 45: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:295 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 154: case condition never applies
+WARNING:HDLCompiler:295 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 178: case condition never applies
+WARNING:HDLCompiler:295 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 201: case condition never applies
+WARNING:HDLCompiler:295 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 225: case condition never applies
+WARNING:HDLCompiler:295 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 249: case condition never applies
+WARNING:HDLCompiler:295 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 273: case condition never applies
+WARNING:HDLCompiler:295 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 297: case condition never applies
+WARNING:HDLCompiler:295 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 321: case condition never applies
+WARNING:HDLCompiler:295 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 345: case condition never applies
 
 Elaborating module <turn_marker>.
 WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\turn_marker.v" Line 33: Signal <current_state> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 WARNING:HDLCompiler:1499 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\turn_marker.v" Line 21: Empty module <turn_marker> remains a black box.
 
 Elaborating module <square_status>.
-WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 86: Signal <rot_ctr> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 87: Signal <square_num> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 92: Signal <square_1_status> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 95: Signal <player_turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 100: Signal <player_turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 110: Signal <square_2_status> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 113: Signal <player_turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 118: Signal <player_turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 127: Signal <square_3_status> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 130: Signal <player_turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 135: Signal <player_turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 144: Signal <square_4_status> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 147: Signal <player_turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 152: Signal <player_turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 162: Signal <square_5_status> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 165: Signal <player_turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 170: Signal <player_turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 180: Signal <square_6_status> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 183: Signal <player_turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 188: Signal <player_turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 198: Signal <square_7_status> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 201: Signal <player_turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 206: Signal <player_turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 216: Signal <square_8_status> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 219: Signal <player_turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 224: Signal <player_turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 234: Signal <square_9_status> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 237: Signal <player_turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 242: Signal <player_turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:189 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 198: Size mismatch in connection of port <square_1_status>. Formal port size is 3-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 198: Assignment to square_1_status ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 199: Size mismatch in connection of port <square_2_status>. Formal port size is 3-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 199: Assignment to square_2_status ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 200: Size mismatch in connection of port <square_3_status>. Formal port size is 3-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 200: Assignment to square_3_status ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 201: Size mismatch in connection of port <square_4_status>. Formal port size is 3-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 201: Assignment to square_4_status ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 202: Size mismatch in connection of port <square_5_status>. Formal port size is 3-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 202: Assignment to square_5_status ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 203: Size mismatch in connection of port <square_6_status>. Formal port size is 3-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 203: Assignment to square_6_status ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 204: Size mismatch in connection of port <square_7_status>. Formal port size is 3-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 204: Assignment to square_7_status ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 205: Size mismatch in connection of port <square_8_status>. Formal port size is 3-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 205: Assignment to square_8_status ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 206: Size mismatch in connection of port <square_9_status>. Formal port size is 3-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 206: Assignment to square_9_status ignored, since the identifier is never used
-WARNING:HDLCompiler:552 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 194: Input port clk is not connected on this instance
-WARNING:HDLCompiler:552 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 195: Input port clk is not connected on this instance
+WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 96: Signal <player_turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 101: Signal <player_turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 116: Signal <square_2_status> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 120: Signal <player_turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 125: Signal <player_turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 140: Signal <square_3_status> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 144: Signal <player_turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 149: Signal <player_turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 164: Signal <square_4_status> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 168: Signal <player_turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 173: Signal <player_turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 188: Signal <square_5_status> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 192: Signal <player_turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 197: Signal <player_turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 212: Signal <square_6_status> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 216: Signal <player_turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 221: Signal <player_turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 236: Signal <square_7_status> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 240: Signal <player_turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 245: Signal <player_turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 260: Signal <square_8_status> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 264: Signal <player_turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 269: Signal <player_turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 284: Signal <square_9_status> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 288: Signal <player_turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 293: Signal <player_turn> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:189 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 381: Size mismatch in connection of port <square_1_status>. Formal port size is 3-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 382: Size mismatch in connection of port <square_2_status>. Formal port size is 3-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 383: Size mismatch in connection of port <square_3_status>. Formal port size is 3-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 384: Size mismatch in connection of port <square_4_status>. Formal port size is 3-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 385: Size mismatch in connection of port <square_5_status>. Formal port size is 3-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 386: Size mismatch in connection of port <square_6_status>. Formal port size is 3-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 387: Size mismatch in connection of port <square_7_status>. Formal port size is 3-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 388: Size mismatch in connection of port <square_8_status>. Formal port size is 3-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 389: Size mismatch in connection of port <square_9_status>. Formal port size is 3-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:552 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 375: Input port clk is not connected on this instance
+WARNING:HDLCompiler:552 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 376: Input port clk is not connected on this instance
 
 Elaborating module <rotary>.
 WARNING:HDLCompiler:413 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\rotary.v" Line 82: Result of 7-bit expression is truncated to fit in 6-bit target.
 WARNING:HDLCompiler:413 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\rotary.v" Line 84: Result of 32-bit expression is truncated to fit in 6-bit target.
-WARNING:HDLCompiler:552 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" Line 41: Input port RST_IN is not connected on this instance
-WARNING:HDLCompiler:552 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" Line 64: Input port ROTCTR_debounce is not connected on this instance
-WARNING:Xst:2972 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" line 194. All outputs of instance <turn_marker> of block <turn_marker> are unconnected in block <ttt_logic>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" line 195. All outputs of instance <square_status> of block <square_status> are unconnected in block <ttt_logic>. Underlying logic will be removed.
+WARNING:HDLCompiler:1127 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" Line 80: Assignment to ROTCTR_oneshot ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" Line 67: Net <clr> does not have a driver.
+WARNING:HDLCompiler:552 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" Line 44: Input port RST_IN is not connected on this instance
+WARNING:Xst:2972 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" line 375. All outputs of instance <turn_marker> of block <turn_marker> are unconnected in block <ttt_logic>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" line 80. All outputs of instance <oneshot_rotctr> of block <oneshot> are unconnected in block <vga_controller>. Underlying logic will be removed.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -249,12 +248,13 @@ WARNING:Xst:2972 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" line 195.
 
 Synthesizing Unit <vga_controller>.
     Related source file is "C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v".
-WARNING:Xst:2898 - Port 'ROTCTR_debounce', unconnected in block instance 'ttt_logic', is tied to GND.
 WARNING:Xst:647 - Input <SW0> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <SW1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <SW2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <SW3> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" line 41: Output port <LOCKED_OUT> of the instance <clock_divider> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" line 44: Output port <LOCKED_OUT> of the instance <clock_divider> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" line 80: Output port <oneshot_out> of the instance <oneshot_rotctr> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <clr> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
 Unit <vga_controller> synthesized.
@@ -303,6 +303,8 @@ Unit <vga_timer> synthesized.
 
 Synthesizing Unit <ttt_logic>.
     Related source file is "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v".
+        PLAYER_1 = 1'b0
+        Player_2 = 1'b1
         NO_SQUARE = 4'b0000
         SQUARE_1 = 4'b0001
         SQUARE_2 = 4'b0010
@@ -317,26 +319,15 @@ Synthesizing Unit <ttt_logic>.
         LINE_WIDTH_MAX = 3'b011
 WARNING:Xst:2898 - Port 'clk', unconnected in block instance 'turn_marker', is tied to GND.
 WARNING:Xst:2898 - Port 'start', unconnected in block instance 'turn_marker', is tied to GND.
-WARNING:Xst:2898 - Port 'square_num', unconnected in block instance 'square_status', is tied to GND.
 WARNING:Xst:2898 - Port 'clk', unconnected in block instance 'square_status', is tied to GND.
 WARNING:Xst:2898 - Port 'clr', unconnected in block instance 'square_status', is tied to GND.
-WARNING:Xst:2898 - Port 'player_turn', unconnected in block instance 'square_status', is tied to GND.
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" line 194: Output port <player_turn> of the instance <turn_marker> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" line 194: Output port <player1_marker> of the instance <turn_marker> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" line 194: Output port <player2_marker> of the instance <turn_marker> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" line 195: Output port <square_1_status> of the instance <square_status> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" line 195: Output port <square_2_status> of the instance <square_status> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" line 195: Output port <square_3_status> of the instance <square_status> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" line 195: Output port <square_4_status> of the instance <square_status> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" line 195: Output port <square_5_status> of the instance <square_status> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" line 195: Output port <square_6_status> of the instance <square_status> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" line 195: Output port <square_7_status> of the instance <square_status> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" line 195: Output port <square_8_status> of the instance <square_status> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" line 195: Output port <square_9_status> of the instance <square_status> is unconnected or connected to loadless signal.
-    Found 11-bit adder for signal <n0082> created at line 162.
-    Found 10-bit adder for signal <n0086> created at line 162.
+INFO:Xst:3210 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" line 375: Output port <player_turn> of the instance <turn_marker> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" line 375: Output port <player1_marker> of the instance <turn_marker> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" line 375: Output port <player2_marker> of the instance <turn_marker> is unconnected or connected to loadless signal.
+    Found 11-bit adder for signal <n0167> created at line 128.
+    Found 10-bit adder for signal <n0171> created at line 128.
 WARNING:Xst:737 - Found 1-bit latch for signal <cursor_start_x<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <cursor_start_x<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <cursor_start_x<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -356,18 +347,70 @@ WARNING:Xst:737 - Found 1-bit latch for signal <cursor_start_y<3>>. Latches may 
 WARNING:Xst:737 - Found 1-bit latch for signal <cursor_start_y<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <cursor_start_y<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <cursor_start_y<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 10-bit comparator lessequal for signal <n0035> created at line 156
-    Found 9-bit comparator lessequal for signal <n0041> created at line 156
-    Found 10-bit comparator lessequal for signal <n0048> created at line 162
-    Found 11-bit comparator lessequal for signal <n0051> created at line 162
-    Found 9-bit comparator lessequal for signal <n0054> created at line 162
-    Found 10-bit comparator lessequal for signal <n0057> created at line 162
+    Found 10-bit comparator lessequal for signal <n0035> created at line 122
+    Found 9-bit comparator lessequal for signal <n0041> created at line 122
+    Found 10-bit comparator lessequal for signal <n0048> created at line 128
+    Found 11-bit comparator lessequal for signal <n0051> created at line 128
+    Found 9-bit comparator lessequal for signal <n0054> created at line 128
+    Found 10-bit comparator lessequal for signal <n0057> created at line 128
+    Found 10-bit comparator lessequal for signal <n0063> created at line 141
+    Found 10-bit comparator lessequal for signal <n0065> created at line 141
+    Found 9-bit comparator lessequal for signal <n0068> created at line 141
+    Found 9-bit comparator lessequal for signal <n0070> created at line 141
+    Found 10-bit comparator lessequal for signal <n0077> created at line 165
+    Found 10-bit comparator lessequal for signal <n0079> created at line 165
+    Found 10-bit comparator lessequal for signal <n0087> created at line 188
+    Found 10-bit comparator lessequal for signal <n0089> created at line 188
+    Found 9-bit comparator lessequal for signal <n0097> created at line 212
+    Found 9-bit comparator lessequal for signal <n0099> created at line 212
+    Found 9-bit comparator lessequal for signal <n0117> created at line 284
+    Found 9-bit comparator lessequal for signal <n0119> created at line 284
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  19 Latch(s).
-	inferred   6 Comparator(s).
-	inferred   2 Multiplexer(s).
+	inferred  18 Comparator(s).
+	inferred  21 Multiplexer(s).
 Unit <ttt_logic> synthesized.
+
+Synthesizing Unit <square_status>.
+    Related source file is "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v".
+        SQUARE1_SELECTED = 8'b00000001
+        SQUARE2_SELECTED = 8'b00000010
+        SQUARE3_SELECTED = 8'b00000011
+        SQUARE4_SELECTED = 8'b00000100
+        SQUARE5_SELECTED = 8'b00000101
+        SQUARE6_SELECTED = 8'b00000110
+        SQUARE7_SELECTED = 8'b00000111
+        SQUARE8_SELECTED = 8'b00001000
+        SQUARE9_SELECTED = 8'b00001001
+        BLANK = 2'b00
+        MARKER_O = 2'b01
+        MARKER_X = 2'b10
+        PLAYER_1 = 1'b0
+        PLAYER_2 = 1'b1
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:737 - Found 1-bit latch for signal <square_1_status_reg<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <square_1_status_reg<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <square_2_status_reg<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <square_2_status_reg<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <square_3_status_reg<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <square_3_status_reg<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <square_4_status_reg<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <square_4_status_reg<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <square_5_status_reg<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <square_5_status_reg<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <square_6_status_reg<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <square_6_status_reg<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <square_7_status_reg<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <square_7_status_reg<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <square_8_status_reg<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <square_8_status_reg<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <square_9_status_reg<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <square_9_status_reg<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred  18 Latch(s).
+	inferred   9 Multiplexer(s).
+Unit <square_status> synthesized.
 
 Synthesizing Unit <rotary>.
     Related source file is "C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\rotary.v".
@@ -414,15 +457,15 @@ Macro Statistics
  15-bit register                                       : 4
  6-bit register                                        : 1
  9-bit register                                        : 1
-# Latches                                              : 19
- 1-bit latch                                           : 19
-# Comparators                                          : 7
- 10-bit comparator lessequal                           : 3
+# Latches                                              : 37
+ 1-bit latch                                           : 37
+# Comparators                                          : 19
+ 10-bit comparator lessequal                           : 9
  11-bit comparator lessequal                           : 1
  9-bit comparator greater                              : 1
- 9-bit comparator lessequal                            : 2
-# Multiplexers                                         : 13
- 1-bit 2-to-1 multiplexer                              : 7
+ 9-bit comparator lessequal                            : 8
+# Multiplexers                                         : 41
+ 1-bit 2-to-1 multiplexer                              : 35
  1-bit 4-to-1 multiplexer                              : 2
  15-bit 2-to-1 multiplexer                             : 4
 # FSMs                                                 : 1
@@ -437,11 +480,16 @@ Reading core <ipcore_dir/ila.ngc>.
 Reading core <ipcore_dir/icon.ngc>.
 Loading core <ila> for timing and area information for instance <ila>.
 Loading core <icon> for timing and area information for instance <icon>.
-WARNING:Xst:1290 - Hierarchical block <debounce_rst> is unconnected in block <vga_controller>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <oneshot> is unconnected in block <vga_controller>.
-   It will be removed from the design.
-INFO:Xst:2261 - The FF/Latch <cursor_start_x_9> in Unit <ttt_logic> is equivalent to the following 8 FFs/Latches, which will be removed : <cursor_start_x_8> <cursor_start_x_4> <cursor_start_x_0> <cursor_start_x_1> <cursor_start_y_8> <cursor_start_y_4> <cursor_start_y_1> <cursor_start_y_0> 
+INFO:Xst:2261 - The FF/Latch <cursor_start_x_9> in Unit <ttt_logic> is equivalent to the following 8 FFs/Latches, which will be removed : <cursor_start_x_8> <cursor_start_x_4> <cursor_start_x_1> <cursor_start_x_0> <cursor_start_y_8> <cursor_start_y_4> <cursor_start_y_1> <cursor_start_y_0> 
+WARNING:Xst:1710 - FF/Latch <square_1_status_reg_1> (without init value) has a constant value of 0 in block <square_status>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <square_2_status_reg_2> (without init value) has a constant value of 0 in block <square_status>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <square_4_status_reg_2> (without init value) has a constant value of 0 in block <square_status>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <square_3_status_reg_2> (without init value) has a constant value of 0 in block <square_status>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <square_5_status_reg_2> (without init value) has a constant value of 0 in block <square_status>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <square_6_status_reg_2> (without init value) has a constant value of 0 in block <square_status>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <square_7_status_reg_2> (without init value) has a constant value of 0 in block <square_status>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <square_8_status_reg_2> (without init value) has a constant value of 0 in block <square_status>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <square_9_status_reg_2> (without init value) has a constant value of 0 in block <square_status>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <cursor_start_x_9> (without init value) has a constant value of 0 in block <ttt_logic>. This FF/Latch will be trimmed during the optimization process.
 
 Synthesizing (advanced) Unit <debounce>.
@@ -471,13 +519,13 @@ Macro Statistics
  9-bit up counter                                      : 1
 # Registers                                            : 12
  Flip-Flops                                            : 12
-# Comparators                                          : 7
- 10-bit comparator lessequal                           : 3
+# Comparators                                          : 19
+ 10-bit comparator lessequal                           : 9
  11-bit comparator lessequal                           : 1
  9-bit comparator greater                              : 1
- 9-bit comparator lessequal                            : 2
-# Multiplexers                                         : 8
- 1-bit 2-to-1 multiplexer                              : 6
+ 9-bit comparator lessequal                            : 8
+# Multiplexers                                         : 36
+ 1-bit 2-to-1 multiplexer                              : 34
  1-bit 4-to-1 multiplexer                              : 2
 # FSMs                                                 : 1
 
@@ -489,15 +537,24 @@ Macro Statistics
 WARNING:Xst:1710 - FF/Latch <cursor_start_x_9> (without init value) has a constant value of 0 in block <ttt_logic>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cursor_start_x_8> (without init value) has a constant value of 0 in block <ttt_logic>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cursor_start_x_4> (without init value) has a constant value of 0 in block <ttt_logic>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cursor_start_x_0> (without init value) has a constant value of 0 in block <ttt_logic>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cursor_start_x_1> (without init value) has a constant value of 0 in block <ttt_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cursor_start_x_0> (without init value) has a constant value of 0 in block <ttt_logic>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cursor_start_y_8> (without init value) has a constant value of 0 in block <ttt_logic>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cursor_start_y_4> (without init value) has a constant value of 0 in block <ttt_logic>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cursor_start_y_1> (without init value) has a constant value of 0 in block <ttt_logic>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cursor_start_y_0> (without init value) has a constant value of 0 in block <ttt_logic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <square_1_status_reg_1> (without init value) has a constant value of 0 in block <square_status>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <square_2_status_reg_2> (without init value) has a constant value of 0 in block <square_status>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <square_4_status_reg_2> (without init value) has a constant value of 0 in block <square_status>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <square_3_status_reg_2> (without init value) has a constant value of 0 in block <square_status>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <square_5_status_reg_2> (without init value) has a constant value of 0 in block <square_status>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <square_6_status_reg_2> (without init value) has a constant value of 0 in block <square_status>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <square_7_status_reg_2> (without init value) has a constant value of 0 in block <square_status>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <square_8_status_reg_2> (without init value) has a constant value of 0 in block <square_status>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <square_9_status_reg_2> (without init value) has a constant value of 0 in block <square_status>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <cursor_start_y_5> in Unit <ttt_logic> is equivalent to the following FF/Latch, which will be removed : <cursor_start_y_2> 
 INFO:Xst:2261 - The FF/Latch <cursor_start_x_5> in Unit <ttt_logic> is equivalent to the following FF/Latch, which will be removed : <cursor_start_x_2> 
 INFO:Xst:2261 - The FF/Latch <cursor_start_x_7> in Unit <ttt_logic> is equivalent to the following FF/Latch, which will be removed : <cursor_start_x_3> 
-INFO:Xst:2261 - The FF/Latch <cursor_start_y_5> in Unit <ttt_logic> is equivalent to the following FF/Latch, which will be removed : <cursor_start_y_2> 
 Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <rotary/FSM_0> on signal <current_state[1:2]> with user encoding.
 -------------------
@@ -508,37 +565,21 @@ Optimizing FSM <rotary/FSM_0> on signal <current_state[1:2]> with user encoding.
  10    | 10
  00    | 00
 -------------------
+INFO:Xst:2261 - The FF/Latch <cursor_start_y_7> in Unit <ttt_logic> is equivalent to the following FF/Latch, which will be removed : <cursor_start_y_3> 
 
 Optimizing unit <vga_controller> ...
 
 Optimizing unit <vga_timer> ...
 
 Optimizing unit <ttt_logic> ...
-INFO:Xst:2261 - The FF/Latch <cursor_start_y_7> in Unit <ttt_logic> is equivalent to the following FF/Latch, which will be removed : <cursor_start_y_3> 
+
+Optimizing unit <square_status> ...
 
 Optimizing unit <rotary> ...
-WARNING:Xst:2677 - Node <debounce_rst/sync_out> of sequential type is unconnected in block <vga_controller>.
-WARNING:Xst:2677 - Node <debounce_rst/q_1> of sequential type is unconnected in block <vga_controller>.
-WARNING:Xst:2677 - Node <oneshot/oneshot_q> of sequential type is unconnected in block <vga_controller>.
-WARNING:Xst:2677 - Node <debounce_rst/count_0> of sequential type is unconnected in block <vga_controller>.
-WARNING:Xst:2677 - Node <debounce_rst/count_1> of sequential type is unconnected in block <vga_controller>.
-WARNING:Xst:2677 - Node <debounce_rst/count_2> of sequential type is unconnected in block <vga_controller>.
-WARNING:Xst:2677 - Node <debounce_rst/count_3> of sequential type is unconnected in block <vga_controller>.
-WARNING:Xst:2677 - Node <debounce_rst/count_4> of sequential type is unconnected in block <vga_controller>.
-WARNING:Xst:2677 - Node <debounce_rst/count_5> of sequential type is unconnected in block <vga_controller>.
-WARNING:Xst:2677 - Node <debounce_rst/count_6> of sequential type is unconnected in block <vga_controller>.
-WARNING:Xst:2677 - Node <debounce_rst/count_7> of sequential type is unconnected in block <vga_controller>.
-WARNING:Xst:2677 - Node <debounce_rst/count_8> of sequential type is unconnected in block <vga_controller>.
-WARNING:Xst:2677 - Node <debounce_rst/count_9> of sequential type is unconnected in block <vga_controller>.
-WARNING:Xst:2677 - Node <debounce_rst/count_10> of sequential type is unconnected in block <vga_controller>.
-WARNING:Xst:2677 - Node <debounce_rst/count_11> of sequential type is unconnected in block <vga_controller>.
-WARNING:Xst:2677 - Node <debounce_rst/count_12> of sequential type is unconnected in block <vga_controller>.
-WARNING:Xst:2677 - Node <debounce_rst/count_13> of sequential type is unconnected in block <vga_controller>.
-WARNING:Xst:2677 - Node <debounce_rst/count_14> of sequential type is unconnected in block <vga_controller>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block vga_controller, actual ratio is 7.
+Found area constraint ratio of 100 (+ 5) on block vga_controller, actual ratio is 9.
 
 Final Macro Processing ...
 
@@ -546,8 +587,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 81
- Flip-Flops                                            : 81
+# Registers                                            : 99
+ Flip-Flops                                            : 99
 
 =========================================================================
 
@@ -570,27 +611,27 @@ Top Level Output File Name         : vga_controller.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 780
+# BELS                             : 902
 #      GND                         : 3
-#      INV                         : 19
-#      LUT1                        : 119
-#      LUT2                        : 102
+#      INV                         : 20
+#      LUT1                        : 133
+#      LUT2                        : 119
 #      LUT2_L                      : 1
-#      LUT3                        : 56
+#      LUT3                        : 78
 #      LUT3_L                      : 1
-#      LUT4                        : 145
+#      LUT4                        : 179
 #      LUT4_L                      : 2
 #      MULT_AND                    : 4
-#      MUXCY                       : 90
+#      MUXCY                       : 104
 #      MUXCY_L                     : 67
-#      MUXF5                       : 35
+#      MUXF5                       : 40
 #      MUXF6                       : 9
 #      VCC                         : 3
-#      XORCY                       : 124
-# FlipFlops/Latches                : 317
-#      FD                          : 11
-#      FDC                         : 49
-#      FDCE                        : 33
+#      XORCY                       : 139
+# FlipFlops/Latches                : 344
+#      FD                          : 12
+#      FDC                         : 65
+#      FDCE                        : 34
 #      FDE                         : 44
 #      FDP                         : 11
 #      FDPE                        : 10
@@ -599,7 +640,7 @@ Primitive and Black Box Usage:
 #      FDRS                        : 4
 #      FDS                         : 10
 #      LDC                         : 1
-#      LDE                         : 6
+#      LDE                         : 15
 # RAMS                             : 5
 #      RAMB16_S1_S2                : 5
 # Shift Registers                  : 61
@@ -608,8 +649,8 @@ Primitive and Black Box Usage:
 #      SRLC16E                     : 52
 # Clock Buffers                    : 4
 #      BUFG                        : 4
-# IO Buffers                       : 17
-#      IBUF                        : 3
+# IO Buffers                       : 18
+#      IBUF                        : 4
 #      IBUFG                       : 1
 #      OBUF                        : 13
 # DCMs                             : 1
@@ -622,13 +663,13 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-4 
 
- Number of Slices:                      359  out of   4656     7%  
- Number of Slice Flip Flops:            317  out of   9312     3%  
- Number of 4 input LUTs:                506  out of   9312     5%  
-    Number used as logic:               445
+ Number of Slices:                      412  out of   4656     8%  
+ Number of Slice Flip Flops:            344  out of   9312     3%  
+ Number of 4 input LUTs:                594  out of   9312     6%  
+    Number used as logic:               533
     Number used as Shift registers:      61
  Number of IOs:                          22
- Number of bonded IOBs:                  17  out of    232     7%  
+ Number of bonded IOBs:                  18  out of    232     7%  
  Number of BRAMs:                         5  out of     20    25%  
  Number of GCLKs:                         4  out of     24    16%  
  Number of DCMs:                          1  out of      4    25%  
@@ -651,17 +692,18 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
-----------------------------------------------------------------------+------------------------------------------------+-------+
-Clock Signal                                                          | Clock buffer(FF name)                          | Load  |
-----------------------------------------------------------------------+------------------------------------------------+-------+
-CCLK                                                                  | DCM_SP:CLK0                                    | 218   |
-CCLK                                                                  | DCM_SP:CLKDV                                   | 22    |
-vga_timer/vga_on                                                      | NONE(ttt_logic/cursor_start_y_5)               | 6     |
-icon/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1                                 | BUFG                                           | 140   |
-icon/CONTROL0<13>(icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_LCE:O)| NONE(*)(ila/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC)| 1     |
-icon/U0/iUPDATE_OUT                                                   | NONE(icon/U0/U_ICON/U_iDATA_CMD)               | 1     |
-----------------------------------------------------------------------+------------------------------------------------+-------+
-(*) This 1 clock signal(s) are generated by combinatorial logic,
+----------------------------------------------------------------------+-------------------------------------------------------+-------+
+Clock Signal                                                          | Clock buffer(FF name)                                 | Load  |
+----------------------------------------------------------------------+-------------------------------------------------------+-------+
+CCLK                                                                  | DCM_SP:CLK0                                           | 218   |
+CCLK                                                                  | DCM_SP:CLKDV                                          | 40    |
+vga_timer/vga_on                                                      | NONE(ttt_logic/cursor_start_y_5)                      | 6     |
+enter(oneshot/oneshot_out1:O)                                         | NONE(*)(ttt_logic/square_status/square_9_status_reg_0)| 9     |
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1                                 | BUFG                                                  | 140   |
+icon/CONTROL0<13>(icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_LCE:O)| NONE(*)(ila/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC)       | 1     |
+icon/U0/iUPDATE_OUT                                                   | NONE(icon/U0/U_ICON/U_iDATA_CMD)                      | 1     |
+----------------------------------------------------------------------+-------------------------------------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -671,13 +713,13 @@ Asynchronous Control Signals Information:
 -------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+-------+
 Control Signal                                                                                   | Buffer(FF name)                                                                                                          | Load  |
 -------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+-------+
-VGA_RED_OBUF(XST_GND:G)                                                                          | NONE(debounce_ROTB/count_4)                                                                                              | 51    |
-icon/U0/U_ICON/U_CMD/iSEL_n(icon/U0/U_ICON/U_CMD/U_SEL_n:O)                                      | NONE(icon/U0/U_ICON/U_CMD/G_TARGET[10].I_NE0.U_TARGET)                                                                   | 10    |
-ila/N0(ila/XST_GND:G)                                                                            | NONE(ila/U0/I_TQ0.G_TW[0].U_TQ)                                                                                          | 9     |
-debounce_ROTCTR/sync_out(debounce_ROTCTR/sync_out:Q)                                             | NONE(rotary/quad_count_1)                                                                                                | 8     |
-icon/CONTROL0<20>(icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[0].U_HCE:O)                           | NONE(ila/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GAND.U_match/I_SRL16.U_GAND_SRL16/I_YES_IREG.F_TW[6].U_IREG)| 8     |
-ila/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/iCLR(ila/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_CLEAR:O)        | NONE(ila/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_DOUT1)                                                                       | 4     |
-ila/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/iCLR(ila/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_CLEAR:O)      | NONE(ila/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_DOUT1)                                                                      | 4     |
+clr(XST_GND:G)                                                                                   | NONE(debounce_ROTB/count_5)                                                                                              | 68    |
+icon/U0/U_ICON/U_CMD/iSEL_n(icon/U0/U_ICON/U_CMD/U_SEL_n:O)                                      | NONE(icon/U0/U_ICON/U_CMD/G_TARGET[8].I_NE0.U_TARGET)                                                                    | 10    |
+ila/N0(ila/XST_GND:G)                                                                            | NONE(ila/U0/I_TQ0.G_TW[6].U_TQ)                                                                                          | 9     |
+debounce_ROTCTR/sync_out(debounce_ROTCTR/sync_out:Q)                                             | NONE(rotary/quad_count_5)                                                                                                | 8     |
+icon/CONTROL0<20>(icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[0].U_HCE:O)                           | NONE(ila/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GAND.U_match/I_SRL16.U_GAND_SRL16/I_YES_IREG.F_TW[0].U_IREG)| 8     |
+ila/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/iCLR(ila/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_CLEAR:O)        | NONE(ila/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_RFDRE)                                                                       | 4     |
+ila/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/iCLR(ila/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_CLEAR:O)      | NONE(ila/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_DOUT0)                                                                      | 4     |
 ila/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/iCLR(ila/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_CLEAR:O)              | NONE(ila/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_DOUT1)                                                                          | 4     |
 ila/U0/I_NO_D.U_ILA/iARM(ila/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_GEN_DELAY[3].U_FD:Q)             | NONE(ila/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_FDCE)                                                                            | 2     |
 icon/CONTROL0<13>(icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_LCE:O)                           | NONE(ila/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_FDPE)                                                                            | 1     |
@@ -692,7 +734,7 @@ Speed Grade: -4
 
    Minimum period: 9.302ns (Maximum Frequency: 107.501MHz)
    Minimum input arrival time before clock: 8.201ns
-   Maximum output required time after clock: 11.052ns
+   Maximum output required time after clock: 16.170ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -702,7 +744,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CCLK'
   Clock period: 5.552ns (frequency: 180.115MHz)
-  Total number of paths / destination ports: 2647 / 479
+  Total number of paths / destination ports: 3009 / 497
 -------------------------------------------------------------------------
 Delay:               5.552ns (Levels of Logic = 4)
   Source:            rotary/current_state_FSM_FFd2 (FF)
@@ -716,13 +758,35 @@ Delay:               5.552ns (Levels of Logic = 4)
     ----------------------------------------  ------------
      FDP:C->Q              4   0.591   0.762  rotary/current_state_FSM_FFd2 (rotary/current_state_FSM_FFd2)
      LUT4:I0->O            8   0.704   0.932  rotary/Mmux_increment_2_f5 (rotary/increment)
-     LUT4:I0->O            1   0.704   0.000  rotary/Mcount_quad_count_cy<3>1_F (N21)
+     LUT4:I0->O            1   0.704   0.000  rotary/Mcount_quad_count_cy<3>1_F (N43)
      MUXF5:I0->O           2   0.321   0.526  rotary/Mcount_quad_count_cy<3>1 (rotary/Mcount_quad_count_cy<3>)
      LUT4:I1->O            1   0.704   0.000  rotary/Mcount_quad_count_xor<5>11 (rotary/Result<5>)
      FDCE:D                    0.308          rotary/quad_count_5
     ----------------------------------------
     Total                      5.552ns (3.332ns logic, 2.220ns route)
                                        (60.0% logic, 40.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'enter'
+  Clock period: 3.061ns (frequency: 326.691MHz)
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Delay:               3.061ns (Levels of Logic = 1)
+  Source:            ttt_logic/square_status/square_8_status_reg_0 (LATCH)
+  Destination:       ttt_logic/square_status/square_8_status_reg_0 (LATCH)
+  Source Clock:      enter falling
+  Destination Clock: enter falling
+
+  Data Path: ttt_logic/square_status/square_8_status_reg_0 to ttt_logic/square_status/square_8_status_reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.676   0.706  ttt_logic/square_status/square_8_status_reg_0 (ttt_logic/square_status/square_8_status_reg_0)
+     LUT3:I0->O            1   0.704   0.420  ttt_logic/square_status/Mmux__n019711 (ttt_logic/square_status/_n0197)
+     LDE:GE                    0.555          ttt_logic/square_status/square_8_status_reg_0
+    ----------------------------------------
+    Total                      3.061ns (1.935ns logic, 1.126ns route)
+                                       (63.2% logic, 36.8% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'icon/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1'
@@ -775,7 +839,7 @@ Delay:               2.554ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CCLK'
-  Total number of paths / destination ports: 3 / 3
+  Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
 Offset:              1.946ns (Levels of Logic = 1)
   Source:            ROTCTR (PAD)
@@ -819,52 +883,87 @@ Offset:              8.201ns (Levels of Logic = 5)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CCLK'
-  Total number of paths / destination ports: 174 / 8
+  Total number of paths / destination ports: 693 / 8
 -------------------------------------------------------------------------
-Offset:              11.002ns (Levels of Logic = 6)
-  Source:            vga_timer/CounterX_6 (FF)
-  Destination:       VGA_GREEN (PAD)
+Offset:              16.170ns (Levels of Logic = 12)
+  Source:            vga_timer/CounterX_0 (FF)
+  Destination:       VGA_BLUE (PAD)
   Source Clock:      CCLK rising 0.5X
 
-  Data Path: vga_timer/CounterX_6 to VGA_GREEN
+  Data Path: vga_timer/CounterX_0 to VGA_BLUE
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              8   0.591   0.932  vga_timer/CounterX_6 (vga_timer/CounterX_6)
-     LUT2:I0->O            1   0.704   0.595  ttt_logic/Mmux_vga_blue_reg189 (ttt_logic/Mmux_vga_blue_reg189)
-     LUT4:I0->O            1   0.704   0.595  ttt_logic/Mmux_vga_blue_reg1117 (ttt_logic/Mmux_vga_blue_reg1117)
-     LUT3:I0->O            1   0.704   0.455  ttt_logic/Mmux_vga_blue_reg1158 (ttt_logic/Mmux_vga_blue_reg1158)
-     LUT3:I2->O            1   0.704   0.595  ttt_logic/Mmux_vga_blue_reg1180 (ttt_logic/Mmux_vga_blue_reg1180)
-     LUT3:I0->O            2   0.704   0.447  ttt_logic/Mmux_vga_blue_reg1205 (VGA_BLUE_OBUF)
-     OBUF:I->O                 3.272          VGA_GREEN_OBUF (VGA_GREEN)
+     FDR:C->Q              6   0.591   0.844  vga_timer/CounterX_0 (vga_timer/CounterX_0)
+     LUT2:I0->O            4   0.704   0.622  ttt_logic/GND_11_o_Pixel_X[9]_LessThan_56_o31 (ttt_logic/GND_11_o_Pixel_X[9]_LessThan_56_o3)
+     LUT4:I2->O            1   0.704   0.455  ttt_logic/Pixel_X[9]_Pixel_Y[8]_OR_74_o1101 (ttt_logic/Pixel_X[9]_Pixel_Y[8]_OR_74_o1101)
+     LUT4:I2->O            1   0.704   0.455  ttt_logic/Pixel_X[9]_Pixel_Y[8]_OR_74_o1130 (ttt_logic/Pixel_X[9]_Pixel_Y[8]_OR_74_o1130)
+     LUT4:I2->O            1   0.704   0.595  ttt_logic/Pixel_X[9]_Pixel_Y[8]_OR_74_o1203_SW0 (N35)
+     LUT4:I0->O            4   0.704   0.666  ttt_logic/Pixel_X[9]_Pixel_Y[8]_OR_74_o1203 (ttt_logic/Pixel_X[9]_Pixel_Y[8]_OR_74_o1203)
+     LUT3:I1->O            1   0.704   0.000  ttt_logic/Mmux_vga_blue_reg430_SW01 (ttt_logic/Mmux_vga_blue_reg430_SW0)
+     MUXF5:I1->O           1   0.321   0.424  ttt_logic/Mmux_vga_blue_reg430_SW0_f5 (ttt_logic/Mmux_vga_blue_reg430_SW0_f5)
+     LUT4:I3->O            1   0.704   0.424  ttt_logic/Mmux_vga_blue_reg430 (ttt_logic/Mmux_vga_blue_reg430)
+     LUT4:I3->O            1   0.704   0.424  ttt_logic/Mmux_vga_blue_reg456 (ttt_logic/Mmux_vga_blue_reg456)
+     LUT4:I3->O            1   0.704   0.000  ttt_logic/Mmux_vga_blue_reg42451 (ttt_logic/Mmux_vga_blue_reg4245)
+     MUXF5:I1->O           1   0.321   0.420  ttt_logic/Mmux_vga_blue_reg4245_f5 (VGA_BLUE_OBUF)
+     OBUF:I->O                 3.272          VGA_BLUE_OBUF (VGA_BLUE)
     ----------------------------------------
-    Total                     11.002ns (7.383ns logic, 3.619ns route)
-                                       (67.1% logic, 32.9% route)
+    Total                     16.170ns (10.841ns logic, 5.329ns route)
+                                       (67.0% logic, 33.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'vga_timer/vga_on'
-  Total number of paths / destination ports: 132 / 2
+  Total number of paths / destination ports: 264 / 2
 -------------------------------------------------------------------------
-Offset:              11.052ns (Levels of Logic = 7)
+Offset:              15.342ns (Levels of Logic = 12)
   Source:            ttt_logic/cursor_start_x_5 (LATCH)
-  Destination:       VGA_GREEN (PAD)
+  Destination:       VGA_BLUE (PAD)
   Source Clock:      vga_timer/vga_on falling
 
-  Data Path: ttt_logic/cursor_start_x_5 to VGA_GREEN
+  Data Path: ttt_logic/cursor_start_x_5 to VGA_BLUE
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LDE:G->Q             13   0.676   1.158  ttt_logic/cursor_start_x_5 (ttt_logic/cursor_start_x_5)
-     LUT2:I0->O            1   0.704   0.420  ttt_logic/Madd_n0082_cy<6>1 (ttt_logic/Madd_n0082_cy<6>)
-     MULT_AND:I1->LO       0   0.741   0.000  ttt_logic/Madd_n0082_cy<7>_mand (ttt_logic/Madd_n0082_cy<7>_mand1)
+     LDE:G->Q             12   0.676   1.040  ttt_logic/cursor_start_x_5 (ttt_logic/cursor_start_x_5)
+     LUT2:I1->O            2   0.704   0.447  ttt_logic/Madd_n0167_cy<6>11 (ttt_logic/Madd_n0167_cy<6>)
+     MULT_AND:I1->LO       0   0.741   0.000  ttt_logic/Madd_n0167_cy<7>_mand (ttt_logic/Madd_n0167_cy<7>_mand1)
      MUXCY:DI->O           1   0.888   0.000  ttt_logic/Mcompar_GND_11_o_BUS_0001_LessThan_44_o_cy<7> (ttt_logic/Mcompar_GND_11_o_BUS_0001_LessThan_44_o_cy<7>)
-     MUXCY:CI->O           1   0.459   0.424  ttt_logic/Mcompar_GND_11_o_BUS_0001_LessThan_44_o_cy<8> (ttt_logic/GND_11_o_BUS_0001_LessThan_44_o)
-     LUT4:I3->O            1   0.704   0.455  ttt_logic/Mmux_vga_blue_reg1196 (ttt_logic/Mmux_vga_blue_reg1196)
-     LUT3:I2->O            2   0.704   0.447  ttt_logic/Mmux_vga_blue_reg1205 (VGA_BLUE_OBUF)
-     OBUF:I->O                 3.272          VGA_GREEN_OBUF (VGA_GREEN)
+     MUXCY:CI->O           1   0.459   0.595  ttt_logic/Mcompar_GND_11_o_BUS_0001_LessThan_44_o_cy<8> (ttt_logic/GND_11_o_BUS_0001_LessThan_44_o)
+     LUT4:I0->O            4   0.704   0.666  ttt_logic/Pixel_X[9]_Pixel_Y[8]_OR_74_o1218 (ttt_logic/Pixel_X[9]_Pixel_Y[8]_OR_74_o1218)
+     LUT4:I1->O            1   0.704   0.000  ttt_logic/Mmux_vga_blue_reg430_SW02 (ttt_logic/Mmux_vga_blue_reg430_SW01)
+     MUXF5:I0->O           1   0.321   0.424  ttt_logic/Mmux_vga_blue_reg430_SW0_f5 (ttt_logic/Mmux_vga_blue_reg430_SW0_f5)
+     LUT4:I3->O            1   0.704   0.424  ttt_logic/Mmux_vga_blue_reg430 (ttt_logic/Mmux_vga_blue_reg430)
+     LUT4:I3->O            1   0.704   0.424  ttt_logic/Mmux_vga_blue_reg456 (ttt_logic/Mmux_vga_blue_reg456)
+     LUT4:I3->O            1   0.704   0.000  ttt_logic/Mmux_vga_blue_reg42451 (ttt_logic/Mmux_vga_blue_reg4245)
+     MUXF5:I1->O           1   0.321   0.420  ttt_logic/Mmux_vga_blue_reg4245_f5 (VGA_BLUE_OBUF)
+     OBUF:I->O                 3.272          VGA_BLUE_OBUF (VGA_BLUE)
     ----------------------------------------
-    Total                     11.052ns (8.148ns logic, 2.904ns route)
-                                       (73.7% logic, 26.3% route)
+    Total                     15.342ns (10.902ns logic, 4.440ns route)
+                                       (71.1% logic, 28.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enter'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              9.505ns (Levels of Logic = 6)
+  Source:            ttt_logic/square_status/square_5_status_reg_0 (LATCH)
+  Destination:       VGA_BLUE (PAD)
+  Source Clock:      enter falling
+
+  Data Path: ttt_logic/square_status/square_5_status_reg_0 to VGA_BLUE
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              2   0.676   0.526  ttt_logic/square_status/square_5_status_reg_0 (ttt_logic/square_status/square_5_status_reg_0)
+     LUT4:I1->O            1   0.704   0.595  ttt_logic/Mmux_vga_blue_reg483 (ttt_logic/Mmux_vga_blue_reg483)
+     LUT4:I0->O            1   0.704   0.424  ttt_logic/Mmux_vga_blue_reg4107_SW0 (N37)
+     LUT4:I3->O            1   0.704   0.455  ttt_logic/Mmux_vga_blue_reg4107 (ttt_logic/Mmux_vga_blue_reg4107)
+     LUT4:I2->O            1   0.704   0.000  ttt_logic/Mmux_vga_blue_reg42451 (ttt_logic/Mmux_vga_blue_reg4245)
+     MUXF5:I1->O           1   0.321   0.420  ttt_logic/Mmux_vga_blue_reg4245_f5 (VGA_BLUE_OBUF)
+     OBUF:I->O                 3.272          VGA_BLUE_OBUF (VGA_BLUE)
+    ----------------------------------------
+    Total                      9.505ns (7.085ns logic, 2.420ns route)
+                                       (74.5% logic, 25.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'icon/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1'
@@ -895,9 +994,18 @@ Clock to Setup on destination clock CCLK
                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -------------------------------------+---------+---------+---------+---------+
-CCLK                                 |    5.626|         |         |         |
+CCLK                                 |    5.879|         |         |         |
 icon/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1|    6.442|         |         |         |
 -------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock enter
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CCLK           |         |         |    4.856|         |
+enter          |         |         |    3.061|         |
+---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock icon/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1
 -------------------------------------+---------+---------+---------+---------+
@@ -923,14 +1031,14 @@ Clock to Setup on destination clock vga_timer/vga_on
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CCLK           |         |         |    3.627|         |
+CCLK           |         |         |    3.711|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 14.00 secs
-Total CPU time to Xst completion: 14.52 secs
+Total REAL time to Xst completion: 18.00 secs
+Total CPU time to Xst completion: 18.31 secs
  
 WARNING:Xst:3152 - You have chosen to run a version of XST which is not the default solution
    for the specified device family. You are free to use it in order to take
@@ -942,9 +1050,9 @@ WARNING:Xst:3152 - You have chosen to run a version of XST which is not the defa
    on the XST command line or in the XST process properties panel.
 --> 
 
-Total memory usage is 229484 kilobytes
+Total memory usage is 230828 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  132 (   0 filtered)
-Number of infos    :   19 (   0 filtered)
+Number of warnings :  146 (   0 filtered)
+Number of infos    :   11 (   0 filtered)
 

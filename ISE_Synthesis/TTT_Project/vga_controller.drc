@@ -1,10 +1,13 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Sat May 07 22:43:55 2016
+Sun May 08 03:24:39 2016
 
 drc -z vga_controller.ncd vga_controller.pcf
 
+WARNING:PhysDesignRules:372 - Gated clock. Clock net enter is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net CONTROL0<13> is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
@@ -15,8 +18,6 @@ WARNING:PhysDesignRules:367 - The signal <SW1_IBUF> is incomplete. The signal
 WARNING:PhysDesignRules:367 - The signal <SW2_IBUF> is incomplete. The signal
    does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <SW3_IBUF> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <BTN0_IBUF> is incomplete. The signal
    does not drive any load pins in the design.
 DRC detected 0 errors and 6 warnings.  Please see the previously displayed
 individual error or warning messages for more details.

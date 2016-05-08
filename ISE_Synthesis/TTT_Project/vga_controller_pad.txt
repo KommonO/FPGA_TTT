@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Sat May 07 22:43:44 2016
+Sun May 08 03:24:26 2016
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -158,7 +158,7 @@ Pinout by Pin Number:
 |H10       |           |         |GND                      |         |           |              |          |         |           |         |         |          |           |                |
 |H11       |           |         |GND                      |         |           |              |          |         |           |         |         |          |           |                |
 |H12       |           |         |VCCO_1                   |         |           |1             |          |         |           |         |3.30     |          |           |                |
-|H13       |           |IBUF     |IP                       |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
+|H13       |BTN1       |IBUF     |IP                       |INPUT    |LVTTL      |1             |          |         |PULLDOWN   |NONE     |         |LOCATED   |NO         |NONE            |
 |H14       |VGA_RED    |IOB      |IO_L17P_1                |OUTPUT   |LVTTL      |1             |8         |FAST     |NONE**     |         |         |LOCATED   |NO         |NONE            |
 |H15       |VGA_GREEN  |IOB      |IO_L17N_1                |OUTPUT   |LVTTL      |1             |8         |FAST     |NONE**     |         |         |LOCATED   |NO         |NONE            |
 |H16       |           |DIFFM    |IO_L16P_1                |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
@@ -325,7 +325,7 @@ Pinout by Pin Number:
 |V1        |           |         |GND                      |         |           |              |          |         |           |         |         |          |           |                |
 |V2        |           |IBUF     |IP                       |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |V3        |           |DIFFSI   |IP_L02N_2                |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
-|V4        |BTN0       |IBUF     |IP_L02P_2                |INPUT    |LVTTL      |2             |          |         |PULLDOWN   |NONE     |         |LOCATED   |NO         |NONE            |
+|V4        |           |DIFFMI   |IP_L02P_2                |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |V5        |           |         |NC                       |         |           |              |          |         |           |         |         |          |           |                |
 |V6        |           |         |NC                       |         |           |              |          |         |           |         |         |          |           |                |
 |V7        |           |         |NC                       |         |           |              |          |         |           |         |         |          |           |                |

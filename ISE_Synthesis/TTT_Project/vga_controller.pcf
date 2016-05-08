@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sat May 07 22:43:20 2016
+// Written by: Map P.20131013 on Sun May 08 03:23:59 2016
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -21,7 +21,7 @@ COMP "VGA_GREEN" LOCATE = SITE "H15" LEVEL 1;
 COMP "VGA_HSYNC" LOCATE = SITE "F15" LEVEL 1;
 COMP "VGA_VSYNC" LOCATE = SITE "F14" LEVEL 1;
 COMP "CCLK" LOCATE = SITE "C9" LEVEL 1;
-COMP "BTN0" LOCATE = SITE "V4" LEVEL 1;
+COMP "BTN1" LOCATE = SITE "H13" LEVEL 1;
 COMP "ROTA" LOCATE = SITE "K18" LEVEL 1;
 COMP "ROTB" LOCATE = SITE "G18" LEVEL 1;
 COMP "ROTCTR" LOCATE = SITE "V16" LEVEL 1;

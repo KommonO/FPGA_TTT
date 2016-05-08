@@ -21,7 +21,7 @@
 //NET 	"VGA_HSYNC"			LOC = "F15"	| IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST;
 //NET 	"VGA_VSYNC"			LOC = "F14"	| IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST;
 
-module vga_controller(input BTN0, CCLK, SW0, SW1, SW2,SW3,ROTA, ROTB,ROTCTR, output  wire VGA_RED, VGA_GREEN, VGA_BLUE, VGA_HSYNC, VGA_VSYNC, LD0, LD1, LD2, LD3,LD4, LD5, LD6, LD7);
+module vga_controller(input BTN1, CCLK, SW0, SW1, SW2,SW3,ROTA, ROTB,ROTCTR, output  wire VGA_RED, VGA_GREEN, VGA_BLUE, VGA_HSYNC, VGA_VSYNC, LD0, LD1, LD2, LD3,LD4, LD5, LD6, LD7);
 //counters are found in thr vga_timer
 wire  hsync_out,vsync_out,vga_on;
 wire [9:0] Pixel_X;
@@ -37,6 +37,9 @@ wire CLKIN_IBUFG_OUT;
 wire CONTROL;
 wire [7:0] LED;
 wire [7:0] square_num;
+wire ROTA_debounce, ROTB_debounce, ROTCTR_debounce, ROTCTR_oneshot, enter_debounce, enter;
+wire rotctr, rota,rot;
+
 
 clock_divider clock_divider (
     .CLKIN_IN(CCLK),  
@@ -56,18 +59,16 @@ ila ila (
 );
 
 //debounced
-debounce debounce_rst(.clk(clk_25mhz), .rst(1'b0),.async_in(BTN0), .sync_out(clr_debounce));
+debounce debounce_enter(.clk(clk_25mhz), .rst(1'b0),.async_in(BTN1), .sync_out(enter_debounce));
 //oneshotted
-oneshot oneshot(.oneshot_in(clr_debounce), .rst(1'b0), .clk(clk_25mhz), .oneshot_out(clr));
+oneshot oneshot(.oneshot_in(enter_debounce), .rst(1'b0), .clk(clk_25mhz), .oneshot_out(enter));
 //initialize other modules
 vga_timer vga_timer(.Clk(clk_25mhz),/* .clr(clr),*/.vga_h_sync(hsync_out), .vga_v_sync(vsync_out),.CounterX(Pixel_X), .CounterY(Pixel_Y), .vga_on(vga_on));
-ttt_logic ttt_logic(.square_num(square_num),.clk(clk_25mhz), .clr(clr), .vga_on(vga_on), .Pixel_X(Pixel_X),.Pixel_Y(Pixel_Y), .vga_green(VGA_GREEN),.vga_red(VGA_RED),.vga_blue(VGA_BLUE));
+ttt_logic ttt_logic(.ROTCTR_debounce(enter),.square_num(square_num),.clk(clk_25mhz), .clr(clr), .vga_on(vga_on), .Pixel_X(Pixel_X),.Pixel_Y(Pixel_Y), .vga_green(VGA_GREEN),.vga_red(VGA_RED),.vga_blue(VGA_BLUE));
 
 
 //testing rotary method 2,needed to add debounce
 //wire [7:0] LED;
-wire ROTA_debounce, ROTB_debounce, ROTCTR_debounce;
-wire rotctr, rota,rot;
 
 rotary rotary(.C_CLK(CLK0), .ROT_A(ROTA_debounce),.ROT_B(ROTB_debounce),.ROT_CTR(ROTCTR_debounce), .LED(LED));
 //debounce rotary signals may need to change CLK0 to clk_25mhz
@@ -75,6 +76,8 @@ debounce debounce_ROTA(.clk(CLK0), .rst(1'b0), .async_in(ROTA), .sync_out(ROTA_d
 debounce debounce_ROTB(.clk(CLK0), .rst(1'b0), .async_in(ROTB), .sync_out(ROTB_debounce));
 debounce debounce_ROTCTR(.clk(CLK0),.rst(1'b0), .async_in(ROTCTR), .sync_out(ROTCTR_debounce));
 
+//onehsot for rotary center
+oneshot oneshot_rotctr(.oneshot_in(ROTCTR_debounce), .rst(1'b0), .clk(clk_25mhz), .oneshot_out(ROTCTR_oneshot));
 //for debugging purposes, display rotary value on LEDs
 assign LD0 = LED[0];
 assign LD1 = LED[1];

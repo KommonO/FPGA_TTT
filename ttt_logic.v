@@ -14,6 +14,11 @@ module ttt_logic(input clk, clr, vga_on, Pixel_X, Pixel_Y,ROTCTR_debounce, input
 wire [9:0] Pixel_X;
 wire [8:0] Pixel_Y;
 
+//Simply to test the square_status module
+wire player_turn;
+parameter PLAYER_1 = 1'b0,
+			 Player_2 = 1'b1;
+assign player_turn = PLAYER_1; //Assign player_turn as player 1
 //Parameters for square_num 
 parameter 
 			 NO_SQUARE  = 4'd0,
@@ -120,16 +125,231 @@ always @*/*( clk or  clr or vga_on or Pixel_X or Pixel_Y or square_num or cursor
 		vga_green_reg <= 1'b0;
 		end
 		//else if to show the cursor, the square the cursor is currently highlighting
-	else if(((Pixel_X >= cursor_start_x) && (Pixel_X <= (cursor_start_x + 100))) && ((Pixel_Y >= cursor_start_y) && (Pixel_Y <= (cursor_start_y + 100)))) begin
+		else if(((Pixel_X >= cursor_start_x) && (Pixel_X <= (cursor_start_x + 100))) && ((Pixel_Y >= cursor_start_y) && (Pixel_Y <= (cursor_start_y + 100)))) begin
 		vga_red_reg <=1'b0;
 		vga_blue_reg <=1'b0;
 		vga_green_reg <=1'b0;
-	end
+		end
 		else begin
 		vga_red_reg <= 1'b0;//0
 		vga_blue_reg <= 1'b1;//1
 		vga_green_reg <= 1'b1;//1
-	   end
+		end
+		
+		case(square_1_status)
+		2'b00:begin
+			if(((Pixel_X >=25) && (Pixel_X <= 75)) && ((Pixel_Y >= 25) && (Pixel_Y <= 75))) begin
+				vga_red_reg <= 1'b0;
+				vga_green_reg <= 1'b1;
+				vga_blue_reg <= 1'b1;
+			end
+		end
+		2'b01: begin
+			if(((Pixel_X >=25) && (Pixel_X <= 75)) && ((Pixel_Y >= 25) && (Pixel_Y <= 75))) begin
+				vga_red_reg <= 1'b0;
+				vga_green_reg <= 1'b1;
+				vga_blue_reg <= 1'b0;
+			end
+		end
+		2'b10: begin
+			if(((Pixel_X >=25) && (Pixel_X <= 75)) && ((Pixel_Y >= 25) && (Pixel_Y <= 75))) begin
+				vga_red_reg <= 1'b1;
+				vga_green_reg <= 1'b0;
+				vga_blue_reg <= 1'b0;
+			end
+		end
+		endcase //end case statement for square 1
+		
+		case(square_2_status)
+		2'b00:begin
+			if(((Pixel_X >=125) && (Pixel_X <= 175)) && ((Pixel_Y >= 25) && (Pixel_Y <= 75))) begin
+				vga_red_reg <= 1'b0;
+				vga_green_reg <= 1'b1;
+				vga_blue_reg <= 1'b1;
+			end
+		end
+		2'b01: begin
+			if(((Pixel_X >=125) && (Pixel_X <= 175)) && ((Pixel_Y >= 25) && (Pixel_Y <= 75))) begin
+				vga_red_reg <= 1'b0;
+				vga_green_reg <= 1'b1;
+				vga_blue_reg <= 1'b0;
+			end
+		end
+		2'b10: begin
+			if(((Pixel_X >=125) && (Pixel_X <= 175)) && ((Pixel_Y >= 25) && (Pixel_Y <= 75))) begin
+				vga_red_reg <= 1'b1;
+				vga_green_reg <= 1'b0;
+				vga_blue_reg <= 1'b0;
+			end
+		end
+		endcase //end case statement for square 2
+		case(square_3_status)
+		2'b00:begin
+			if(((Pixel_X >=225) && (Pixel_X <= 275)) && ((Pixel_Y >= 25) && (Pixel_Y <= 75))) begin
+				vga_red_reg <= 1'b0;
+				vga_green_reg <= 1'b1;
+				vga_blue_reg <= 1'b1;
+			end
+		end
+		2'b01: begin
+			if(((Pixel_X >=225) && (Pixel_X <= 275)) && ((Pixel_Y >= 25) && (Pixel_Y <= 75))) begin
+				vga_red_reg <= 1'b0;
+				vga_green_reg <= 1'b1;
+				vga_blue_reg <= 1'b0;
+			end
+		end
+		2'b10: begin
+			if(((Pixel_X >=225) && (Pixel_X <= 275)) && ((Pixel_Y >= 25) && (Pixel_Y <= 75))) begin
+				vga_red_reg <= 1'b1;
+				vga_green_reg <= 1'b0;
+				vga_blue_reg <= 1'b0;
+			end
+		end
+		endcase //end case statement for square 3
+		
+		case(square_4_status)
+		2'b00:begin
+			if(((Pixel_X >=25) && (Pixel_X <= 75)) && ((Pixel_Y >= 125) && (Pixel_Y <= 175))) begin
+				vga_red_reg <= 1'b0;
+				vga_green_reg <= 1'b1;
+				vga_blue_reg <= 1'b1;
+			end
+		end
+		2'b01: begin
+			if(((Pixel_X >=25) && (Pixel_X <= 75)) && ((Pixel_Y >= 125) && (Pixel_Y <= 175))) begin
+				vga_red_reg <= 1'b0;
+				vga_green_reg <= 1'b1;
+				vga_blue_reg <= 1'b0;
+			end
+		end
+		2'b10: begin
+			if(((Pixel_X >=25) && (Pixel_X <= 75)) && ((Pixel_Y >= 125) && (Pixel_Y <= 175))) begin
+				vga_red_reg <= 1'b1;
+				vga_green_reg <= 1'b0;
+				vga_blue_reg <= 1'b0;
+			end
+		end
+		endcase //end case statement for square 4
+		
+		case(square_5_status)
+		2'b00:begin
+			if(((Pixel_X >=125) && (Pixel_X <= 175)) && ((Pixel_Y >= 125) && (Pixel_Y <= 175))) begin
+				vga_red_reg <= 1'b0;
+				vga_green_reg <= 1'b1;
+				vga_blue_reg <= 1'b1;
+			end
+		end
+		2'b01: begin
+			if(((Pixel_X >=125) && (Pixel_X <= 175)) && ((Pixel_Y >= 125) && (Pixel_Y <= 175))) begin
+				vga_red_reg <= 1'b0;
+				vga_green_reg <= 1'b1;
+				vga_blue_reg <= 1'b0;
+			end
+		end
+		2'b10: begin
+			if(((Pixel_X >=125) && (Pixel_X <= 175)) && ((Pixel_Y >= 125) && (Pixel_Y <= 175))) begin
+				vga_red_reg <= 1'b1;
+				vga_green_reg <= 1'b0;
+				vga_blue_reg <= 1'b0;
+			end
+		end
+		endcase //end case statement for square 5
+		
+		case(square_6_status)
+		2'b00:begin
+			if(((Pixel_X >=225) && (Pixel_X <= 275)) && ((Pixel_Y >= 125) && (Pixel_Y <= 175))) begin
+				vga_red_reg <= 1'b0;
+				vga_green_reg <= 1'b1;
+				vga_blue_reg <= 1'b1;
+			end
+		end
+		2'b01: begin
+			if(((Pixel_X >=225) && (Pixel_X <= 275)) && ((Pixel_Y >= 125) && (Pixel_Y <= 175))) begin
+				vga_red_reg <= 1'b0;
+				vga_green_reg <= 1'b1;
+				vga_blue_reg <= 1'b0;
+			end
+		end
+		2'b10: begin
+			if(((Pixel_X >=225) && (Pixel_X <= 275)) && ((Pixel_Y >= 125) && (Pixel_Y <= 175))) begin
+				vga_red_reg <= 1'b1;
+				vga_green_reg <= 1'b0;
+				vga_blue_reg <= 1'b0;
+			end
+		end
+		endcase //end case statement for square 6
+		
+		case(square_7_status)
+		2'b00:begin
+			if(((Pixel_X >=25) && (Pixel_X <= 75)) && ((Pixel_Y >= 225) && (Pixel_Y <= 275))) begin
+				vga_red_reg <= 1'b0;
+				vga_green_reg <= 1'b1;
+				vga_blue_reg <= 1'b1;
+			end
+		end
+		2'b01: begin
+			if(((Pixel_X >=25) && (Pixel_X <= 75)) && ((Pixel_Y >= 225) && (Pixel_Y <= 275))) begin
+				vga_red_reg <= 1'b0;
+				vga_green_reg <= 1'b1;
+				vga_blue_reg <= 1'b0;
+			end
+		end
+		2'b10: begin
+			if(((Pixel_X >=25) && (Pixel_X <= 75)) && ((Pixel_Y >= 225) && (Pixel_Y <= 275))) begin
+				vga_red_reg <= 1'b1;
+				vga_green_reg <= 1'b0;
+				vga_blue_reg <= 1'b0;
+			end
+		end
+		endcase //end case statement for square 7
+		
+		case(square_8_status)
+		2'b00:begin
+			if(((Pixel_X >=125) && (Pixel_X <= 175)) && ((Pixel_Y >= 225) && (Pixel_Y <= 275))) begin
+				vga_red_reg <= 1'b0;
+				vga_green_reg <= 1'b1;
+				vga_blue_reg <= 1'b1;
+			end
+		end
+		2'b01: begin
+			if(((Pixel_X >=125) && (Pixel_X <= 175)) && ((Pixel_Y >= 225) && (Pixel_Y <= 275))) begin
+				vga_red_reg <= 1'b0;
+				vga_green_reg <= 1'b1;
+				vga_blue_reg <= 1'b0;
+			end
+		end
+		2'b10: begin
+			if(((Pixel_X >=125) && (Pixel_X <= 175)) && ((Pixel_Y >= 225) && (Pixel_Y <= 275))) begin
+				vga_red_reg <= 1'b1;
+				vga_green_reg <= 1'b0;
+				vga_blue_reg <= 1'b0;
+			end
+		end
+		endcase //end case statement for square 8
+		
+		case(square_9_status)
+		2'b00:begin
+			if(((Pixel_X >=225) && (Pixel_X <= 275)) && ((Pixel_Y >= 225) && (Pixel_Y <= 275))) begin
+				vga_red_reg <= 1'b0;
+				vga_green_reg <= 1'b1;
+				vga_blue_reg <= 1'b1;
+			end
+		end
+		2'b01: begin
+			if(((Pixel_X >=225) && (Pixel_X <= 275)) && ((Pixel_Y >= 225) && (Pixel_Y <= 275))) begin
+				vga_red_reg <= 1'b0;
+				vga_green_reg <= 1'b1;
+				vga_blue_reg <= 1'b0;
+			end
+		end
+		2'b10: begin
+			if(((Pixel_X >=225) && (Pixel_X <= 275)) && ((Pixel_Y >= 225) && (Pixel_Y <= 275))) begin
+				vga_red_reg <= 1'b1;
+				vga_green_reg <= 1'b0;
+				vga_blue_reg <= 1'b0;
+			end
+		end
+		endcase //end case statement for square 9
 	end
 	
 	else begin
@@ -154,6 +374,8 @@ assign vga_green = vga_green_reg;
 //instantiate module to decide who's turn it is and their player marker
 turn_marker turn_marker();
 square_status square_status(
+			.square_num(square_num),
+			.player_turn(player_turn),	//
 			.rot_ctr(ROTCTR_debounce),//,make sure this is right
 			//Passing squares status' to determine what goes to each square
 			.square_1_status(square_1_status),

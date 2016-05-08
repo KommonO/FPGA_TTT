@@ -69,7 +69,7 @@ reg [2:0] square_1_status_reg,
 	square_8_status_reg,
 	square_9_status_reg;
 	
-	always @(clk or clr) begin
+	always @(clk or clr or rot_ctr) begin
 	//reset the squares to blank, 
 	if(clr) begin
 		square_1_status_reg = 1'b0;
@@ -92,160 +92,224 @@ reg [2:0] square_1_status_reg,
 		if(square_1_status == BLANK)begin
 			//another if statement to determine who's turn it is
 			//0 equals player 1 and 1 equals player 2
-			if(player_turn == PLAYER_1) begin
-				//player1's turn so need to mark the space as an x.
-				square_1_status_reg = 2'd1; 
-				//maybe add a "end_turn" register here to show it is the next player's turn
+			if(rot_ctr) begin
+				if(player_turn == PLAYER_1) begin
+						//player1's turn so need to mark the space as an x.
+					square_1_status_reg = 2'd1; 
+					//maybe add a "end_turn" register here to show it is the next player's turn
+				end
+				else if(player_turn == PLAYER_2) begin
+					//player 2's turn so need to mark the space as an o. 2'b10 = 2'd2
+					square_1_status_reg = 2'd2;
+				end
 			end
-			else if(player_turn == PLAYER_2) begin
-				//player 2's turn so need to mark the space as an o. 2'b10 = 2'd2
-				square_1_status_reg = 2'd2;
+			else begin
+				square_1_status_reg = BLANK;
 			end
 		end
 		
 	 end
 	 
+	 //Square 2
 	 SQUARE2_SELECTED: begin
-	 		//if statement to determine if it is empty, only need if statement because if not blank, do nothing
+		//if statement to determine if it is empty, only need if statement because if not blank, do nothing
 		if(square_2_status == BLANK)begin
 			//another if statement to determine who's turn it is
 			//0 equals player 1 and 1 equals player 2
-			if(player_turn == PLAYER_1) begin
-				//player1's turn so need to mark the space as an x.
-				square_2_status_reg = 2'd1; 
-				//maybe add a "end_turn" register here to show it is the next player's turn
+			if(rot_ctr) begin
+				if(player_turn == PLAYER_1) begin
+						//player1's turn so need to mark the space as an x.
+					square_2_status_reg = 2'd1; 
+					//maybe add a "end_turn" register here to show it is the next player's turn
+				end
+				else if(player_turn == PLAYER_2) begin
+					//player 2's turn so need to mark the space as an o. 2'b10 = 2'd2
+					square_2_status_reg = 2'd2;
+				end
 			end
-			else if(player_turn == PLAYER_2) begin
-				//player 2's turn so need to mark the space as an o. 2'b10 = 2'd2
-				square_2_status_reg = 2'd2;
+			else begin
+				square_2_status_reg = BLANK;
 			end
 		end
+		
 	 end
 	 
+	 //Square 3
 	 SQUARE3_SELECTED: begin
-	 		//if statement to determine if it is empty, only need if statement because if not blank, do nothing
+		//if statement to determine if it is empty, only need if statement because if not blank, do nothing
 		if(square_3_status == BLANK)begin
 			//another if statement to determine who's turn it is
 			//0 equals player 1 and 1 equals player 2
-			if(player_turn == PLAYER_1) begin
-				//player1's turn so need to mark the space as an x.
-				square_3_status_reg = 2'd1; 
-				//maybe add a "end_turn" register here to show it is the next player's turn
+			if(rot_ctr) begin
+				if(player_turn == PLAYER_1) begin
+						//player1's turn so need to mark the space as an x.
+					square_3_status_reg = 2'd1; 
+					//maybe add a "end_turn" register here to show it is the next player's turn
+				end
+				else if(player_turn == PLAYER_2) begin
+					//player 2's turn so need to mark the space as an o. 2'b10 = 2'd2
+					square_3_status_reg = 2'd2;
+				end
 			end
-			else if(player_turn == PLAYER_2) begin
-				//player 2's turn so need to mark the space as an o. 2'b10 = 2'd2
-				square_3_status_reg = 2'd2;
+			else begin
+				square_3_status_reg = BLANK;
 			end
 		end
+		
 	 end
 	 
+	 //Square 4
 	 SQUARE4_SELECTED: begin
-	 		//if statement to determine if it is empty, only need if statement because if not blank, do nothing
+		//if statement to determine if it is empty, only need if statement because if not blank, do nothing
 		if(square_4_status == BLANK)begin
 			//another if statement to determine who's turn it is
 			//0 equals player 1 and 1 equals player 2
-			if(player_turn == PLAYER_1) begin
-				//player1's turn so need to mark the space as an x.
-				square_4_status_reg = 2'd1; 
-				//maybe add a "end_turn" register here to show it is the next player's turn
+			if(rot_ctr) begin
+				if(player_turn == PLAYER_1) begin
+						//player1's turn so need to mark the space as an x.
+					square_4_status_reg = 2'd1; 
+					//maybe add a "end_turn" register here to show it is the next player's turn
+				end
+				else if(player_turn == PLAYER_2) begin
+					//player 2's turn so need to mark the space as an o. 2'b10 = 2'd2
+					square_4_status_reg = 2'd2;
+				end
 			end
-			else if(player_turn == PLAYER_2) begin
-				//player 2's turn so need to mark the space as an o. 2'b10 = 2'd2
-				square_4_status_reg = 2'd2;
+			else begin
+				square_4_status_reg = BLANK;
 			end
 		end
+		
 	 end
 	 
 	 //Square 5
 	 SQUARE5_SELECTED: begin
-	 		//if statement to determine if it is empty, only need if statement because if not blank, do nothing
+		//if statement to determine if it is empty, only need if statement because if not blank, do nothing
 		if(square_5_status == BLANK)begin
 			//another if statement to determine who's turn it is
 			//0 equals player 1 and 1 equals player 2
-			if(player_turn == PLAYER_1) begin
-				//player1's turn so need to mark the space as an x.
-				square_5_status_reg = 2'd1; 
-				//maybe add a "end_turn" register here to show it is the next player's turn
+			if(rot_ctr) begin
+				if(player_turn == PLAYER_1) begin
+						//player1's turn so need to mark the space as an x.
+					square_5_status_reg = 2'd1; 
+					//maybe add a "end_turn" register here to show it is the next player's turn
+				end
+				else if(player_turn == PLAYER_2) begin
+					//player 2's turn so need to mark the space as an o. 2'b10 = 2'd2
+					square_5_status_reg = 2'd2;
+				end
 			end
-			else if(player_turn == PLAYER_2) begin
-				//player 2's turn so need to mark the space as an o. 2'b10 = 2'd2
-				square_5_status_reg = 2'd2;
+			else begin
+				square_5_status_reg = BLANK;
 			end
 		end
+		
 	 end
-	 
-	 //Square 6
-	 SQUARE6_SELECTED: begin
-	 		//if statement to determine if it is empty, only need if statement because if not blank, do nothing
+	
+	//Square 6
+	SQUARE6_SELECTED: begin
+		//if statement to determine if it is empty, only need if statement because if not blank, do nothing
 		if(square_6_status == BLANK)begin
 			//another if statement to determine who's turn it is
 			//0 equals player 1 and 1 equals player 2
-			if(player_turn == PLAYER_1) begin
-				//player1's turn so need to mark the space as an x.
-				square_6_status_reg = 2'd1; 
-				//maybe add a "end_turn" register here to show it is the next player's turn
+			if(rot_ctr) begin
+				if(player_turn == PLAYER_1) begin
+						//player1's turn so need to mark the space as an x.
+					square_6_status_reg = 2'd1; 
+					//maybe add a "end_turn" register here to show it is the next player's turn
+				end
+				else if(player_turn == PLAYER_2) begin
+					//player 2's turn so need to mark the space as an o. 2'b10 = 2'd2
+					square_6_status_reg = 2'd2;
+				end
 			end
-			else if(player_turn == PLAYER_2) begin
-				//player 2's turn so need to mark the space as an o. 2'b10 = 2'd2
-				square_6_status_reg = 2'd2;
+			else begin
+				square_6_status_reg = BLANK;
 			end
 		end
+		
 	 end
 	 
 	 //Square 7
 	 SQUARE7_SELECTED: begin
-	 		//if statement to determine if it is empty, only need if statement because if not blank, do nothing
+		//if statement to determine if it is empty, only need if statement because if not blank, do nothing
 		if(square_7_status == BLANK)begin
 			//another if statement to determine who's turn it is
 			//0 equals player 1 and 1 equals player 2
-			if(player_turn == PLAYER_1) begin
-				//player1's turn so need to mark the space as an x.
-				square_7_status_reg = 2'd1; 
-				//maybe add a "end_turn" register here to show it is the next player's turn
+			if(rot_ctr) begin
+				if(player_turn == PLAYER_1) begin
+						//player1's turn so need to mark the space as an x.
+					square_7_status_reg = 2'd1; 
+					//maybe add a "end_turn" register here to show it is the next player's turn
+				end
+				else if(player_turn == PLAYER_2) begin
+					//player 2's turn so need to mark the space as an o. 2'b10 = 2'd2
+					square_7_status_reg = 2'd2;
+				end
 			end
-			else if(player_turn == PLAYER_2) begin
-				//player 2's turn so need to mark the space as an o. 2'b10 = 2'd2
-				square_7_status_reg = 2'd2;
+			else begin
+				square_7_status_reg = BLANK;
 			end
 		end
+		
 	 end
 	 
 	 //Square 8
 	 SQUARE8_SELECTED: begin
-	 		//if statement to determine if it is empty, only need if statement because if not blank, do nothing
+		//if statement to determine if it is empty, only need if statement because if not blank, do nothing
 		if(square_8_status == BLANK)begin
 			//another if statement to determine who's turn it is
 			//0 equals player 1 and 1 equals player 2
-			if(player_turn == PLAYER_1) begin
-				//player1's turn so need to mark the space as an x.
-				square_8_status_reg = 2'd1; 
-				//maybe add a "end_turn" register here to show it is the next player's turn
+			if(rot_ctr) begin
+				if(player_turn == PLAYER_1) begin
+						//player1's turn so need to mark the space as an x.
+					square_8_status_reg = 2'd1; 
+					//maybe add a "end_turn" register here to show it is the next player's turn
+				end
+				else if(player_turn == PLAYER_2) begin
+					//player 2's turn so need to mark the space as an o. 2'b10 = 2'd2
+					square_8_status_reg = 2'd2;
+				end
 			end
-			else if(player_turn == PLAYER_2) begin
-				//player 2's turn so need to mark the space as an o. 2'b10 = 2'd2
-				square_8_status_reg = 2'd2;
+			else begin
+				square_8_status_reg = BLANK;
 			end
 		end
+		
 	 end
 	 
 	 //Square 9
 	 SQUARE9_SELECTED: begin
-	 		//if statement to determine if it is empty, only need if statement because if not blank, do nothing
+		//if statement to determine if it is empty, only need if statement because if not blank, do nothing
 		if(square_9_status == BLANK)begin
 			//another if statement to determine who's turn it is
 			//0 equals player 1 and 1 equals player 2
-			if(player_turn == PLAYER_1) begin
-				//player1's turn so need to mark the space as an x.
-				square_9_status_reg = 2'd1; 
-				//maybe add a "end_turn" register here to show it is the next player's turn
+			if(rot_ctr) begin
+				if(player_turn == PLAYER_1) begin
+						//player1's turn so need to mark the space as an x.
+					square_9_status_reg = 2'd1; 
+					//maybe add a "end_turn" register here to show it is the next player's turn
+				end
+				else if(player_turn == PLAYER_2) begin
+					//player 2's turn so need to mark the space as an o. 2'b10 = 2'd2
+					square_9_status_reg = 2'd2;
+				end
 			end
-			else if(player_turn == PLAYER_2) begin
-				//player 2's turn so need to mark the space as an o. 2'b10 = 2'd2
-				square_9_status_reg = 2'd2;
+			else begin
+				square_9_status_reg = BLANK;
 			end
 		end
+		
 	 end
+	
+	
+	
 	 
+	
+	
+	
+	
+	
 	 //default case here
 	 
 	 endcase 

@@ -11,10 +11,7 @@
 <msg type="warning" file="HDLCompiler" num="751" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 15: Redeclaration of ansi port <arg fmt="%s" index="1">Pixel_Y</arg> is not allowed
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" Line 41: Port <arg fmt="%s" index="1">RST_IN</arg> is not connected to this instance
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" Line 64: Port <arg fmt="%s" index="1">ROTCTR_debounce</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" Line 44: Port <arg fmt="%s" index="1">RST_IN</arg> is not connected to this instance
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_timer.v" Line 17: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
@@ -23,13 +20,40 @@
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_timer.v" Line 20: Result of <arg fmt="%d" index="1">10</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">9</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 194: Port <arg fmt="%s" index="1">clk</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 375: Port <arg fmt="%s" index="1">clk</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 195: Port <arg fmt="%s" index="1">clk</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 376: Port <arg fmt="%s" index="1">clk</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 42: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 45: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="295" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 154: case condition never applies
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="295" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 178: case condition never applies
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="295" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 201: case condition never applies
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="295" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 225: case condition never applies
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="295" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 249: case condition never applies
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="295" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 273: case condition never applies
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="295" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 297: case condition never applies
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="295" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 321: case condition never applies
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="295" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 345: case condition never applies
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\turn_marker.v" Line 33: Signal &lt;<arg fmt="%s" index="1">current_state</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
@@ -38,151 +62,121 @@
 <msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\turn_marker.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">turn_marker</arg>&gt; remains a black box.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 86: Signal &lt;<arg fmt="%s" index="1">rot_ctr</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-</msg>
-
 <msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 87: Signal &lt;<arg fmt="%s" index="1">square_num</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 92: Signal &lt;<arg fmt="%s" index="1">square_1_status</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 95: Signal &lt;<arg fmt="%s" index="1">player_turn</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 96: Signal &lt;<arg fmt="%s" index="1">player_turn</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 100: Signal &lt;<arg fmt="%s" index="1">player_turn</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 101: Signal &lt;<arg fmt="%s" index="1">player_turn</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 110: Signal &lt;<arg fmt="%s" index="1">square_2_status</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 116: Signal &lt;<arg fmt="%s" index="1">square_2_status</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 113: Signal &lt;<arg fmt="%s" index="1">player_turn</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 120: Signal &lt;<arg fmt="%s" index="1">player_turn</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 118: Signal &lt;<arg fmt="%s" index="1">player_turn</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 125: Signal &lt;<arg fmt="%s" index="1">player_turn</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 127: Signal &lt;<arg fmt="%s" index="1">square_3_status</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 140: Signal &lt;<arg fmt="%s" index="1">square_3_status</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 130: Signal &lt;<arg fmt="%s" index="1">player_turn</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 144: Signal &lt;<arg fmt="%s" index="1">player_turn</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 135: Signal &lt;<arg fmt="%s" index="1">player_turn</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 149: Signal &lt;<arg fmt="%s" index="1">player_turn</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 144: Signal &lt;<arg fmt="%s" index="1">square_4_status</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 164: Signal &lt;<arg fmt="%s" index="1">square_4_status</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 147: Signal &lt;<arg fmt="%s" index="1">player_turn</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 168: Signal &lt;<arg fmt="%s" index="1">player_turn</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 152: Signal &lt;<arg fmt="%s" index="1">player_turn</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 173: Signal &lt;<arg fmt="%s" index="1">player_turn</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 162: Signal &lt;<arg fmt="%s" index="1">square_5_status</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 188: Signal &lt;<arg fmt="%s" index="1">square_5_status</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 165: Signal &lt;<arg fmt="%s" index="1">player_turn</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 192: Signal &lt;<arg fmt="%s" index="1">player_turn</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 170: Signal &lt;<arg fmt="%s" index="1">player_turn</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 197: Signal &lt;<arg fmt="%s" index="1">player_turn</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 180: Signal &lt;<arg fmt="%s" index="1">square_6_status</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 212: Signal &lt;<arg fmt="%s" index="1">square_6_status</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 183: Signal &lt;<arg fmt="%s" index="1">player_turn</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 216: Signal &lt;<arg fmt="%s" index="1">player_turn</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 188: Signal &lt;<arg fmt="%s" index="1">player_turn</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 221: Signal &lt;<arg fmt="%s" index="1">player_turn</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 198: Signal &lt;<arg fmt="%s" index="1">square_7_status</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 236: Signal &lt;<arg fmt="%s" index="1">square_7_status</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 201: Signal &lt;<arg fmt="%s" index="1">player_turn</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 240: Signal &lt;<arg fmt="%s" index="1">player_turn</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 206: Signal &lt;<arg fmt="%s" index="1">player_turn</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 245: Signal &lt;<arg fmt="%s" index="1">player_turn</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 216: Signal &lt;<arg fmt="%s" index="1">square_8_status</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 260: Signal &lt;<arg fmt="%s" index="1">square_8_status</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 219: Signal &lt;<arg fmt="%s" index="1">player_turn</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 264: Signal &lt;<arg fmt="%s" index="1">player_turn</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 224: Signal &lt;<arg fmt="%s" index="1">player_turn</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 269: Signal &lt;<arg fmt="%s" index="1">player_turn</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 234: Signal &lt;<arg fmt="%s" index="1">square_9_status</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 284: Signal &lt;<arg fmt="%s" index="1">square_9_status</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 237: Signal &lt;<arg fmt="%s" index="1">player_turn</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 288: Signal &lt;<arg fmt="%s" index="1">player_turn</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 242: Signal &lt;<arg fmt="%s" index="1">player_turn</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\square_status.v" Line 293: Signal &lt;<arg fmt="%s" index="1">player_turn</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 198: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">square_1_status</arg>&gt;. Formal port size is <arg fmt="%d" index="2">3</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 381: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">square_1_status</arg>&gt;. Formal port size is <arg fmt="%d" index="2">3</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 198: Assignment to <arg fmt="%s" index="1">square_1_status</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 382: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">square_2_status</arg>&gt;. Formal port size is <arg fmt="%d" index="2">3</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 199: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">square_2_status</arg>&gt;. Formal port size is <arg fmt="%d" index="2">3</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 383: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">square_3_status</arg>&gt;. Formal port size is <arg fmt="%d" index="2">3</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 199: Assignment to <arg fmt="%s" index="1">square_2_status</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 384: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">square_4_status</arg>&gt;. Formal port size is <arg fmt="%d" index="2">3</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 200: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">square_3_status</arg>&gt;. Formal port size is <arg fmt="%d" index="2">3</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 385: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">square_5_status</arg>&gt;. Formal port size is <arg fmt="%d" index="2">3</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 200: Assignment to <arg fmt="%s" index="1">square_3_status</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 386: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">square_6_status</arg>&gt;. Formal port size is <arg fmt="%d" index="2">3</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 201: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">square_4_status</arg>&gt;. Formal port size is <arg fmt="%d" index="2">3</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 387: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">square_7_status</arg>&gt;. Formal port size is <arg fmt="%d" index="2">3</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 201: Assignment to <arg fmt="%s" index="1">square_4_status</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 388: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">square_8_status</arg>&gt;. Formal port size is <arg fmt="%d" index="2">3</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 202: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">square_5_status</arg>&gt;. Formal port size is <arg fmt="%d" index="2">3</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 389: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">square_9_status</arg>&gt;. Formal port size is <arg fmt="%d" index="2">3</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 202: Assignment to <arg fmt="%s" index="1">square_5_status</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 375: Input port <arg fmt="%s" index="1">clk</arg> is not connected on this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 203: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">square_6_status</arg>&gt;. Formal port size is <arg fmt="%d" index="2">3</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 203: Assignment to <arg fmt="%s" index="1">square_6_status</arg> ignored, since the identifier is never used
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 204: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">square_7_status</arg>&gt;. Formal port size is <arg fmt="%d" index="2">3</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 204: Assignment to <arg fmt="%s" index="1">square_7_status</arg> ignored, since the identifier is never used
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 205: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">square_8_status</arg>&gt;. Formal port size is <arg fmt="%d" index="2">3</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 205: Assignment to <arg fmt="%s" index="1">square_8_status</arg> ignored, since the identifier is never used
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 206: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">square_9_status</arg>&gt;. Formal port size is <arg fmt="%d" index="2">3</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 206: Assignment to <arg fmt="%s" index="1">square_9_status</arg> ignored, since the identifier is never used
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="552" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 194: Input port <arg fmt="%s" index="1">clk</arg> is not connected on this instance
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="552" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 195: Input port <arg fmt="%s" index="1">clk</arg> is not connected on this instance
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v" Line 376: Input port <arg fmt="%s" index="1">clk</arg> is not connected on this instance
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\rotary.v" Line 82: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
@@ -191,19 +185,19 @@
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\ISE_Synthesis\TTT_Project\rotary.v" Line 84: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="552" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" Line 41: Input port <arg fmt="%s" index="1">RST_IN</arg> is not connected on this instance
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" Line 80: Assignment to <arg fmt="%s" index="1">ROTCTR_oneshot</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="552" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" Line 64: Input port <arg fmt="%s" index="1">ROTCTR_debounce</arg> is not connected on this instance
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" Line 67: Net &lt;<arg fmt="%s" index="1">clr</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%d" index="2">194</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">turn_marker</arg>&gt; of block &lt;<arg fmt="%s" index="4">turn_marker</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">ttt_logic</arg>&gt;. Underlying logic will be removed.
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v" Line 44: Input port <arg fmt="%s" index="1">RST_IN</arg> is not connected on this instance
 </msg>
 
-<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%d" index="2">195</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">square_status</arg>&gt; of block &lt;<arg fmt="%s" index="4">square_status</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">ttt_logic</arg>&gt;. Underlying logic will be removed.
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%d" index="2">375</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">turn_marker</arg>&gt; of block &lt;<arg fmt="%s" index="4">turn_marker</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">ttt_logic</arg>&gt;. Underlying logic will be removed.
 </msg>
 
-<msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">ROTCTR_debounce</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">ttt_logic</arg>&apos;, is tied to GND.
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v</arg>&quot; line <arg fmt="%d" index="2">80</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">oneshot_rotctr</arg>&gt; of block &lt;<arg fmt="%s" index="4">oneshot</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">vga_controller</arg>&gt;. Underlying logic will be removed.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">SW0</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -218,7 +212,13 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">SW3</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v</arg>&quot; line <arg fmt="%s" index="2">41</arg>: Output port &lt;<arg fmt="%s" index="3">LOCKED_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">clock_divider</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v</arg>&quot; line <arg fmt="%s" index="2">44</arg>: Output port &lt;<arg fmt="%s" index="3">LOCKED_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">clock_divider</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\vga_controller.v</arg>&quot; line <arg fmt="%s" index="2">80</arg>: Output port &lt;<arg fmt="%s" index="3">oneshot_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">oneshot_rotctr</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">clr</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
 </msg>
 
 <msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">clk</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">turn_marker</arg>&apos;, is tied to GND.
@@ -227,16 +227,10 @@
 <msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">start</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">turn_marker</arg>&apos;, is tied to GND.
 </msg>
 
-<msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">square_num</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">square_status</arg>&apos;, is tied to GND.
-</msg>
-
 <msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">clk</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">square_status</arg>&apos;, is tied to GND.
 </msg>
 
 <msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">clr</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">square_status</arg>&apos;, is tied to GND.
-</msg>
-
-<msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">player_turn</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">square_status</arg>&apos;, is tied to GND.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -245,40 +239,13 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%s" index="2">194</arg>: Output port &lt;<arg fmt="%s" index="3">player_turn</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">turn_marker</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%s" index="2">375</arg>: Output port &lt;<arg fmt="%s" index="3">player_turn</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">turn_marker</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%s" index="2">194</arg>: Output port &lt;<arg fmt="%s" index="3">player1_marker</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">turn_marker</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%s" index="2">375</arg>: Output port &lt;<arg fmt="%s" index="3">player1_marker</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">turn_marker</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%s" index="2">194</arg>: Output port &lt;<arg fmt="%s" index="3">player2_marker</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">turn_marker</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%s" index="2">195</arg>: Output port &lt;<arg fmt="%s" index="3">square_1_status</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">square_status</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%s" index="2">195</arg>: Output port &lt;<arg fmt="%s" index="3">square_2_status</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">square_status</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%s" index="2">195</arg>: Output port &lt;<arg fmt="%s" index="3">square_3_status</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">square_status</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%s" index="2">195</arg>: Output port &lt;<arg fmt="%s" index="3">square_4_status</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">square_status</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%s" index="2">195</arg>: Output port &lt;<arg fmt="%s" index="3">square_5_status</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">square_status</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%s" index="2">195</arg>: Output port &lt;<arg fmt="%s" index="3">square_6_status</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">square_status</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%s" index="2">195</arg>: Output port &lt;<arg fmt="%s" index="3">square_7_status</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">square_status</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%s" index="2">195</arg>: Output port &lt;<arg fmt="%s" index="3">square_8_status</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">square_status</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%s" index="2">195</arg>: Output port &lt;<arg fmt="%s" index="3">square_9_status</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">square_status</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Kirsten\Desktop\FPGA TTT Git\ttt_logic.v</arg>&quot; line <arg fmt="%s" index="2">375</arg>: Output port &lt;<arg fmt="%s" index="3">player2_marker</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">turn_marker</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">cursor_start_x&lt;9&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -338,24 +305,100 @@
 <msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">cursor_start_y&lt;0&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 </msg>
 
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">square_1_status_reg&lt;1&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">square_1_status_reg&lt;0&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">square_2_status_reg&lt;2&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">square_2_status_reg&lt;0&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">square_3_status_reg&lt;2&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">square_3_status_reg&lt;0&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">square_4_status_reg&lt;2&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">square_4_status_reg&lt;0&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">square_5_status_reg&lt;2&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">square_5_status_reg&lt;0&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">square_6_status_reg&lt;2&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">square_6_status_reg&lt;0&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">square_7_status_reg&lt;2&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">square_7_status_reg&lt;0&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">square_8_status_reg&lt;2&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">square_8_status_reg&lt;0&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">square_9_status_reg&lt;2&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">square_9_status_reg&lt;0&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">LED&lt;7:4&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">debounce_rst</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">vga_controller</arg>&gt;.
-It will be removed from the design.
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">cursor_start_x_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ttt_logic</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">8 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;cursor_start_x_8&gt; &lt;cursor_start_x_4&gt; &lt;cursor_start_x_1&gt; &lt;cursor_start_x_0&gt; &lt;cursor_start_y_8&gt; &lt;cursor_start_y_4&gt; &lt;cursor_start_y_1&gt; &lt;cursor_start_y_0&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">oneshot</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">vga_controller</arg>&gt;.
-It will be removed from the design.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">square_1_status_reg_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">square_status</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">cursor_start_x_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ttt_logic</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">8 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;cursor_start_x_8&gt; &lt;cursor_start_x_4&gt; &lt;cursor_start_x_0&gt; &lt;cursor_start_x_1&gt; &lt;cursor_start_y_8&gt; &lt;cursor_start_y_4&gt; &lt;cursor_start_y_1&gt; &lt;cursor_start_y_0&gt; </arg>
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">square_2_status_reg_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">square_status</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">cursor_start_x_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ttt_logic</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">square_4_status_reg_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">square_status</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">cursor_start_x_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ttt_logic</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">square_3_status_reg_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">square_status</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">square_5_status_reg_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">square_status</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">square_6_status_reg_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">square_status</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">square_7_status_reg_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">square_status</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">square_8_status_reg_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">square_status</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">square_9_status_reg_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">square_status</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">cursor_start_x_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ttt_logic</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">cursor_start_x_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ttt_logic</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">cursor_start_x_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ttt_logic</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -364,13 +407,13 @@ It will be removed from the design.
 <msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">cursor_start_x_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ttt_logic</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">cursor_start_x_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ttt_logic</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
 <msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">cursor_start_x_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ttt_logic</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">cursor_start_y_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ttt_logic</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">cursor_start_x_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ttt_logic</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">cursor_start_y_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ttt_logic</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">cursor_start_y_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ttt_logic</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -382,70 +425,43 @@ It will be removed from the design.
 <msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">cursor_start_y_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ttt_logic</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">square_1_status_reg_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">square_status</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">square_2_status_reg_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">square_status</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">square_4_status_reg_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">square_status</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">square_3_status_reg_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">square_status</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">square_5_status_reg_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">square_status</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">square_6_status_reg_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">square_status</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">square_7_status_reg_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">square_status</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">square_8_status_reg_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">square_status</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">square_9_status_reg_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">square_status</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">cursor_start_y_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ttt_logic</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;cursor_start_y_2&gt; </arg>
+</msg>
+
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">cursor_start_x_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ttt_logic</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;cursor_start_x_2&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">cursor_start_x_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ttt_logic</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;cursor_start_x_3&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">cursor_start_y_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ttt_logic</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;cursor_start_y_2&gt; </arg>
-</msg>
-
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">cursor_start_y_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ttt_logic</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;cursor_start_y_3&gt; </arg>
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">debounce_rst/sync_out</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_controller</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">debounce_rst/q_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_controller</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">oneshot/oneshot_q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_controller</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">debounce_rst/count_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_controller</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">debounce_rst/count_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_controller</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">debounce_rst/count_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_controller</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">debounce_rst/count_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_controller</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">debounce_rst/count_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_controller</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">debounce_rst/count_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_controller</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">debounce_rst/count_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_controller</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">debounce_rst/count_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_controller</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">debounce_rst/count_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_controller</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">debounce_rst/count_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_controller</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">debounce_rst/count_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_controller</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">debounce_rst/count_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_controller</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">debounce_rst/count_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_controller</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">debounce_rst/count_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_controller</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">debounce_rst/count_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_controller</arg>&gt;.
 </msg>
 
 <msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
