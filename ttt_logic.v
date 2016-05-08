@@ -8,7 +8,7 @@
 //player_1_win:1 bit wire
 //player_2_win:1 bit wire
 //
-module ttt_logic(input clk, clr, vga_on, Pixel_X, Pixel_Y, input wire [7:0] square_num, ROTCTR_debounce,  output wire vga_red, vga_blue, vga_green/*, player_1_win,player_2_win*/);
+module ttt_logic(input clk, clr, vga_on, Pixel_X, Pixel_Y,ROTCTR_debounce, input wire [7:0] square_num,  output wire vga_red, vga_blue, vga_green/*, player_1_win,player_2_win*/);
 
 //wires
 wire [9:0] Pixel_X;
@@ -26,8 +26,6 @@ parameter
 			 SQUARE_7	=	4'd7,
 			 SQUARE_8	=	4'd8,
 			 SQUARE_9	=	4'd9;
-
-
 
 //count to produce one square and duplicate it
 //98 cout max less than max starting from 0
@@ -49,23 +47,6 @@ end
 //variable that holds the value of X top left corner,
 reg [9:0] cursor_start_x;
 reg [8:0] cursor_start_y;
-//variable that holds the value of Y top left corner
-//process that physicall creates the cursor block color
-/*always @( clk or  clr or square_num ) begin
-	if (clr) begin
-	vga_red_reg =1'b0;
-	vga_blue_reg =1'b0;
-	vga_green_reg =1'b0;
-	end
-	else if((Pixel_X >= cursor_start_x) && (Pixel_X <= (cursor_start_x + 50)) || (Pixel_Y >= cursor_start_y) && (Pixel_Y <= (cursor_start_y + 50))) begin
-	vga_red_reg =1'b0;
-	vga_blue_reg =1'b0;
-	vga_green_reg =1'b0;
-	end
-   if 
-
-end*/
-
 
 //register to hold the pixel coordinates for the rotary switch
 
@@ -75,20 +56,7 @@ reg [8:0] pixel_y_fill;
 always @*/*(clk or clr or vga_on or Pixel_X or Pixel_Y or square_num)*/ begin
 	if(vga_on) begin
 		//defaults
-		//cursor_start_x <= 200;
-		//cursor_start_y <= 200;
-		//pixel_x_fill <= 200;
-		//pixel_y_fill <= 200;
-		if(square_num == 2) begin
-		cursor_start_x <= 100;
-		cursor_start_y <= 0;
-		end
-		else if (square_num == 3) begin
-		cursor_start_x <= 200;
-		cursor_start_y <= 0;
-		end
-		
-		
+
 		case(square_num) 
 		//case the rotary number is 1
 		NO_SQUARE: begin
@@ -132,50 +100,26 @@ always @*/*(clk or clr or vga_on or Pixel_X or Pixel_Y or square_num)*/ begin
 		cursor_start_x <= 200;
 		cursor_start_y <= 200;
 		end
-		
-		
-		
-		
 		endcase
-	
-	
-	
 	end
-
-
-
-end
-
-
-/*wire player1_turn, player2_turn;
-wire enter;//also known as select depending on keyboard use or button use
-
-//98 cout max less than max starting from 0
-
-//parameters
-parameter 
-
-	IDLE = ,	//IDLE state means that the screen is black
-	START = ,	//Here we will also print the starting board 
-	PLAYER1_MOVE = ,//takes in player 1's move, prints the new board, it is now player 2's turn
-	PLAYER2_MOVE = ,//if it is player 2's turn in 
-
-*/
+end//end always 
 
 reg vga_red_reg, vga_blue_reg, vga_green_reg;
 parameter LINE_WIDTH_MAX = 3'd3;
 //test block to assign values
 //try changing <= to = 
 always @*/*( clk or  clr or vga_on or Pixel_X or Pixel_Y or square_num or cursor_start_x or cursor_start_y)*/ begin
-   //test to make screen green
+   
 	if(vga_on) begin
-//		if((Pixel_X >= 212) && (Pixel_X <= 214) || (Pixel_X >= 425) &&(Pixel_X <= 427) ||(Pixel_Y >= 132) && (Pixel_Y <= 134) || (Pixel_Y >= 265)&&(Pixel_Y <= 267) ) begin
+		//code for whole screen criss cross
+		//if((Pixel_X >= 212) && (Pixel_X <= 214) || (Pixel_X >= 425) &&(Pixel_X <= 427) ||(Pixel_Y >= 132) && (Pixel_Y <= 134) || (Pixel_Y >= 265)&&(Pixel_Y <= 267) ) begin
+		//code for top left criss cross board
 		if(((Pixel_X >=0) && (Pixel_X <= 300) && ((Pixel_Y == 100) ||(Pixel_Y == 200))) || ((Pixel_Y >=0) && (Pixel_Y <= 300) && ((Pixel_X == 100) ||(Pixel_X == 200)))) begin
 		vga_red_reg <= 1'b0;
 		vga_blue_reg <= 1'b0;
 		vga_green_reg <= 1'b0;
 		end
-		//else if for cursor
+		//else if to show the cursor, the square the cursor is currently highlighting
 	else if(((Pixel_X >= cursor_start_x) && (Pixel_X <= (cursor_start_x + 100))) && ((Pixel_Y >= cursor_start_y) && (Pixel_Y <= (cursor_start_y + 100)))) begin
 		vga_red_reg <=1'b0;
 		vga_blue_reg <=1'b0;
@@ -209,7 +153,18 @@ assign vga_green = vga_green_reg;
 
 //instantiate module to decide who's turn it is and their player marker
 turn_marker turn_marker();
-square_status square_status();
+square_status square_status(
+			.rot_ctr(ROTCTR_debounce),//,make sure this is right
+			//Passing squares status' to determine what goes to each square
+			.square_1_status(square_1_status),
+			.square_2_status(square_2_status),
+			.square_3_status(square_3_status),
+			.square_4_status(square_4_status),
+			.square_5_status(square_5_status),
+			.square_6_status(square_6_status),
+			.square_7_status(square_7_status),
+			.square_8_status(square_8_status),
+			.square_9_status(square_9_status));
 
 //ASCII TEXT
 

@@ -15,15 +15,15 @@
 //INTERMEDIATE:ARROWS ENTER X, O
 //ADVANCED:ARROWS ENTER ANY CHARACTER
 //Will also need tp set several count values for the different timers, refer to the washer machinr timers
-//NET 	"RD"			LOC = "H14"	| IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST;
-//NET 	"GR"			LOC = "H15"	| IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST;
-//NET 	"BL"			LOC = "G15"	| IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST;
-//NET 	"HS"			LOC = "F15"	| IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST;
-//NET 	"VS"			LOC = "F14"	| IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST;
+//NET 	"VGA_RED"			LOC = "H14"	| IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST;
+//NET 	"VGA_GREEN"			LOC = "H15"	| IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST;
+//NET 	"VGA_BLUE"			LOC = "G15"	| IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST;
+//NET 	"VGA_HSYNC"			LOC = "F15"	| IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST;
+//NET 	"VGA_VSYNC"			LOC = "F14"	| IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST;
 
 module vga_controller(input BTN0, CCLK, SW0, SW1, SW2,SW3,ROTA, ROTB,ROTCTR, output  wire VGA_RED, VGA_GREEN, VGA_BLUE, VGA_HSYNC, VGA_VSYNC, LD0, LD1, LD2, LD3,LD4, LD5, LD6, LD7);
 //counters are found in thr vga_timer
-wire clk_50mhz, hsync_out,vsync_out,vga_on;
+wire  hsync_out,vsync_out,vga_on;
 wire [9:0] Pixel_X;
 wire [8:0] Pixel_Y;
 //wire vga_on;
@@ -70,15 +70,12 @@ wire ROTA_debounce, ROTB_debounce, ROTCTR_debounce;
 wire rotctr, rota,rot;
 
 rotary rotary(.C_CLK(CLK0), .ROT_A(ROTA_debounce),.ROT_B(ROTB_debounce),.ROT_CTR(ROTCTR_debounce), .LED(LED));
-//debounce and oneshot rotary signals may need to change CLK0 to clk_25mhz
+//debounce rotary signals may need to change CLK0 to clk_25mhz
 debounce debounce_ROTA(.clk(CLK0), .rst(1'b0), .async_in(ROTA), .sync_out(ROTA_debounce));
 debounce debounce_ROTB(.clk(CLK0), .rst(1'b0), .async_in(ROTB), .sync_out(ROTB_debounce));
 debounce debounce_ROTCTR(.clk(CLK0),.rst(1'b0), .async_in(ROTCTR), .sync_out(ROTCTR_debounce));
 
-/*oneshot oneshot_ROTA(.oneshot_in(ROTA_debounce), .rst(1'b0), .clk(CLK0),.oneshot_out(rota));
-oneshot oneshot_ROTB(.oneshot_in(ROTB_debounce), .rst(1'b0), .clk(CLK0), .oneshot_out(rotb));
-oneshot oneshot_ROTCTR(.oneshot_in(ROTCTR_debounce), .rst(1'b0), .clk(CLK0), .oneshot_out(rotctr));*/
-
+//for debugging purposes, display rotary value on LEDs
 assign LD0 = LED[0];
 assign LD1 = LED[1];
 assign LD2 = LED[2];
@@ -87,7 +84,7 @@ assign LD4 = LED[4];
 assign LD5 = LED[5];
 assign LD6 = LED[6];
 assign LD7 = LED[7];
-//8 bit wire to transfer LED count values
+//wire to transfer LED count values to the ttt_logic module for handling
 wire square_num0, square_num1, square_num2, square_num3, square_num4, square_num5, square_num6, square_num7;
  assign square_num0 = LED[0];
  assign square_num1 = LED[1];
@@ -97,13 +94,7 @@ wire square_num0, square_num1, square_num2, square_num3, square_num4, square_num
  assign square_num5 = LED[5];
  assign square_num6 = LED[6];
  assign square_num7 = LED[7];
+ //concatinates the data into one 8 bit value.
  assign square_num = {square_num7,square_num6,square_num5,square_num4, square_num3, square_num2,square_num1, square_num0};
- 
-//ASCCII TRANSLATE
-
-
-
-
-
 
 endmodule 

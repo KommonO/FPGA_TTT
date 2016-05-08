@@ -36,4 +36,4 @@ else
 assign vga_h_sync = ~vga_HS;
 assign vga_v_sync = ~vga_VS;
 
-endmodule
+endmodule 
