@@ -13,11 +13,20 @@ module ttt_logic(input clk, clr, vga_on, Pixel_X, Pixel_Y,ROTCTR_debounce, input
 //wires
 wire [9:0] Pixel_X;
 wire [8:0] Pixel_Y;
+wire [2:0] square_1_status,
+			  square_2_status,
+			  square_3_status,
+			  square_4_status,
+			  square_5_status,
+			  square_6_status,
+			  square_7_status,
+			  square_8_status,
+			  square_9_status;
 
 //Simply to test the square_status module
 //wire player_turn;
 parameter PLAYER_1 = 1'b0,
-			 Player_2 = 1'b1;
+			 PLAYER_2 = 1'b1;
 //assign player_turn = PLAYER_1; //Assign player_turn as player 1
 //Parameters for square_num 
 parameter 
