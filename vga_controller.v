@@ -38,7 +38,7 @@ wire CONTROL;
 wire [7:0] LED;
 wire [7:0] square_num;
 wire ROTA_debounce, ROTB_debounce, ROTCTR_debounce, ROTCTR_oneshot, enter_debounce, enter;
-wire rotctr, rota,rot;
+wire rotctr, rota,rotb, player_turn;
 
 
 clock_divider clock_divider (
@@ -64,7 +64,7 @@ debounce debounce_enter(.clk(clk_25mhz), .rst(1'b0),.async_in(BTN1), .sync_out(e
 oneshot oneshot(.oneshot_in(enter_debounce), .rst(1'b0), .clk(clk_25mhz), .oneshot_out(enter));
 //initialize other modules
 vga_timer vga_timer(.Clk(clk_25mhz),/* .clr(clr),*/.vga_h_sync(hsync_out), .vga_v_sync(vsync_out),.CounterX(Pixel_X), .CounterY(Pixel_Y), .vga_on(vga_on));
-ttt_logic ttt_logic(.ROTCTR_debounce(enter),.square_num(square_num),.clk(clk_25mhz), .clr(clr), .vga_on(vga_on), .Pixel_X(Pixel_X),.Pixel_Y(Pixel_Y), .vga_green(VGA_GREEN),.vga_red(VGA_RED),.vga_blue(VGA_BLUE));
+ttt_logic ttt_logic(.player_turn(player_turn), .ROTCTR_debounce(enter),.square_num(square_num),.clk(clk_25mhz), .clr(clr), .vga_on(vga_on), .Pixel_X(Pixel_X),.Pixel_Y(Pixel_Y), .vga_green(VGA_GREEN),.vga_red(VGA_RED),.vga_blue(VGA_BLUE));
 
 
 //testing rotary method 2,needed to add debounce
@@ -86,7 +86,7 @@ assign LD3 = LED[3];
 assign LD4 = LED[4];
 assign LD5 = LED[5];
 assign LD6 = LED[6];
-assign LD7 = LED[7];
+assign LD7 = player_turn;
 //wire to transfer LED count values to the ttt_logic module for handling
 wire square_num0, square_num1, square_num2, square_num3, square_num4, square_num5, square_num6, square_num7;
  assign square_num0 = LED[0];

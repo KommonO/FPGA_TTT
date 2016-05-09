@@ -8,17 +8,17 @@
 //player_1_win:1 bit wire
 //player_2_win:1 bit wire
 //
-module ttt_logic(input clk, clr, vga_on, Pixel_X, Pixel_Y,ROTCTR_debounce, input wire [7:0] square_num,  output wire vga_red, vga_blue, vga_green/*, player_1_win,player_2_win*/);
+module ttt_logic(input clk, clr, vga_on, Pixel_X, Pixel_Y,ROTCTR_debounce, input wire [7:0] square_num,  output wire vga_red, vga_blue, vga_green, player_turn/*, player_1_win,player_2_win*/);
 
 //wires
 wire [9:0] Pixel_X;
 wire [8:0] Pixel_Y;
 
 //Simply to test the square_status module
-wire player_turn;
+//wire player_turn;
 parameter PLAYER_1 = 1'b0,
 			 Player_2 = 1'b1;
-assign player_turn = PLAYER_1; //Assign player_turn as player 1
+//assign player_turn = PLAYER_1; //Assign player_turn as player 1
 //Parameters for square_num 
 parameter 
 			 NO_SQUARE  = 4'd0,
@@ -372,7 +372,7 @@ assign vga_green = vga_green_reg;
 
 
 //instantiate module to decide who's turn it is and their player marker
-turn_marker turn_marker();
+turn_marker turn_marker(.clk(clk), .clr(clr),.player_turn(player_turn), .enter(ROTCTR_debounce));
 square_status square_status(
 			.square_num(square_num),
 			.player_turn(player_turn),	//

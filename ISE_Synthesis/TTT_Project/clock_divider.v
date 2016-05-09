@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : xaw2verilog
 //  /   /         Filename : clock_divider.v
-// /___/   /\     Timestamp : 05/06/2016 13:19:56
+// /___/   /\     Timestamp : 05/08/2016 12:54:50
 // \   \  /  \ 
 //  \___\/\___\ 
 //

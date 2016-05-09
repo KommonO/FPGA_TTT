@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module turn_marker(input clk, start, output player_turn, player1_marker, player2_marker
+module turn_marker(input clk, enter,clr, output player_turn, player1_marker, player2_marker
     );
 	 
 	 
@@ -26,22 +26,35 @@ module turn_marker(input clk, start, output player_turn, player1_marker, player2
 	 //if playerx_marker = 0,marker = o
 	 //player_turn, 0 = player 1, 1 = player2;
 	 parameter 
-		START = 6'b000000;
-		reg [5:0] current_state, next_state;
+		PLAYER_1 = 1'b0,
+		PLAYER_2 = 1'b1;
+		reg [1:0] current_state, next_state;
 		reg player_turn_reg, player1_marker_reg, player2_marker_reg;//for now player markers are never changed
-	 always @(clk or start) begin	 
+	 always @*/*(clk or enter)*/ begin	 
 	   case(current_state) 
-		START: begin
-		player_turn_reg = 0;
-		
-		
+		PLAYER_1: begin
+		player_turn_reg = 1'b0;
+		if(enter)
+			next_state <= PLAYER_2;
+		else
+			next_state <= PLAYER_1;
 		end//end START state
-		
-		
-		
+		PLAYER_2: begin
+		player_turn_reg = 1'b1;
+		if(enter)
+			next_state <= PLAYER_1;
+		else
+			next_state <= PLAYER_2;
+		end//end Player 2 state
 		endcase
-	 
 	 end
-
+	 
+	 assign player_turn = player_turn_reg;
+	 always @ (posedge clk or posedge clr) begin
+	 if(clr)
+		current_state <= PLAYER_1;
+	 else if (enter)
+		current_state <= next_state;
+	 end//state transition
 
 endmodule
