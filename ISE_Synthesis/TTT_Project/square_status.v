@@ -24,7 +24,7 @@
 //8 but input rot_ctr, is the square_num from ttt_logic, that, along with the rot_ctr to display when it is selected
 //
 module square_status(input clk, clr, rot_ctr,player_turn, input wire [7:0]square_num,  
-	output [2:0] square_1_status,
+	output [1:0] square_1_status,
 	square_2_status,
 	square_3_status,
 	square_4_status,

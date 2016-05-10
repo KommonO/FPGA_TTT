@@ -6,7 +6,7 @@ H:\Kommon\Applications\14.7\ISE_DS\ISE\.
 speed -4
 Opened constraints file vga_controller.pcf.
 
-Sun May 08 20:10:54 2016
+Tue May 10 11:15:34 2016
 
 H:\Kommon\Applications\14.7\ISE_DS\ISE\bin\nt64\unwrapped\bitgen.exe -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g ConfigRate:1 -g ProgPin:PullUp -g DonePin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g DCMShutdown:Disable -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:None -g DonePipe:Yes -g DriveDone:No vga_controller.ncd 
 

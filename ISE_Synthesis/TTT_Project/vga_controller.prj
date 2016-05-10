@@ -1,4 +1,6 @@
+verilog work "winner.v"
 verilog work "turn_marker.v"
+verilog work "test.v"
 verilog work "square_status.v"
 verilog work "../../vga_timer.v"
 verilog work "../../ttt_logic.v"

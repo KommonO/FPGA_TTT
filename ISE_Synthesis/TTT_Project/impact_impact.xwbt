@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\Users\kousley\Downloads\FPGA_TTT-master (1)\FPGA_TTT-master\ISE_Synthesis\TTT_Project\impact.xsl
+OUTFILE=C:\Users\kousley\Downloads\FPGA_TTT-master (1)\FPGA_TTT-master\ISE_Synthesis\TTT_Project\impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=C:\Users\kousley\Downloads\FPGA_TTT-master (1)\FPGA_TTT-master\ISE_Synthesis\TTT_Project
+LICENSE=iMPACT
+USER_INFO=iMPACT

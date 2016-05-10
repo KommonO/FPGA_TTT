@@ -8,12 +8,13 @@
 //player_1_win:1 bit wire
 //player_2_win:1 bit wire
 //
-module ttt_logic(input clk, clr, vga_on, Pixel_X, Pixel_Y,ROTCTR_debounce, input wire [7:0] square_num,  output wire vga_red, vga_blue, vga_green, player_turn/*, player_1_win,player_2_win*/);
-
+module ttt_logic(input clk, clr, vga_on, Pixel_X, Pixel_Y,ROTCTR_debounce, input wire [7:0] square_num,  output wire vga_red, vga_blue, vga_green, player_turn, player_win/*, player_1_win,player_2_win*/);
+wire out;
+test test(.clk(clk),.out(out));
 //wires
 wire [9:0] Pixel_X;
 wire [8:0] Pixel_Y;
-wire [2:0] square_1_status,
+wire [1:0] square_1_status,
 			  square_2_status,
 			  square_3_status,
 			  square_4_status,
@@ -66,6 +67,9 @@ reg [8:0] cursor_start_y;
 
 reg [9:0] pixel_x_fill;
 reg [8:0] pixel_y_fill;
+
+
+
 //process that decides what block its in
 always @*/*(clk or clr or vga_on or Pixel_X or Pixel_Y or square_num)*/ begin
 	if(vga_on) begin
@@ -138,6 +142,17 @@ always @*/*( clk or  clr or vga_on or Pixel_X or Pixel_Y or square_num or cursor
 		vga_red_reg <=1'b0;
 		vga_blue_reg <=1'b0;
 		vga_green_reg <=1'b0;
+		end
+		//P1 and P2
+		else if(((Pixel_X >=350) && (Pixel_X <= 375)) && ((Pixel_Y >= 100) && (Pixel_Y <= 200))) begin
+			vga_red_reg <=1'b0;
+			vga_blue_reg <=1'b1;
+			vga_green_reg <=1'b0;
+		end
+		else if(((Pixel_X >=350) && (Pixel_X <= 375)) && ((Pixel_Y >= 250) && (Pixel_Y <= 350))) begin
+			vga_red_reg <=1'b0;
+			vga_blue_reg <=1'b1;
+			vga_green_reg <=1'b0;
 		end
 		else begin
 		vga_red_reg <= 1'b0;//0
@@ -359,7 +374,25 @@ always @*/*( clk or  clr or vga_on or Pixel_X or Pixel_Y or square_num or cursor
 			end
 		end
 		endcase //end case statement for square 9
-	end
+		
+		//code to print winning stuff
+	   if(player_win) begin
+			if(player_turn) begin
+				if(((Pixel_X >=400) && (Pixel_X <= 500)) && ((Pixel_Y >= 100) && (Pixel_Y <= 200))/*|| ((Pixel_X >=440) && (Pixel_X <= 450)) && ((Pixel_Y >= 100) && (Pixel_Y <= 200)) || ((Pixel_X >=480) && (Pixel_X <= 490)) && ((Pixel_Y >= 100) && (Pixel_Y <= 200))*/) begin
+				vga_red_reg<= 1'b1;
+				vga_green_reg<= 1'b0;
+				vga_blue_reg <=1'b1;
+				end
+			end
+			else begin
+				if(((Pixel_X >=400) && (Pixel_X <= 500)) && ((Pixel_Y >= 250) && (Pixel_Y <= 350))/*|| ((Pixel_X >=440) && (Pixel_X <= 450)) && ((Pixel_Y >= 250) && (Pixel_Y <= 350)) || ((Pixel_X >=480) && (Pixel_X <= 490)) && ((Pixel_Y >= 250) && (Pixel_Y <= 350))*/) begin
+				vga_red_reg<= 1'b1;
+				vga_green_reg<= 1'b0;
+				vga_blue_reg <=1'b1;
+				end
+			end
+			end
+		end
 	
 	else begin
 	vga_red_reg <= 1'b0;
@@ -384,6 +417,7 @@ assign vga_green = vga_green_reg;
 turn_marker turn_marker(.clk(clk), .clr(clr),.player_turn(player_turn), .enter(ROTCTR_debounce));
 square_status square_status(
 			.square_num(square_num),
+			.clr(clr),
 			.player_turn(player_turn),	//
 			.rot_ctr(ROTCTR_debounce),//,make sure this is right
 			//Passing squares status' to determine what goes to each square
@@ -396,7 +430,20 @@ square_status square_status(
 			.square_7_status(square_7_status),
 			.square_8_status(square_8_status),
 			.square_9_status(square_9_status));
-
+winner winner(
+			.clk(clk),
+			.clr(clr),
+			.square_1_status(square_1_status),
+			.square_2_status(square_2_status),
+			.square_3_status(square_3_status),
+			.square_4_status(square_4_status),
+			.square_5_status(square_5_status),
+			.square_6_status(square_6_status),
+			.square_7_status(square_7_status),
+			.square_8_status(square_8_status),
+			.square_9_status(square_9_status),
+			.player_win(player_win)
+					);
 //ASCII TEXT
 
 

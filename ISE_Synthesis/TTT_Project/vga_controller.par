@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-KIRSTEN-PC::  Sun May 08 20:10:22 2016
+KIRSTEN-PC::  Tue May 10 11:15:04 2016
 
 par -w -intstyle ise -ol high -t 1 vga_controller_map.ncd vga_controller.ncd
 vga_controller.pcf 
@@ -20,12 +20,12 @@ Device speed data version:  "PRODUCTION 1.27 2013-10-13".
 
 Design Summary Report:
 
- Number of External IOBs                          22 out of 232     9%
+ Number of External IOBs                          23 out of 232     9%
 
-   Number of External Input IOBs                  9
+   Number of External Input IOBs                 10
 
-      Number of External Input IBUFs              9
-        Number of LOCed External Input IBUFs      9 out of 9     100%
+      Number of External Input IBUFs             10
+        Number of LOCed External Input IBUFs     10 out of 10    100%
 
 
    Number of External Output IOBs                13
@@ -41,7 +41,7 @@ Design Summary Report:
    Number of BUFGMUXs                        4 out of 24     16%
    Number of DCMs                            1 out of 4      25%
    Number of RAMB16s                         5 out of 20     25%
-   Number of Slices                        405 out of 4656    8%
+   Number of Slices                        481 out of 4656   10%
       Number of SLICEMs                     36 out of 2328    1%
 
 
@@ -51,8 +51,8 @@ Placer effort level (-pl):    High
 Placer cost table entry (-t): 1
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 4 secs 
-Finished initial Timing Analysis.  REAL time: 4 secs 
+Starting initial Timing Analysis.  REAL time: 2 secs 
+Finished initial Timing Analysis.  REAL time: 2 secs 
 
 WARNING:Par:288 - The signal SW0_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal SW1_IBUF has no load.  PAR will not attempt to route this signal.
@@ -60,44 +60,44 @@ WARNING:Par:288 - The signal SW2_IBUF has no load.  PAR will not attempt to rout
 WARNING:Par:288 - The signal SW3_IBUF has no load.  PAR will not attempt to route this signal.
 
 Starting Placer
-Total REAL time at the beginning of Placer: 4 secs 
-Total CPU  time at the beginning of Placer: 3 secs 
+Total REAL time at the beginning of Placer: 2 secs 
+Total CPU  time at the beginning of Placer: 2 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:97bf5cbe) REAL time: 5 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:93eccf) REAL time: 3 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:97bf5cbe) REAL time: 5 secs 
+Phase 2.7  Design Feasibility Check (Checksum:93eccf) REAL time: 3 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:d69d585b) REAL time: 5 secs 
+Phase 3.31  Local Placement Optimization (Checksum:62a411f3) REAL time: 3 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 
-Phase 4.2  Initial Clock and IO Placement (Checksum:b05af530) REAL time: 8 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:69fd7673) REAL time: 6 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:b05af530) REAL time: 8 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:69fd7673) REAL time: 6 secs 
 
 Phase 6.36  Local Placement Optimization
-Phase 6.36  Local Placement Optimization (Checksum:b05af530) REAL time: 8 secs 
+Phase 6.36  Local Placement Optimization (Checksum:69fd7673) REAL time: 6 secs 
 
 Phase 7.8  Global Placement
-...............................................................................................
-.......
-Phase 7.8  Global Placement (Checksum:6c7fcc79) REAL time: 8 secs 
+................................................................
+.....
+Phase 7.8  Global Placement (Checksum:e70d9f33) REAL time: 6 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:6c7fcc79) REAL time: 8 secs 
+Phase 8.5  Local Placement Optimization (Checksum:e70d9f33) REAL time: 6 secs 
 
 Phase 9.18  Placement Optimization
-Phase 9.18  Placement Optimization (Checksum:89e8752d) REAL time: 8 secs 
+Phase 9.18  Placement Optimization (Checksum:c9ac9aca) REAL time: 6 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:89e8752d) REAL time: 8 secs 
+Phase 10.5  Local Placement Optimization (Checksum:c9ac9aca) REAL time: 6 secs 
 
-Total REAL time to Placer completion: 8 secs 
-Total CPU  time to Placer completion: 7 secs 
+Total REAL time to Placer completion: 6 secs 
+Total CPU  time to Placer completion: 6 secs 
 Writing design to file vga_controller.ncd
 
 
@@ -105,42 +105,42 @@ Writing design to file vga_controller.ncd
 Starting Router
 
 
-Phase  1  : 2464 unrouted;      REAL time: 16 secs 
+Phase  1  : 2925 unrouted;      REAL time: 13 secs 
 
-Phase  2  : 2110 unrouted;      REAL time: 16 secs 
+Phase  2  : 2556 unrouted;      REAL time: 13 secs 
 
-Phase  3  : 350 unrouted;      REAL time: 16 secs 
+Phase  3  : 481 unrouted;      REAL time: 14 secs 
 
-Phase  4  : 350 unrouted; (Setup:0, Hold:667, Component Switching Limit:0)     REAL time: 17 secs 
+Phase  4  : 481 unrouted; (Setup:0, Hold:1054, Component Switching Limit:0)     REAL time: 14 secs 
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:959, Component Switching Limit:0)     REAL time: 17 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:1147, Component Switching Limit:0)     REAL time: 15 secs 
 
 Updating file: vga_controller.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:959, Component Switching Limit:0)     REAL time: 18 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:1147, Component Switching Limit:0)     REAL time: 15 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:959, Component Switching Limit:0)     REAL time: 18 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:1147, Component Switching Limit:0)     REAL time: 16 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:959, Component Switching Limit:0)     REAL time: 18 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:1147, Component Switching Limit:0)     REAL time: 16 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:959, Component Switching Limit:0)     REAL time: 18 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:1147, Component Switching Limit:0)     REAL time: 16 secs 
 
-Phase 10  : 0 unrouted; (Setup:0, Hold:959, Component Switching Limit:0)     REAL time: 18 secs 
+Phase 10  : 0 unrouted; (Setup:0, Hold:1147, Component Switching Limit:0)     REAL time: 16 secs 
 
-Phase 11  : 0 unrouted; (Setup:0, Hold:959, Component Switching Limit:0)     REAL time: 18 secs 
+Phase 11  : 0 unrouted; (Setup:0, Hold:1147, Component Switching Limit:0)     REAL time: 16 secs 
 
-Phase 12  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 18 secs 
+Phase 12  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 16 secs 
 
-Phase 13  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 18 secs 
+Phase 13  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 16 secs 
 WARNING:Route:455 - CLK Net:CONTROL0<13> may have excessive skew because 
       1 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:vga_timer/vga_on may have excessive skew because 
-      3 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+      0 CLK pins and 4 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:enter may have excessive skew because 
       0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 
-Total REAL time to Router completion: 18 secs 
-Total CPU time to Router completion: 16 secs 
+Total REAL time to Router completion: 16 secs 
+Total CPU time to Router completion: 15 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -159,21 +159,21 @@ Generating Clock Report
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
 |CLKIN_IBUFG_OUT_BUFG |              |      |      |            |             |
-|                     | BUFGMUX_X1Y11| No   |   99 |  0.063     |  0.181      |
+|                     | BUFGMUX_X1Y11| No   |   99 |  0.064     |  0.181      |
 +---------------------+--------------+------+------+------------+-------------+
-|         CONTROL0<0> |  BUFGMUX_X1Y0| No   |   81 |  0.068     |  0.185      |
+|         CONTROL0<0> |  BUFGMUX_X1Y0| No   |   81 |  0.059     |  0.181      |
 +---------------------+--------------+------+------+------------+-------------+
-|           clk_25mhz | BUFGMUX_X1Y10| No   |   25 |  0.078     |  0.196      |
+|           clk_25mhz | BUFGMUX_X1Y10| No   |   36 |  0.068     |  0.190      |
 +---------------------+--------------+------+------+------------+-------------+
-|                CLK0 | BUFGMUX_X2Y11| No   |   36 |  0.069     |  0.187      |
+|                CLK0 | BUFGMUX_X2Y11| No   |   36 |  0.058     |  0.191      |
 +---------------------+--------------+------+------+------------+-------------+
-| icon/U0/iUPDATE_OUT |         Local|      |    1 |  0.000     |  2.104      |
+| icon/U0/iUPDATE_OUT |         Local|      |    1 |  0.000     |  1.939      |
 +---------------------+--------------+------+------+------------+-------------+
-|    vga_timer/vga_on |         Local|      |    6 |  0.002     |  1.317      |
+|               enter |         Local|      |   10 |  0.151     |  1.897      |
 +---------------------+--------------+------+------+------------+-------------+
-|               enter |         Local|      |   10 |  0.186     |  2.122      |
+|    vga_timer/vga_on |         Local|      |    7 |  0.018     |  1.615      |
 +---------------------+--------------+------+------+------------+-------------+
-|        CONTROL0<13> |         Local|      |    4 |  0.000     |  1.236      |
+|        CONTROL0<13> |         Local|      |    4 |  0.000     |  0.949      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -193,15 +193,15 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  NET "CLKIN_IBUFG_OUT" PERIOD = 20 ns HIGH | SETUP       |    11.974ns|     8.026ns|       0|           0
-   40%                                      | HOLD        |     0.737ns|            |       0|           0
+  NET "CLKIN_IBUFG_OUT" PERIOD = 20 ns HIGH | SETUP       |     9.092ns|    10.908ns|       0|           0
+   40%                                      | HOLD        |     0.427ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  PERIOD analysis for net "clock_divider/CL | SETUP       |    13.031ns|     6.969ns|       0|           0
-  K0_BUF" derived from  NET "CLKIN_IBUFG_OU | HOLD        |     1.253ns|            |       0|           0
+  PERIOD analysis for net "clock_divider/CL | SETUP       |    12.747ns|     7.253ns|       0|           0
+  K0_BUF" derived from  NET "CLKIN_IBUFG_OU | HOLD        |     1.327ns|            |       0|           0
   T" PERIOD = 20 ns HIGH 40%                |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  PERIOD analysis for net "clock_divider/CL | SETUP       |    33.648ns|     6.352ns|       0|           0
-  KDV_BUF" derived from  NET "CLKIN_IBUFG_O | HOLD        |     1.396ns|            |       0|           0
+  PERIOD analysis for net "clock_divider/CL | SETUP       |    33.499ns|     6.501ns|       0|           0
+  KDV_BUF" derived from  NET "CLKIN_IBUFG_O | HOLD        |     1.220ns|            |       0|           0
   UT" PERIOD = 20 ns HIGH 40%               |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
 
@@ -216,9 +216,9 @@ Derived Constraints for CLKIN_IBUFG_OUT
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|CLKIN_IBUFG_OUT                |     20.000ns|      8.026ns|      6.969ns|            0|            0|         1124|         1882|
-| clock_divider/CLK0_BUF        |     20.000ns|      6.969ns|          N/A|            0|            0|         1185|            0|
-| clock_divider/CLKDV_BUF       |     40.000ns|      6.352ns|          N/A|            0|            0|          697|            0|
+|CLKIN_IBUFG_OUT                |     20.000ns|     10.908ns|      7.253ns|            0|            0|         1124|         2244|
+| clock_divider/CLK0_BUF        |     20.000ns|      7.253ns|          N/A|            0|            0|         1185|            0|
+| clock_divider/CLKDV_BUF       |     40.000ns|      6.501ns|          N/A|            0|            0|         1059|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 All constraints were met.
@@ -230,10 +230,10 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 4 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 20 secs 
-Total CPU time to PAR completion: 17 secs 
+Total REAL time to PAR completion: 17 secs 
+Total CPU time to PAR completion: 16 secs 
 
-Peak Memory Usage:  335 MB
+Peak Memory Usage:  329 MB
 
 Placement: Completed - No errors found.
 Routing: Completed - No errors found.

@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : xaw2verilog
 //  /   /         Filename : clock_divider.v
-// /___/   /\     Timestamp : 05/08/2016 12:54:50
+// /___/   /\     Timestamp : 05/10/2016 11:11:45
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: xaw2verilog -intstyle C:/Users/Kirsten/Desktop/FPGA TTT Git/ISE_Synthesis/TTT_Project/ipcore_dir/clock_divider.xaw -st clock_divider.v
+//Command: xaw2verilog -intstyle C:/Users/Kirsten/Desktop/Current PRogresss TTT/FPGA_TTT-master (1)/FPGA_TTT-master/ISE_Synthesis/TTT_Project/ipcore_dir/clock_divider.xaw -st clock_divider.v
 //Design Name: clock_divider
 //Device: xc3s500e-4fg320
 //
